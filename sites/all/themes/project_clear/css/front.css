@@ -1,0 +1,11 @@
+html{
+	background: none repeat scroll 0 0 #945d5d;
+}
+
+body{
+	background-color: #945d5d;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	color:rgb(83,83,83);
+}

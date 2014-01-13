@@ -1,0 +1,35 @@
+<?php
+/** Implements hook_theme(). */
+function node_form_theme($existing, $type, $theme, $path) {
+
+  return array(
+    'home_node_form' => array(
+      'render element' => 'form',
+      'template' => 'home-node-form',
+      // this will set to module/theme path by default:
+      'path' => drupal_get_path('module', 'node_form'),
+    ),
+  );
+}
+?>
+
+<?php
+/**
+ * Preprocessor for theme('home_node_form').
+ */
+function template_preprocess_home_node_form(&$variables) {
+
+  // nodeformcols is an alternative for this solution.
+  if (!module_exists('nodeformcols')) {
+
+    $variables['sidebar'] = array();   // Put taxonomy fields in sidebar.
+
+    $variables['sidebar'][] = $variables['form']['field_tags'];
+    hide($variables['form']['field_tags']);
+
+    // Extract the form buttons, and put them in independent variable.
+    $variables['buttons'] = $variables['form']['actions'];
+    hide($variables['form']['actions']);
+  }
+}
+?>
