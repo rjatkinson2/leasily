@@ -60,16 +60,17 @@
 	    <?php print $pager; ?>
 	  <?php endif; ?>
 	  
-	  <div id="over_map" class="row searchCard">
-		<div class="large-12 columns">
-			  <?php if ($exposed): ?>
-	            <div class="view-filters">
-	              <?php print $exposed; ?>
-	            </div>
-	          <?php endif; ?>
-		</div>  
+	  <div class="hide-for-small">
+		  <div id="over_map" class="row searchCard">
+			<div class="large-12 columns">
+				  <?php if ($exposed): ?>
+		            <div class="view-filters">
+		              <?php print $exposed; ?>
+		            </div>
+		          <?php endif; ?>
+			</div>  
+		  </div>
 	  </div>
-	
 	  <?php if ($attachment_after): ?>
 	    <div class="attachment attachment-after">
 	      <?php print $attachment_after; ?>

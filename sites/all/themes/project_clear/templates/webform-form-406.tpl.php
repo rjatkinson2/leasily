@@ -22,24 +22,22 @@
         
         	<div class="row">
 	        	<div class="large-12 columns">
-		            <ul class="large-block-grid-3 small-block-grid-3" style="padding-top:60px;">
-						<li>            	
-		                    <p>Build your offer</p>
-							<?php print drupal_render($form['submitted']['rate']);?>
-							<?php print drupal_render($form['submitted']['number_of_tenants']);?>
-			            </li>
-			            <li>
-		                    <p>Send offer</p>
-		                    <p>Check in to see if you’ve scored a new place to live.</p>
-							<?php print drupal_render($form['submitted']['email']);?>
-							<?php print drupal_render($form['submitted']['phone']);?>
-			            </li>
-			            <li>
-		                    <p>Offer Status</p>
-		                    <p>Check in to see if you’ve scored<br /> a new place to live oh yea.</p>
-							<?php print drupal_render($form['submitted']['preferred_move_in']);?>
-			            </li>
-		            </ul>
+		            <div class="large-4 columns" style="padding-top:60px;">
+	                    <p>Build your offer</p>
+						<?php print drupal_render($form['submitted']['rate']);?>
+						<?php print drupal_render($form['submitted']['number_of_tenants']);?>
+		            </div>
+		            <div class="large-4 columns">
+	                    <p>Send offer</p>
+	                    <p>Check in to see if you’ve scored a new place to live.</p>
+						<?php print drupal_render($form['submitted']['email']);?>
+						<?php print drupal_render($form['submitted']['phone']);?>
+		            </div>
+		            <div class="large-4 columns">
+	                    <p>Offer Status</p>
+	                    <p>Check in to see if you’ve scored<br /> a new place to live oh yea.</p>
+						<?php print drupal_render($form['submitted']['preferred_move_in']);?>
+		            </div>
 	        	</div>
         	</div>
         	

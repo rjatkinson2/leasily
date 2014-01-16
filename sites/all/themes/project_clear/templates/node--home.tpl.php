@@ -204,7 +204,7 @@
 
 
     <div class="row card">
-        <div class="large-7 columns" style="padding-top:40px">
+        <div class="large-7 columns hide-for-small" style="padding-top:40px">
             <div id="content">
                 <div class="demo-container">
                     <div id="placeholder" class="demo-placeholder">
