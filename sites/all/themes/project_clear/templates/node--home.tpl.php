@@ -322,7 +322,12 @@
             
 		<?php elseif ($cardNumberCount % 2 != 0): ?>    
             <div class="row card">
-                <div class="large-8 columns">
+                <div class="large-4 push-8 columns deckText">
+                    <?php print render($content['titleArray'][$cardNumberCount]); ?>
+                    <?php print render($content['descriptionArray'][$cardNumberCount]); ?>
+                </div>
+            
+                <div class="large-8 pull-4 columns">
                 	<?php if($content['subphotoArray'][$cardNumberCount] == 1):?>
 	                	<?php print render($content['photoArray'][$cardNumberCount]); ?>
                 	<?php else:?>	
@@ -334,11 +339,6 @@
 	                    <?php endwhile; ?>
                 	</ul>
                 	<?php endif;?>
-                </div>
-        
-                <div class="large-4 columns deckText">
-                    <?php print render($content['titleArray'][$cardNumberCount]); ?>
-                    <?php print render($content['descriptionArray'][$cardNumberCount]); ?>
                 </div>
             </div>
          <?php endif; ?>
