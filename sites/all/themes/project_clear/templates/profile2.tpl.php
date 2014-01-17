@@ -42,7 +42,7 @@ global $user;
                 <p style="font-size:35px; text-align:right; margin-right:17%" class="statHeader">New Orleans</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row hide-for-small">
             <div class="profileBar">
                 <div class="large-12 columns">            
                 </div>

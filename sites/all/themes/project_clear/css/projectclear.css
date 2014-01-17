@@ -256,29 +256,32 @@ input#edit-search-block-form--2{
 	background: #FFF;
 }  
 
-#over_map {
-	position: absolute;
-	top: 10px;
-	left: 100px;
-	padding-bottom: 0px;
-	width: 225px;
-	border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-}  
-
-#over_map .large-12.columns{
-	padding:0 10px;
+@media only screen and (min-width: 768px) {
+	#over_map {
+		position: absolute;
+		top: 10px;
+		left: 100px;
+		padding-bottom: 0px;
+		width: 225px;
+		border-radius: 5px 5px 5px 5px;
+		-moz-border-radius: 5px 5px 5px 5px;
+		-webkit-border-radius: 5px 5px 5px 5px;
+	}  
+	
+	#over_map .large-12.columns{
+		padding:0 10px;
+	}
+	
+	div#mapBottomBorder{
+		height: 3px;
+		padding: 0;
+		margin: 0;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-top-color: #C3C3C3;
+	}
 }
 
-div#mapBottomBorder{
-	height: 3px;
-	padding: 0;
-	margin: 0;
-	border-top-style: solid;
-	border-top-width: 1px;
-	border-top-color: #C3C3C3;
-}
 /* Cards -------------------------------------------
 ----------------------------------------------------*/
 .card {
@@ -1360,6 +1363,10 @@ img.centerTest{
 	position:relative;
 	z-index:1;
 	border: 5px solid #fff;
+}
+
+form .row .row .columns .row{
+	padding: 0 1em;
 }
 
 .profileSelector img,
