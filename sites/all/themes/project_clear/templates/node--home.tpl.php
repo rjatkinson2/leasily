@@ -118,28 +118,34 @@
 	<span data-magellan-destination="money"></span>
 	
 	<div class="row" style="padding-top:50px">
-  		<div class="large-5 large-offset-1 columns">
+  		<div class="large-5 columns">
     		<p class="clearTitle"><?php print render($content['title']); ?><?php print $node->title;?></p>
   		</div>
-				<?php
-                    if ($is_admin_or_author){
-                      print('<div class="large-2 columns"><div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<br/><span style="font-size:.5em; color:rgb(25,25,25);">Your Property</span></div></div>');
-                      }
-                    else{
-						if ($logged_in){	  
-						  print('<div class="large-2 columns"><div class="button1">' . flag_create_link('favorites', $node->nid) . '<br/><span style="min-width=50px; font-size:.5em; color:rgb(25,25,25);">Add to Favorites</span></div></div>');
-						}
-                      }
-                ?>   
-        <div class="large-2 columns <?php if(!$logged_in && !$is_admin_or_author){print('large-offset-2');} ?>">
-        
-    		<div class="button1" style="min-width:150px;">Available<br/><span style="font-size:.5em; color:rgb(25,25,25);">July 1st, 2014</span></div>
+  		
+  		<div class="large-4 columns">
+	  		<ul class="small-block-grid-2 homeButtonGrid">
+			  <li>
+				  
+					<?php
+	                    if ($is_admin_or_author){
+	                      print('<div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<br/><span style="font-size:.5em; color:rgb(25,25,25);">Your Property</span></div>');
+	                      }
+	                    else{
+							if ($logged_in){	  
+							  print('<div class="button1">' . flag_create_link('favorites', $node->nid) . '<br/><span style="min-width=50px; font-size:.5em; color:rgb(25,25,25);">Add to Favorites</span></div>');
+							}
+	                      }
+	                ?>   
+				  
+			  </li>
+			  <li><div class="button1">Available<br/><span style="font-size:.5em; color:rgb(25,25,25);">July 1st, 2014</span></div></li>
+	  		</ul>
   		</div>
-        <div class="large-1 columns">
-    		<div class="button1"><?php print render($content['field_bed_number']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Beds</span></div>
-  		</div>
-        <div class="large-1 columns">
-    		<div class="button1"><?php print render($content['field_full_baths']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Baths</span></div>
+  		<div class="large-3 columns">
+  			<ul class="small-block-grid-2 homeButtonGrid">
+			  <li><div class="button1"><?php print render($content['field_bed_number']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Beds</span></div></li>
+			  <li><div class="button1"><?php print render($content['field_full_baths']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Baths</span></div></li>
+			</ul>
   		</div>
 	</div>
 
