@@ -123,11 +123,11 @@
   		</div>
 				<?php
                     if ($is_admin_or_author){
-                      print('<div class="large-2 columns" style="padding-left:28px; padding-right:2px"><div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<br/><span style="font-size:.5em; color:rgb(25,25,25);">Your Property</span></div></div>');
+                      print('<div class="large-2 columns"><div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<br/><span style="font-size:.5em; color:rgb(25,25,25);">Your Property</span></div></div>');
                       }
                     else{
 						if ($logged_in){	  
-						  print('<div class="large-2 columns" style="padding-left:28px; padding-right:2px"><div class="button1">' . flag_create_link('favorites', $node->nid) . '<br/><span style="min-width=50px; font-size:.5em; color:rgb(25,25,25);">Add to Favorites</span></div></div>');
+						  print('<div class="large-2 columns"><div class="button1">' . flag_create_link('favorites', $node->nid) . '<br/><span style="min-width=50px; font-size:.5em; color:rgb(25,25,25);">Add to Favorites</span></div></div>');
 						}
                       }
                 ?>   
@@ -136,10 +136,10 @@
     		<div class="button1" style="min-width:150px;">Available<br/><span style="font-size:.5em; color:rgb(25,25,25);">July 1st, 2014</span></div>
   		</div>
         <div class="large-1 columns">
-    		<div class="button1"><?php print render($content['field_bed_number']); ?><br/><span style="font-size:.5em; color:rgb(25,25,25);">Beds</span></div>
+    		<div class="button1"><?php print render($content['field_bed_number']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Beds</span></div>
   		</div>
         <div class="large-1 columns">
-    		<div class="button1"><?php print render($content['field_full_baths']); ?><br/><span style="font-size:.5em; color:rgb(25,25,25);">Baths</span></div>
+    		<div class="button1"><?php print render($content['field_full_baths']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Baths</span></div>
   		</div>
 	</div>
 
