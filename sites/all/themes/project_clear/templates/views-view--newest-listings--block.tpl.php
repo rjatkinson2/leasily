@@ -34,7 +34,7 @@
                 
                 <div class="row">                
                     <p class="statHeader"  style="text-align:center; margin-bottom:5px">Newest Listings</p>
-                    <p class="statDescription" style="font-size:1em; line-height:.75em; text-align:center; margin-bottom:40px">Have a look at the latest homes available for rent.</p>            
+                    <p class="statDescription hide-for-touch hide-for-small" style="font-size:1em; line-height:.75em; text-align:center; margin-bottom:40px">Have a look at the latest homes available for rent.</p>            
                 </div>
                 
                 <!---------------------ROW 1------------------------>  

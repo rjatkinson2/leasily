@@ -106,9 +106,12 @@
 <!---------------------MAGELLAN------------------------>
 	<div data-magellan-expedition="fixed">
 	  <dl class="sub-nav">
-	  	<dd data-magellan-arrival="money"><a href="#money">Money Card</a></dd>
-	    <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
-	    <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
+	  	<dd data-magellan-arrival="money"><a href="#money">Cover Photo</a></dd>
+	    <dd data-magellan-arrival="location"><a href="#location">Location</a></dd>
+	    <dd data-magellan-arrival="lease"><a href="#lease">Lease Details</a></dd>
+	    <dd data-magellan-arrival="ammenities"><a href="#ammenities">Ammenities</a></dd>
+	    <dd data-magellan-arrival="cards"><a href="#cards">Cards</a></dd>
+	    <dd data-magellan-arrival="comments"><a href="#comments">Comments</a></dd>
 	  </dl>
 	</div>
 <!---------------------END MAGELLAN------------------------>
@@ -123,7 +126,7 @@
   		</div>
   		
   		<div class="large-4 columns">
-	  		<ul class="small-block-grid-2 homeButtonGrid">
+	  		<ul class="small-block-grid-<?php if(!$logged_in && !$is_admin_or_author){print('1');}else{print('2');} ?> homeButtonGrid">
 			  <li>
 				  
 					<?php
@@ -156,6 +159,9 @@
         		<?php print render($content['field_money_shot']); ?>
      	 	</div>
 
+	<a name="location"></a>
+	<span data-magellan-destination="location"></span>
+
 <?php if($content['field_subcity']): ?>
 	<?php print '<div class="large-6 columns">
             	<div style="display:inline-block; float:left; margin-left:1em;">' ?>
@@ -178,8 +184,8 @@
        		</div>
 
 <?php if($content['field_subcity']): ?>
-            <div class="large-6 columns">
-            	<div style="display:inline-block; float:right; margin-right:1em">
+            <div class="large-6 columns hide-for-small">
+            	<div style="display:inline-block; float:right; margin-right:1em" class="hide-for-small">
             	
                     <div style="display:inline-block; float:right">
                         <img src="<?php print $base_path . $theme_path . '/images/compass3.png'; ?>" alt="Google Pin" style="margin-left:1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:right">
@@ -204,8 +210,8 @@
 <!---------------------STAT CARD------------------------>    
 	
 <!---------------------MAGELLAN NUMBER 2------------------------>
-	<a name="build"></a>
-	<span data-magellan-destination="build"></span>
+	<a name="lease"></a>
+	<span data-magellan-destination="lease"></span>
 
 
 
@@ -241,9 +247,15 @@
                         <p class="statDescription">What's it worth to you?</p>
         	</div>
         </div>
+        
 
 		<div class="large-5 large-offset-7">
         	<div class="row">
+        	
+        		<a name="offer"></a>
+				<span data-magellan-destination="offer"></span>
+
+        	
 	            <button class="btn1">Begin our simple offer creator!</button>
         	</div>
 		</div>
@@ -273,8 +285,8 @@
     </div>
         
 <!---------------------MAGELLAN NUMBER 3------------------------>
-	<a name="js"></a>
-	<span data-magellan-destination="js"></span>
+	<a name="ammenities"></a>
+	<span data-magellan-destination="ammenities"></span>
 
      <div class="row card">
      	<div style="text-align:center">
@@ -296,7 +308,8 @@
 
 <!-------------------------------------------------------DYNAMIC CARDS-------------------------------------------------------->    
 
-
+	<a name="cards"></a>
+	<span data-magellan-destination="cards"></span>
 
 <?php $cardNumberCount=0;?>
 	<?php while ($cardNumberCount < $content['totalCards']):?>
@@ -330,7 +343,8 @@
   }  
 ?>    
 <!-----------------------END CARDS-------------------------->
-
+<a name="comments"></a>
+<span data-magellan-destination="comments"></span>
 
 <?php if($content['comments']): ?>
 	<div class="row card" style="margin-bottom:50px">

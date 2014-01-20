@@ -48,10 +48,16 @@ div.field span{
 
 .top-bar{
 	background-color: #4D997C;
+	margin-bottom: 0px;
 }
 
 .contain-to-grid .top-bar{
 	margin-bottom: 0;
+}
+
+[data-magellan-expedition]{
+	z-index: 99999;
+	border-bottom: solid 1px #C3C3C3;
 }
 
 section.footerSection{
@@ -291,26 +297,28 @@ input#edit-search-block-form--2{
   border-color: #C3C3C3;
   padding:1.0em .3em;
   background: #FFFFFF; }
-
-@media only screen and (min-width: 768px) {
-
-.card {
-  margin-top:30px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #C3C3C3;
-  padding: 2.0em;
-  background: #FFFFFF; }
-
-}
-
+  
 .searchCard {
   margin-top:10px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px 0;
   border-color: #C3C3C3;
   padding-top:1em;
   background: #FFFFFF; }
+
+
+@media only screen and (min-width: 768px) {
+
+	.card {
+		border-width: 1px;
+		padding: 2.0em;
+	  }
+	  
+	.searchCard{
+		border-width: 1px;
+	}
+
+}
 
 .mapCard {
   border-style: solid;
@@ -612,8 +620,24 @@ code {
 }
 
 ul.homeButtonGrid{
-	margin-top: .7em;
+	margin-top: 0;
 }
+
+p.clearTitle{
+	margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+	p.clearTitle{
+		margin-bottom: 0px;
+	}
+	
+	ul.homeButtonGrid {
+		margin-top: .7em;
+	}  
+}
+
 
 .button1 {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
