@@ -27,7 +27,14 @@
  * @ingroup views_templates
  */
 ?>
-<div id="mapWrapper">
+<div class="row card hide-for-medium-up">
+	<div class="large-12 columns" style="padding:0px">
+	    <p class="statHeader" style="text-align:center; margin-bottom:5px">Maps!</p>
+	    <p class="statDescription" style="font-size:1em; text-align:center; margin-bottom:20px; padding: 0 1.0em">Run to your nearest desktop to view our map features. We're working hard to integrate with mobile!</p>
+	</div>
+</div>
+
+<div id="mapWrapper" class="hide-for-small">
 	<div class="<?php print $classes; ?>">
 	  <?php print render($title_prefix); ?>
 	  <?php if ($title): ?>
