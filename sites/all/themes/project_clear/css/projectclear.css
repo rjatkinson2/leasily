@@ -1224,7 +1224,6 @@ h2.title{
 
 .footerForm{
 	background-color:#fff;
-	min-height:80px;
 	font-family: 'Pacifico', cursive;
   	font-weight: normal;
   	font-size: 3em;
@@ -1234,6 +1233,8 @@ h2.title{
 	border-top-width: 1px;
 	border-top-color: #C3C3C3;
 	padding:22px 0px;
+	margin-top: 100px;
+	overflow: auto;
 }
 
 .signUpText{
@@ -1242,7 +1243,14 @@ h2.title{
   	font-weight: normal;
   	font-size: 22px;
   	text-rendering: optimizeLegibility;
-  	color:#17254C;	
+  	color:#17254C;
+  	margin-bottom: 0;	
+}
+
+@media only screen and (min-width: 1280px) {
+	.signUpText{
+		text-align: right;
+	}
 }
 
 .formPlaceHolder{
@@ -1690,15 +1698,23 @@ a:hover .topBarText{
 	height:50px;
 	margin: 0 auto;
 	style=z-index:80;
-	width:58%;
+	width:80%;
 	font-size:18px;
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 	color:#fff;
-	padding-left:35px;
-	padding-right:40px;
 	border:none;
 	margin-top:12px;
 	margin-bottom:20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.form-item-name input[type="text"],
+	.form-item-pass input[type="password"],
+	.form-item-mail input[type="text"],
+	.form-item-current-pass input[type="password"],
+	.accountSettings input[type="text"]{
+		width:60%;
+	}
 }
 
 .accountSettings input[type="text"],
@@ -1741,11 +1757,23 @@ input:-webkit-autofill {
   	font-size: 22px;
   	text-rendering: optimizeLegibility;
   	color: #525252;
-	margin-left:22%;
+	margin-left:15%;
 	display: inline;
 	width:300px;
 	margin-top:-5px;
 	font-weight: 100;
+}
+
+@media only screen and (min-width: 768px) {
+	.form-item-pass label,
+	.form-item-name label,
+	.form-item-current-pass label,
+	.form-item-mail label,
+	.form-item-timezone label,
+	.addProperty label,
+	.registerForm label{
+		margin-left: 22%;
+	}
 }
 
 .registerForm label{
@@ -1772,7 +1800,7 @@ button.loginSubmit,
 	font-family: 'Pacifico', cursive;
 	font-size:35px;
 	text-align:right;
-	margin-right:22%;
+	margin-right:15%;
 	padding:10px 0 70px 0;
 	font-weight: normal;
 	margin-bottom: -.1em;
@@ -1782,6 +1810,13 @@ button.loginSubmit,
 	border:none;
 	padding:0 10px 10px 10px;
 	margin-bottom:50px;
+}
+
+@media only screen and (min-width: 768px) {
+	button.loginSubmit,
+	.registerForm button#edit-submit{
+		margin-right: 22%;
+	}
 }
 
 .registerForm button#edit-submit{

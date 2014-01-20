@@ -137,7 +137,7 @@
 <div class="footerForm"  style="margin-top:100px">
     <div class="row row3" style="height:.85em">
         <div class="large-7 columns">
-            <p class="signUpText" style="text-align:right">Stay on top of what’s happening here at leasily.com with our noninvasive emails</p>
+            <p class="signUpText">Stay on top of what’s happening here at leasily.com with our noninvasive emails</p>
         </div>
         <div class="large-5 columns" style="padding-left:20px">
             <div class="formPlaceHolder" style="display:inline-block; float:left"></div>

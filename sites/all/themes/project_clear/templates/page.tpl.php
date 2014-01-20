@@ -140,8 +140,8 @@
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
   <?php global $theme_path; ?>
     <!--.footer-columns -->
-<div class="footerForm"  style="margin-top:100px">
-    <div class="row row3" style="height:.85em">
+<div class="footerForm">
+    <div class="row row3" style="height:100%">
         <div class="large-7 columns">
             <p class="signUpText" style="text-align:right">Stay on top of what’s happening here at leasily.com with our noninvasive emails</p>
         </div>
@@ -214,7 +214,7 @@
 		<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/greenCircleLogo.png'; ?>" alt="L-Logo" style="margin-top:85px" width="130px" class="centerTest"/>
 	</div>
     <p class="loginFooterText" data-thmr="thmr_400">
-    ©2001-2014 All Rights Reserved. Leasily&trade; is a trademark of Leasily LLC. Privacy and Terms
+    ©2013-2014 All Rights Reserved. Leasily&trade; is a trademark of Leasily LLC. Privacy and Terms
     </p>
   <?php endif; ?>
 

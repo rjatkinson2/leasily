@@ -33,7 +33,7 @@
               
                 <div class="row">
                     <p class="statHeader" style="text-align:center; margin-bottom:5px">Most Viewed</p>
-                    <p class="statDescription hide-for-touch hide-for-small" style="font-size:1em; line-height:.75em; text-align:center; margin-bottom:40px">Check out the properties that are getting the most looks.</p>
+                    <p class="statDescription hide-for-touch hide-for-small" style="font-size:1em; line-height:.75em; text-align:center; margin-bottom:40px; padding: 0 2em">Check out the properties that are getting the most looks.</p>
                 </div>
                 
                 <!---------------------ROW 1------------------------>  
