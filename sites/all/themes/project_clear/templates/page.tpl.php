@@ -210,12 +210,11 @@
 <div class="footerAccent"></div>
 
   <?php else: ?>
-	<div style="margin:0 auto;">
-		<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/greenCircleLogo.png'; ?>" alt="L-Logo" style="margin-top:85px" width="130px" class="centerTest"/>    </div>
+	<div style="margin:0 auto">
+		<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/greenCircleLogo.png'; ?>" alt="L-Logo" style="margin-top:85px" width="130px" class="centerTest"/>
+	</div>
     <p class="loginFooterText" data-thmr="thmr_400">
-    ©2001-2014 All Rights Reserved. Leasily® is a registered
-    <br>
-    trademark of Leasily LLC. Privacy and Terms
+    ©2001-2014 All Rights Reserved. Leasily&trade; is a trademark of Leasily LLC. Privacy and Terms
     </p>
   <?php endif; ?>
 

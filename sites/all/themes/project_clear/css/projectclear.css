@@ -1446,8 +1446,9 @@ form .row .row .columns .row{
   	font-size: 16px;
   	text-rendering: optimizeLegibility;
   	color: #17254C;
-	margin-top:20px;
 	line-height:20px;
+	margin: 20px auto;
+	max-width: 350px;
 }
 
 .searchNumber{
