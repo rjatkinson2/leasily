@@ -170,7 +170,7 @@
 	<?php print '<div class="large-12 columns">
             	<div style="display:inline-block; float:left; margin-left:310px;;">' ?>
 <?php endif; ?>
-                    <img src="<?php print $base_path . $theme_path . '/images/googlePin.png'; ?>" alt="Google Pin" style="margin-right: 1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:left">
+                    <img src="<?php print $base_path . $theme_path . '/images/googlePin.png'; ?>" alt="Google Pin" style="margin-right: 1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:left" class="hide-for-small">
 
                     <p class="clearH2" style="display:inline; float:left">
                         <?php if ($location['street']) : ?> 
