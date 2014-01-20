@@ -104,7 +104,7 @@
 
 
 <!---------------------MAGELLAN------------------------>
-	<div data-magellan-expedition="fixed">
+	<div data-magellan-expedition="fixed" class="hide-for-small">
 	  <dl class="sub-nav">
 	  	<dd data-magellan-arrival="money"><a href="#money">Cover Photo</a></dd>
 	    <dd data-magellan-arrival="location"><a href="#location">Location</a></dd>
