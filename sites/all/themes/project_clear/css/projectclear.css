@@ -39,6 +39,27 @@ div.field span{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
+.alert-box.alert{
+	background-color: #D44332;
+}
+
+.alert-box.alert .close{
+	color: #FFF;
+}
+
+.alert-box.alert a{
+	color: #00BAFF;
+}
+
+.alert-box.success{
+	background-color: #00BAFF;
+	border: none;
+}
+
+.sub-nav dd.active a{
+	background-color: #00BAFF;
+}
+
 /* Top-bar and Footer Styles ---------------------------------
 ----------------------------------------------------*/
 
