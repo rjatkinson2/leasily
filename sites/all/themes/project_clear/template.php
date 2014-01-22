@@ -263,7 +263,7 @@ if($variables['page']['content']['system_main']['nodes']);{
 	//kpr($variables['node']->NEXTLOWERVARIABLE);
 	//$variables['show_messages'] = FALSE;
 	//kpr($variables['page']['content']['system_main']['nodes']);
-	//kpr($variables);
+	kpr($variables);
 }
 
 

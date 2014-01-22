@@ -288,23 +288,17 @@
 	<a name="ammenities"></a>
 	<span data-magellan-destination="ammenities"></span>
 
-     <div class="row card">
-     	<div style="text-align:center">
-			<?php $amenityCount=0;?>
-				<?php while ($amenityCount < $content['totalAmmenities']):?>
-			        <?php print ('<div class="button2" style="display:inline-block"><img src="' . $base_path . $theme_path . '/images/icon1.png"></div>'); ?>
-				<?php $amenityCount++;?>
-			<?php endwhile; ?>
-    	</div>
-
+     <div class="row card ammenities">
         <div style="text-align:center">
+        	<ul>
 			<?php $amenityCount=0;?>
 				<?php while ($amenityCount < $content['totalAmmenities']):?>
-					<?php print ('<p class="button2Description" style="display:inline-block">' . render($content['field_amenity'][$amenityCount]) . '</p>'); ?>
+					<?php print ('<li class="' . render($content['field_amenity']['#items'][$amenityCount]['value']) . '" style="display:inline-block">' . render($content['field_amenity'][$amenityCount]) . '</li>'); ?>
 				<?php $amenityCount++;?>
 			<?php endwhile; ?>
+        	</ul>
     	</div>
-    </div>
+     </div>
 
 <!-------------------------------------------------------DYNAMIC CARDS-------------------------------------------------------->    
 

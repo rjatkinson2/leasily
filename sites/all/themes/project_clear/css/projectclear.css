@@ -2617,3 +2617,68 @@ button.btn1{
 .makeOffer .large-block-grid-3 > li{
 	padding: .25em 2.0em;
 }
+
+div.row.card.ammenities{
+	padding: 1.5em 2em;
+}
+
+.ammenities ul{
+	margin-bottom: 0px;
+}
+
+.ammenities ul li{
+	padding:.5em 1.0em .5em 3.0em;
+	font-size: .9em;
+	line-height: 3.0em;
+	background:url('icon_images/googlePin.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li.Backyard {
+   background:url('icon_images/adsense_for_games-32.png') 0% 50% no-repeat no-repeat;
+}
+.ammenities ul li.Central {
+   background:url('icon_images/adsense_for_mobile-32.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li.Dishwasher {
+   background:url('icon_images/android_market-32.png') 0% 50% no-repeat no-repeat;
+}
+.ammenities ul li.Dog {
+   background:url('icon_images/authenticator-32.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li.Fireplace {
+   background:url('icon_images/blogger-32.png') 0% 50% no-repeat no-repeat;
+}
+.ammenities ul li.Hardwood {
+   background:url('icon_images/catalogs-32.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li.Off {
+   background:url('icon_images/chrome-32.png') 0% 50% no-repeat no-repeat;
+}
+.ammenities ul li.On {
+   background:url('icon_images/contacts-32.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li.Pool {
+   background:url('icon_images/couldprint-32.png') 0% 50% no-repeat no-repeat;
+}
+.ammenities ul li.Washer {
+   background:url('icon_images/dictionary-32.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li.Dryer {
+   background:url('icon_images/docs-32.png') 0% 50% no-repeat no-repeat;
+}
+.ammenities ul li.Jacuzzi {
+   background:url('icon_images/drawings-32.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li.Barbeque {
+   background:url('icon_images/earth_engine-32.png') 0% 50% no-repeat no-repeat;
+}
+.ammenities ul li.Front {
+   background:url('icon_images/earth-32.png') 0% 50% no-repeat no-repeat;
+}
+
