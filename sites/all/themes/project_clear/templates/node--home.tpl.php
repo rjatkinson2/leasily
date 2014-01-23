@@ -293,7 +293,7 @@
         	<ul>
 			<?php $amenityCount=0;?>
 				<?php while ($amenityCount < $content['totalAmmenities']):?>
-					<?php print ('<li class="' . render($content['field_amenity']['#items'][$amenityCount]['value']) . '" style="display:inline-block">' . render($content['field_amenity'][$amenityCount]) . '</li>'); ?>
+					<?php print ('<li class="' . ''/*for future individual icons render($content['field_amenity']['#items'][$amenityCount]['value'])*/ . '" style="display:inline-block">' . render($content['field_amenity'][$amenityCount]) . '</li>'); ?>
 				<?php $amenityCount++;?>
 			<?php endwhile; ?>
         	</ul>

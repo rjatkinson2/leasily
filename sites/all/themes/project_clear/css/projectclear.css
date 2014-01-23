@@ -2627,14 +2627,24 @@ div.row.card.ammenities{
 }
 
 .ammenities ul li{
-	padding:.5em 1.0em .5em 3.0em;
+	padding:.5em 2em .5em 3.0em;
 	font-size: .9em;
 	line-height: 3.0em;
-	background:url('icon_images/googlePin.png') 0% 50% no-repeat no-repeat;
 }
 
+.ammenities ul li:nth-child(even){
+   background:url('icons/aqua32.png') 0% 50% no-repeat no-repeat;
+}
+
+.ammenities ul li:nth-child(odd){
+   background:url('icons/green32.png') 0% 50% no-repeat no-repeat;
+}
+
+
+/*-----------------------------INDIVIDUAL ICON STYLES----------------------------
+
 .ammenities ul li.Backyard {
-   background:url('icon_images/adsense_for_games-32.png') 0% 50% no-repeat no-repeat;
+   background:url('icon_images/Black/tree.png') 0% 50% no-repeat no-repeat;
 }
 .ammenities ul li.Central {
    background:url('icon_images/adsense_for_mobile-32.png') 0% 50% no-repeat no-repeat;
@@ -2681,4 +2691,4 @@ div.row.card.ammenities{
 .ammenities ul li.Front {
    background:url('icon_images/earth-32.png') 0% 50% no-repeat no-repeat;
 }
-
+------------*/

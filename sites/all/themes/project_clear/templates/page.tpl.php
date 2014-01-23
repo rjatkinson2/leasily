@@ -141,7 +141,7 @@
   <?php global $theme_path; ?>
     <!--.footer-columns -->
 <div class="footerForm">
-    <div class="row row3" style="height:100%">
+    <div class="row row3">
         <div class="large-7 columns">
             <p class="signUpText" style="text-align:right">Stay on top of what’s happening here at leasily.com with our noninvasive emails</p>
         </div>
