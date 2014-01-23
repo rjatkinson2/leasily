@@ -126,7 +126,7 @@
   		</div>
   		
   		<div class="large-4 columns">
-	  		<ul class="small-block-grid-<?php if(!$logged_in && !$is_admin_or_author){print('1');}else{print('2');} ?> homeButtonGrid">
+	  		<ul class="small-block-grid-<?php if(!$logged_in && !$is_admin_or_author){print('1');}else{print('2');} ?> large-block-grid-2 homeButtonGrid">
 			  <li>
 				  
 					<?php
@@ -170,7 +170,7 @@
 	<?php print '<div class="large-12 columns">
             	<div style="display:inline-block; float:left; margin-left:310px;;">' ?>
 <?php endif; ?>
-                    <img src="<?php print $base_path . $theme_path . '/images/googlePin.png'; ?>" alt="Google Pin" style="margin-right: 1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:left" class="hide-for-small">
+                    <img src="<?php print $base_path . $theme_path . '/css/icons/location64.png'; ?>" alt="Google Pin" style="margin-right: 1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:left" class="hide-for-small">
 
                     <p class="clearH2" style="display:inline; float:left">
                         <?php if ($location['street']) : ?> 
@@ -188,7 +188,7 @@
             	<div style="display:inline-block; float:right; margin-right:1em" class="hide-for-small">
             	
                     <div style="display:inline-block; float:right">
-                        <img src="<?php print $base_path . $theme_path . '/images/compass3.png'; ?>" alt="Google Pin" style="margin-left:1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:right">
+                        <img src="<?php print $base_path . $theme_path . '/css/icons/compass64.png'; ?>" alt="Google Pin" style="margin-left:1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:right">
                     </div>
                     
             		<?php print render($content['field_subcity']); ?>
@@ -256,7 +256,7 @@
 				<span data-magellan-destination="offer"></span>
 
         	
-	            <button class="btn1">Begin our simple offer creator!</button>
+	            <button class="btn1">Create an offer (it's easy!)</button>
         	</div>
 		</div>
 
