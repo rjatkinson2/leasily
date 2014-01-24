@@ -102,7 +102,7 @@ global $base_path;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/location40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/location40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">city</p>' . render($content['field_user_city']) . '
@@ -116,7 +116,7 @@ global $base_path;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/mail40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/mail40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">beds</p>
@@ -131,7 +131,7 @@ global $base_path;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/furniture40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/furniture40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">furniture</p>
@@ -146,7 +146,7 @@ global $base_path;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/roomates40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/roomates40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">roomates</p>
@@ -161,7 +161,7 @@ global $base_path;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/bone40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/bone40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">pets</p>
@@ -176,7 +176,7 @@ global $base_path;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/mail40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/mail40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">phone</p>
