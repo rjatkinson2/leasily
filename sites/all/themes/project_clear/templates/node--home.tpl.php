@@ -119,7 +119,7 @@
 <!---------------------MAGELLAN NUMBER ONE------------------------>
 	<a name="money"></a>
 	<span data-magellan-destination="money"></span>
-	
+		
 	<div class="row" style="padding-top:50px">
   		<div class="large-5 columns">
     		<p class="clearTitle"><?php print render($content['title']); ?><?php print $node->title;?></p>
