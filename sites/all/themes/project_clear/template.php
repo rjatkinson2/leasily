@@ -356,7 +356,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		$form['actions']['submit']['#attributes']['class'][2] = '';
 		$form['actions']['submit']['#value'] = 'Submit';
 		$form['remember_me']['#title'] = 'keep me logged in!';
-		kpr($form);
+		//kpr($form);
 		}
 	if($form_id == 'user_pass'){
 		$form['actions']['submit']['#attributes']['class'][0] = 'loginSubmit';
