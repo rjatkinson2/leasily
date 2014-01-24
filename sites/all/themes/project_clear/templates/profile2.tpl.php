@@ -69,11 +69,11 @@ global $user;
         <div class="large-6 columns card" style="width:400px; margin-top:40px">
 			<?php if($content['field_first_name']): ?>
 	            <?php print('
-	                <div class="row profInfo">
-	                    <div class="large-4 columns">
-	                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
-	                    </div>
-	                    <div class="large-8 columns">
+                <div class="row profInfo">
+                    <div class="large-4 columns">
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/name40.png" alt="Ammenity1"></div>
+                    </div>
+                    <div class="large-8 columns">
 	                        <p class="profileH2">name</p>' . render($content['field_first_name']) . ' ' . render($content['field_last_name']) . '
 	                    </div>
 	                </div>')
@@ -86,7 +86,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/mail40.png" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">e-mail</p>' . render($content['field_email']) . '
@@ -99,7 +99,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/location40.png" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">city</p>' . render($content['field_user_city']) . '
@@ -113,7 +113,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/mail40.png" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">beds</p>
@@ -128,7 +128,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/furniture40.png" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">furniture</p>
@@ -143,7 +143,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/roomates40.png" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">roomates</p>
@@ -158,7 +158,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/bone40.png" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">pets</p>
@@ -173,7 +173,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class="button2" style="display:inline-block; margin-left:30px"><img src="/d7-demo/sites/all/themes/project_clear/images/icon1.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/mail40.png" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">phone</p>

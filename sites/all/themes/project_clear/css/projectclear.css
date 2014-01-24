@@ -618,7 +618,7 @@ code {
 	margin: 0px 12px 10px 12px;
 	width:68px;
 	min-height:60px;
-	padding-top:13px;
+	padding-top:8px;
 	
 	/*Gradient Details*/
   	border: 1px solid #C3C3C3;
@@ -2640,7 +2640,6 @@ div.row.card.ammenities{
 .ammenities ul li:nth-child(odd){
    background:url('icons/green32.png') 0% 50% no-repeat no-repeat;
 }
-
 
 /*-----------------------------INDIVIDUAL ICON STYLES----------------------------
 
