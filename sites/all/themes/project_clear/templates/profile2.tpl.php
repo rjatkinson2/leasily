@@ -30,6 +30,9 @@
 ?>
 <?php
 global $user;
+global $theme_path;
+global $base_path;
+  
 ?>
 
 <div class="topSecondBar">
@@ -71,7 +74,7 @@ global $user;
 	            <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/name40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/name40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
 	                        <p class="profileH2">name</p>' . render($content['field_first_name']) . ' ' . render($content['field_last_name']) . '
@@ -86,7 +89,7 @@ global $user;
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="/d7-demo/sites/all/themes/project_clear/css/icons/mail40.png" alt="Ammenity1"></div>
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/mail40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">e-mail</p>' . render($content['field_email']) . '
