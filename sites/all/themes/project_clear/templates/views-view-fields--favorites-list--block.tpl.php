@@ -30,11 +30,11 @@
     <div class="view view-first">
         <?php print $fields['field_money_shot']->content?>
         <div class="mask">
-            <h2><?php print $fields['field_property_title']->content?></h2>
+            <h2><?php print $fields['title']->content?></h2>
             <div class="hoverStat" style="margin-left:115px; width:50px"><?php print $fields['field_bed_number']->content?><span>beds</span></div>
             <div class="hoverStat"><?php print $fields['field_full_baths']->content?><span>baths</span></div>
             <div class="hoverStat"><?php print $fields['field_base_price']->content?><span>$/mo</span></div>
-            <div style="float:left; margin:20px 0 0 210px"><?php print $fields['title']->content?></div>
+            <div style="float:left; margin:20px 0 0 215px"><?php print $fields['nid']->content?></div>
         </div>
     </div>
 </div>
