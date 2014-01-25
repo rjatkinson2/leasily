@@ -58,7 +58,7 @@
     </div>
     
     <div style="display:inline-block; float:left; margin-left:10px">    	
-        <div class="panel2"><?php print $fields['field_property_title']->content?><br /><span style="font-size:.8em"><?php print $fields['title']->content?></span></div>
+        <div class="panel2"><?php print $fields['title']->content?><br /><span style="font-size:.8em"><?php print $fields['nid']->content?></span></div>
         <div class="panel2"><span><?php print $fields['field_move_in_day']->content?></span><br /><span style="font-size:.8em">opening date</span></div>
         <div class="panel2 last"><?php print $fields['changed']->content?><br /><span style="font-size:.8em">last updated</span></div>
     </div>          	
