@@ -688,6 +688,11 @@ p.clearTitle{
 	background-color:#FFFFFF;  	
 }
 
+.flagButton{
+	padding: 0 .35em .35em .35em;
+	height: 70px;
+}
+
 .topBarButton {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-weight: normal;
@@ -2639,6 +2644,32 @@ div.row.card.ammenities{
 
 .ammenities ul li:nth-child(odd){
    background:url('icons/green32.png') 0% 50% no-repeat no-repeat;
+}
+
+a.flag-action{
+   background:url('icons/checkBlue26.png') 60% 50% no-repeat no-repeat;
+   padding: 0 1em;
+}
+
+a.unflag-action{
+   background:url('icons/xmarkRed26.png') 60% 50% no-repeat no-repeat;
+   padding: 0 1em;
+}
+
+span.ok, small.ok {
+    background: none repeat scroll 0 0 #47C965;
+    color: #FFFFFF;
+    display: block;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: -1.3125em;
+    padding: 0.375em 0.25em;
+}
+
+.password-confirm{
+	padding-left: .25em;
+	margin-top: 0;
 }
 
 /*-----------------------------INDIVIDUAL ICON STYLES----------------------------
