@@ -266,6 +266,10 @@ if($variables['page']['content']['system_main']['nodes']);{
 	//kpr($variables);
 }
 
+function project_clear_preprocess_block(&$variables) {
+	//kpr($variables);
+}
+
 
 function project_clear_faceted_search_ui_search_item($item, $type) {
 	$output = ' <dt class="title"><a href="'. check_url($item['link']) .'">'. check_plain($item['title']) .'</a></dt>';
