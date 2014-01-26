@@ -2672,11 +2672,11 @@ span.ok, small.ok {
 	margin-top: 0;
 }
 
-div.addProperty div.group_card10 h2.element-invisible{
+h2.element-invisible{
 	display: none;
 }
 
-div.addProperty h2.element-invisible div.vertical-tabs{
+div.vertical-tabs{
 	display: none;
 }
 
