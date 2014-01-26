@@ -2685,6 +2685,14 @@ div.alert-box.success{
 	text-align: center;
 }
 
+.registerConfirm div.body{
+	text-align: center;
+}
+
+.registerConfirm p{
+	text-align: center;
+}
+
 /*-----------------------------INDIVIDUAL ICON STYLES----------------------------
 
 .ammenities ul li.Backyard {
