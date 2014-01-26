@@ -2657,7 +2657,7 @@ a.unflag-action{
 }
 
 span.ok, small.ok {
-    background: none repeat scroll 0 0 #47C965;
+    background: none repeat scroll 0 0 #D44332;
     color: #FFFFFF;
     display: block;
     font-size: 0.75em;
@@ -2680,6 +2680,10 @@ div.vertical-tabs{
 	display: none;
 }
 
+div.alert-box.alert,
+div.alert-box.success{
+	text-align: center;
+}
 
 /*-----------------------------INDIVIDUAL ICON STYLES----------------------------
 
