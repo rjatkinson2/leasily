@@ -67,7 +67,8 @@
 	    <?php print $pager; ?>
 	  <?php endif; ?>
 	  
-	  <div id="over_map" class="row searchCard">
+	  <div id="over_map" class="row">
+	  <div class="top">Search Settings</div>        
 		<div class="large-12 columns">
 			  <?php if ($exposed): ?>
 	            <div class="view-filters">

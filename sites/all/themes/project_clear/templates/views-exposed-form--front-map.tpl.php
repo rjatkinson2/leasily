@@ -47,19 +47,17 @@
 	<?php $columnWidthCounter=1;?>
 	<?php foreach ($widgets as $id => $widget): ?>
     	<?php if ($columnWidthCounter<=1):?>
-			<?php print '<div class="large-12 columns"><div class="row collapse">';?>
+			<?php print '<div class="large-12 columns searchRow"><div class="row collapse">';?>
         <?php endif; ?>
     	<?php if ($columnWidthCounter>1):?>
-			<?php print '<div class="large-12 columns"><div class="row collapse">';?>
+			<?php print '<div class="large-12 columns searchRow"><div class="row collapse">';?>
         <?php endif; ?>
 			<?php if (!empty($widget->label)): ?>
             
             <?php if ($columnWidthCounter>1):?>
                 <?php print '<div class="large-5 small-5 columns">';?>
             <?php endif; ?>
-                <span class="prefix">
 						<?php print $widget->label; ?>
-                </span>
             </div>
             <?php endif; ?>
             
