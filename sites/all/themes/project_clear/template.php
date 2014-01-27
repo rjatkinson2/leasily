@@ -446,7 +446,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 
 	
 	if($form_id == 'views_exposed_form'){
-		$form['#attributes']['class'][1] = 'custom';
+		//$form['#attributes']['class'][1] = 'custom';
 		//kpr($form);
 	}
 	
