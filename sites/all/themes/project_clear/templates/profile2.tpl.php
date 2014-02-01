@@ -1,192 +1,257 @@
 <?php
-
-/**
- * @file
- * Default theme implementation for profiles.
- *
- * Available variables:
- * - $content: An array of comment items. Use render($content) to print them all, or
- *   print a subset such as render($content['field_example']). Use
- *   hide($content['field_example']) to temporarily suppress the printing of a
- *   given element.
- * - $title: The (sanitized) profile type label.
- * - $url: The URL to view the current profile.
- * - $page: TRUE if this is the main view page $url points too.
- * - $classes: String of classes that can be used to style contextually through
- *   CSS. It can be manipulated through the variable $classes_array from
- *   preprocess functions. By default the following classes are available, where
- *   the parts enclosed by {} are replaced by the appropriate values:
- *   - entity-profile
- *   - profile-{TYPE}
- *
- * Other variables:
- * - $classes_array: Array of html class attribute values. It is flattened
- *   into a string within the variable $classes.
- *
- * @see template_preprocess()
- * @see template_preprocess_entity()
- * @see template_process()
- */
-?>
-<?php
-global $user;
 global $theme_path;
 global $base_path;
-  
 ?>
+<div class="topSecondBar pricing" style="padding:0; margin: 0 0 570px 0; overflow:hidden">
 
-<div class="topSecondBar">
-    <div class="row profileSelector" style="margin-top:15px">
-        <?php print render($content['field_user_picture']) ?>
-
-<!---------------------MONEY CARD------------------------>    
-        <div class="row">
-            <div class="large-12 columns">
-                <p style="font-size:35px; text-align:right; margin-right:17%" class="statHeader">New Orleans</p>
-            </div>
-        </div>
-        <div class="row hide-for-small">
-            <div class="profileBar">
-                <div class="large-12 columns">            
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-12 columns">
-                <?php print l(t('Account Settings'),'user/' . $user->uid . '/edit', array('attributes' => array('class' => array('anythingHere'))));?>
-                <?php print l(t('Edit Profile'), 'profile-main/' . $user->uid . '/edit', array('attributes' => array('class' => array('anythingHere')))); ?>
-            </div>
-        </div>
-    </div>
-</div>    
-
-<!---------------------STAT CARD------------------------>    
-
-
-    <div class="row">
-<?php
-	$views = views_embed_view('favorites_list', 'block');
-	print render($views);
-?>
-            
-        <div class="large-6 columns card" style="width:400px; margin-top:40px">
-			<?php if($content['field_first_name']): ?>
-	            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/name40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-	                        <p class="profileH2">name</p>' . render($content['field_first_name']) . ' ' . render($content['field_last_name']) . '
-	                    </div>
-	                </div>')
-				?>
-            <?php endif?>
-
-            
-            
-			<?php if($content['field_email']): ?>
-            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/mail40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="profileH2">e-mail</p>' . render($content['field_email']) . '
-                    </div>
-                </div>')
-			?>
-            <?php endif?>
-
-			<?php if($content['field_user_city']): ?>
-            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/location40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="profileH2">city</p>' . render($content['field_user_city']) . '
-                    </div>
-                </div>')
-			?>
-            <?php endif?>
-            
-
-			<?php if($content['field_user_beds']): ?>
-            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/mail40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="profileH2">beds</p>
-                        <p class="profileDescription">' . render($content['field_user_beds']) . '</p>
-                    </div>
-                </div>')
-			?>
-            <?php endif?>
-            
-
-			<?php if($content['field_user_furniture']): ?>
-            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/furniture40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="profileH2">furniture</p>
-                        <p class="profileDescription">' . render($content['field_user_furniture']) . '</p>
-                    </div>
-                </div>')
-			?>
-            <?php endif?>
-            
-
-			<?php if($content['field_user_roomates']): ?>
-            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/roomates40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="profileH2">roomates</p>
-                        <p class="profileDescription">' . render($content['field_user_roomates']) . '</p>
-                    </div>
-                </div>')
-			?>
-            <?php endif?>
-            
-            
-			<?php if($content['field_user_pets']): ?>
-            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/bone40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="profileH2">pets</p>
-                        <p class="profileDescription">' . render($content['field_user_pets']) . '</p>
-                    </div>
-                </div>')
-			?>
-            <?php endif?>
-            
-            
-			<?php if($content['field_user_phone']): ?>
-            <?php print('
-                <div class="row profInfo">
-                    <div class="large-4 columns">
-                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/mail40.png' . '" alt="Ammenity1"></div>
-                    </div>
-                    <div class="large-8 columns">
-                        <p class="profileH2">phone</p>
-                        <p class="profileDescription">' . render($content['field_user_phone']) . '</p>
-                    </div>
-                </div>')
-			?>
-            <?php endif?>
-            
-        </div>
-    </div>
-  </div>
+	    <img src="<?php print $base_path . 'sites/all/themes/project_clear/images/price-photo-10.jpg';?>" alt="Ammenity1" style="position:relative; width=100%">
+		
+		
+		<div style="position:absolute; bottom:350px; width:100%">
+		<div style="position:absolute; bottom:-90px; width:100%; height:500px; background-color:#FFF; border-bottom:solid 1px #C2C2C2">&nbsp;</div>
+			<div class="row">
+				<div class="large-12 columns pricingTitle hide-for-medium hide-for-small" style="margin-bottom:3%">Welcome! Your listing awaits.</div>
+				<div class="large-12 columns" id="priceDesc">
+					<div class="large-12 columns" style="padding-bottom:10px">
+						<div class="large-1 columns">
+							<p class="deckHeader accountNumber">1</p>
+						</div>
+						<div class="large-11 columns">
+							<p style="padding-top:7px">Want to handle the listing yourself? Go for it!  Our free property manager is quick and easy to use.</p>
+						</div>
+					</div>
+					<div style="border-left: solid 1px #FFF; display:inline-block; margin-left:4%">
+						<div class="large-9 large-offset-3 columns" style="padding-top:0">
+							<div class="large-1 columns">
+								<p class="deckHeader accountNumber">2</p>
+							</div>
+							<div class="large-11 columns">
+								<p>Or, let us take care of everything!  We will create a complete listing and fill it with beautiful photography.  The monthly rate only applies while the property is active.</p>
+							</div>
+						</div>
+						<div class="large-9 columns large-offset-3" style="padding-top:0;">
+							<div style="border-left: solid 1px #FFF; display:inline-block; margin-left:5%">
+								<div class="large-9 large-offset-3 columns">
+									<div class="large-2 columns">
+										<p class="deckHeader accountNumber">3</p>
+									</div>
+									<div class="large-10 columns">
+										<p>We want listings up earlier so tenants can plan ahead.  Our plans get cheaper the earlier you list.</p>
+									</div>
+								</div>
+								<div class="large-9 columns large-offset-3" style="padding:0">
+									<div style="border-left: solid 1px #FFF; width: 91%; margin-left:8%; padding:5% 30% 0 0">
+										<div style="border-top: solid 1px #FFF; border-right: solid 1px #FFF; width: 91%">&nbsp;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+				
+				<div class="large-12 columns pricingTables">
+					<div class="large-3 columns">
+		                <div class="pricing_table one row">
+		                	<div class="large-12 columns">
+		                        <div class="top">
+		                            Original
+		                        </div>
+		                	</div>
+		                    <div class="large-12 columns searchRow">
+								<p>Always Free!</p>
+								<p>(no credit card necessary)</p>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Use your photos</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Property Manager</p>
+		                                <p>For quickly and easily creating and managing listings</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns signUp">
+		                        <div class="row collapse">
+		                            <a href="#"><div>
+		                                Get started!
+		                            </div></a>
+		                        </div>
+		                    </div>
+		                </div>
+					</div>
+					<div class="large-3 columns">
+		                <div class="pricing_table two row">
+		                	<div class="large-12 columns">
+		                        <div class="top">
+		                            Rush Hour
+		                        </div>
+		                	</div>
+		                    <div class="large-12 columns searchRow">
+								<p>6%</p>
+								<p>of one month's rent</p>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Pro Photography</p>
+		                                <p>let us take the shots!</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Hands free listing</p>
+		                                <p>we'll set everything up for you, head to toe</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Property Manager</p>
+		                                <p>For quickly and easily managing listings after setup</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="large-12 columns signUp">
+		                        <div class="row collapse">
+		                            <a href="#"><div>
+		                                Sign up
+		                            </div></a>
+		                        </div>
+		                    </div>
+		                    
+		                </div>
+					</div>
+					<div class="large-3 columns">
+		                <div class="pricing_table three row">
+		                	<div class="large-12 columns">
+		                        <div class="top">
+		                            Prime Time
+		                        </div>
+		                	</div>
+		                    <div class="large-12 columns searchRow">
+								<p>4%</p>
+								<p>of one month's rent</p>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Pro Photography</p>
+		                                <p>let us take the shots!</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Hands free listing</p>
+		                                <p>we'll set everything up for you, head to toe</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Property Manager</p>
+		                                <p>For managing listings after setup</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Make an Offer</p>
+		                                <p>*coming soon*</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="large-12 columns signUp">
+		                        <div class="row collapse">
+		                            <a href="#"><div>
+		                                Sign up
+		                            </div></a>
+		                        </div>
+		                    </div>
+		                </div>
+					</div>
+					<div class="large-3 columns">
+		                <div class="pricing_table four row">
+		                	<div class="large-12 columns">
+		                        <div class="top">
+		                            Early Bird
+		                        </div>
+		                	</div>
+		                    <div class="large-12 columns searchRow">
+								<p>2%</p>
+								<p>of one month's rent</p>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Pro Photography</p>
+		                                <p>let us take the shots!</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Hands Free Listing</p>
+		                                <p>we'll set everything up for you, head to toe</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Property Manager</p>
+		                                <p>For managing listings after setup</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="large-12 columns searchRow">
+		                        <div class="row collapse">
+		                            <div class="large-12 small-12 columns">
+		                                <p>Make an Offer</p>
+		                                <p>*coming soon*</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="large-12 columns signUp">
+		                        <div class="row collapse">
+		                            <a href="#"><div>
+		                                Sign up
+		                            </div></a>
+		                        </div>
+		                    </div>
+		                </div>
+					</div>
+				</div>
+			</div>
+    	</div>
 </div>
