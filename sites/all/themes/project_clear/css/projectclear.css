@@ -2886,6 +2886,7 @@ form#views-exposed-form-front-map-block{
 }
 
 #over_map div.top,
+#over_map div.bottom,
 .pricing_table div.top{
 	background-color: #333C48;
 	font-family: 'Pacifico', cursive;
@@ -2895,6 +2896,18 @@ form#views-exposed-form-front-map-block{
 	border-radius: 4px 4px 0 0;
 	-moz-border-radius: 4px 4px 0 0;
 	-webkit-border-radius: 4px 4px 0 0;
+}
+
+#over_map div.bottom{
+	background-color: #4D997C;
+	line-height: 2.0em;
+	border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+}
+
+#over_map div.bottom a{
+	color:#FFF;
 }
 
 .pricing_table div div.top{
@@ -3105,4 +3118,12 @@ div#priceDesc .accountNumber{
 		background-color:#FFF;
 		border-bottom:solid 1px #C2C2C2;
 	}
+}
+
+.frontList{
+	text-align: center;
+	border-top: solid 1px #C2C2C2;
+	font-family: 'Pacifico', cursive;
+	color: #D44332;
+	background-color:
 }

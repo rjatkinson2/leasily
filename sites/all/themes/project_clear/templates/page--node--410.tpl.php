@@ -202,7 +202,7 @@ global $base_path;
 		
 		                    <div class="large-12 columns signUp">
 		                        <div class="row collapse">
-		                            <a href="#"><div>
+		                            <a href="<?php print $base_path . 'node/add/home'; ?>"><div>
 		                                Get started!
 		                            </div></a>
 		                        </div>
@@ -250,7 +250,7 @@ global $base_path;
 		                    
 		                    <div class="large-12 columns signUp">
 		                        <div class="row collapse">
-		                            <a href="#"><div>
+		                            <a href="<?php print $base_path . 'node/add/home'; ?>"><div>
 		                                Sign up
 		                            </div></a>
 		                        </div>
@@ -308,7 +308,7 @@ global $base_path;
 		                    
 		                    <div class="large-12 columns signUp">
 		                        <div class="row collapse">
-		                            <a href="#"><div>
+		                            <a href="<?php print $base_path . 'node/add/home'; ?>"><div>
 		                                Sign up
 		                            </div></a>
 		                        </div>
@@ -365,7 +365,7 @@ global $base_path;
 		                    
 		                    <div class="large-12 columns signUp">
 		                        <div class="row collapse">
-		                            <a href="#"><div>
+		                            <a href="<?php print $base_path . 'node/add/home'; ?>"><div>
 		                                Sign up
 		                            </div></a>
 		                        </div>
