@@ -3025,3 +3025,84 @@ div#priceDesc .accountNumber{
 .pricingTitle p{
 	font-size: .5em;
 }
+
+/*-----------------------------INDIVIDUAL ICON STYLES---------------------------------*/
+
+div.topSecondBar.pricing{
+	padding:0;
+	margin: 0;
+}
+
+div#priceDesc div.columns{
+	color: #17254C;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+div#priceDesc .accountNumber{
+	color: #17254C;
+	border-color: #17254C;
+}
+
+.pricingTables .pricing_table.row{
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	div.topSecondBar.pricing{
+		padding:0;
+		margin: 0 0 570px 0;
+	}
+	
+	.logoPush{
+		position:absolute;
+		bottom:280px;
+		width:100%
+	}
+	
+	.whiteDrop{
+		position:absolute;
+		bottom:-46px;
+		width:100%;
+		height:525px;
+		background-color:#FFF;
+		border-bottom:solid 1px #C2C2C2;
+	}
+	
+	div#priceDesc div.columns{
+		color: #FFF;
+		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	}
+	
+	div#priceDesc .accountNumber{
+		color: #FFF;
+		border-color: #FFF;
+	}
+	
+	.pricingTables .pricing_table.row{
+	margin-bottom: 0;
+}
+
+	
+}
+
+@media only screen and (min-width: 1280px) {
+	div.topSecondBar.pricing{
+		padding:0;
+		margin: 0 0 570px 0;
+	}
+	
+	.logoPush{
+		position:absolute;
+		bottom:350px;
+		width:100%
+	}
+	
+	.whiteDrop{
+		position:absolute;
+		bottom:-90px;
+		width:100%;
+		height:500px;
+		background-color:#FFF;
+		border-bottom:solid 1px #C2C2C2;
+	}
+}
