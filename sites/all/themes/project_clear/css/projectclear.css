@@ -1706,7 +1706,7 @@ select {
 	height:50px;
 	margin: 0 auto;
 	min-width:400px;
-	style=z-index:80;
+	z-index:80;
 	width:70%;
 	font-size:18px;
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -1739,7 +1739,7 @@ a:hover .topBarText{
 	background-color:#17254C;
 	height:50px;
 	margin: 0 auto;
-	style=z-index:80;
+	z-index:80;
 	width:80%;
 	font-size:18px;
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -1748,6 +1748,9 @@ a:hover .topBarText{
 	margin-top:12px;
 	margin-bottom:20px;
 	padding: 0 35px;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1780,6 +1783,9 @@ a:hover .topBarText{
 	border:none;
 	margin-top:12px;
 	margin-bottom:20px;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
 }
 
 input:-webkit-autofill {
