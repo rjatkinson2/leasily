@@ -688,9 +688,8 @@ p.clearTitle{
   	font-size: 1.8em;
   	color:#4D997C;
   	text-align: center;
-  	line-height: .65em;
-  	margin-bottom: 0em;
   	text-rendering: optimizeLegibility;
+  	line-height: .65em;
 	padding:.55em .35em .35em .35em;
 	
 	/*Gradient Details*/
@@ -2106,7 +2105,7 @@ input[type=checkbox].form-checkbox:checked + label.option {
 	background-position: 0 -22px;
 }
 
-label.option {
+.form-type-checkbox label.option {
 	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_e1482dadb6a75e66384b083f546c9034.png);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -2957,7 +2956,7 @@ form#views-exposed-form-front-map-block{
     background: url("icons/checkGreen16.png") no-repeat 10% 50%;
 }
 
-.form-type-select {
+#over_map .form-type-select {
 	height: 100%;
 	padding: .5em 0;
     border-radius: 0px;
@@ -2965,12 +2964,12 @@ form#views-exposed-form-front-map-block{
     background: #FFF url("icons/dropBlue8.png") no-repeat 80% 50%;
 }
 
-.form-type-select.form-item-city {
+#over_map .form-type-select.form-item-city {
     background: #475462 url("icons/dropWhite8.png") no-repeat 80% 50%;
 
 }
 
-.form-type-select select {
+#over_map .form-type-select select {
 	color:#17254C;
 	width: 130%;
 	height: 100%;
@@ -2985,12 +2984,12 @@ form#views-exposed-form-front-map-block{
     font-size: 1.0em;
 }
 
-.form-type-select.form-item-city select{
+#over_map .form-type-select.form-item-city select{
 	color: #FFF;
 	padding-left: 4.0em;
 }
 
-.form-type-select select:focus {
+#over_map .form-type-select select:focus {
     outline: none;
 }
 
@@ -3132,4 +3131,68 @@ div#priceDesc .accountNumber{
 	font-family: 'Pacifico', cursive;
 	color: #D44332;
 	background-color:
+}
+
+.stepsRow .form-type-radio{
+	display:inline-block;
+	float: left;
+}
+
+.stepsRow .form-type-radio input,
+.stepsRow .form-type-radio label{
+	display: inline-block;
+	float: left;
+	width: 100%;
+	color: #525252;
+    font-family: 'Pacifico',cursive;
+    font-size: 22px;
+    font-weight: 100;
+    margin-left: 15%;
+    margin-top: -5px;
+    text-align: left;
+    text-rendering: optimizelegibility;
+}
+
+.form-item-field-occupancy-und > label,
+.form-item-field-privacy-und > label{
+	display: none;
+}
+
+.privacyBar{
+  margin-top: 4.0em;
+  padding: 30px 0 35px 0;
+  background: #FFF;
+  border-top: solid 1px #C3C3C3;
+  border-bottom: solid 1px #C3C3C3;
+}
+
+.privacyBar p{
+	text-align: center;
+	margin: 0;
+}
+
+.privacyBar .clearTitle{
+	font-size: 2.5em;
+	margin-bottom: .5em;	
+}
+
+.privacyBar p:nth-child(3){
+	color: #D44332;
+	font-size: 1.3em;
+}
+
+.button1 span,
+.button1 p{
+	padding: 0;
+	margin: 0;
+	font-size: .5em;
+	color: #17254C;
+}
+
+.stats div.date{
+	padding: 0 auto;
+}
+
+.statDescription span.date-display-single{
+	font-size: 1.0em;
 }

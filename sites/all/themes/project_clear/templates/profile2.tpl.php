@@ -47,7 +47,7 @@ global $base_path;
         </div>
         <div class="row hide-for-small">
             <div class="profileBar">
-                <div class="large-12 columns">            
+                <div class="large-12 columns">
                 </div>
             </div>
         </div>

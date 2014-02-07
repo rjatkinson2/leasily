@@ -131,23 +131,33 @@
 				  
 					<?php
 	                    if ($is_admin_or_author){
-	                      print('<div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<br/><span style="font-size:.5em; color:rgb(25,25,25);">Your Property</span></div>');
+	                      print('<div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<br/><span>Your Property</span></div>');
 	                      }
 	                    else{
 							if ($logged_in){	  
-							  print('<div class="button1">' . flag_create_link('favorites', $node->nid) . '<br/><span style="min-width=50px; font-size:.5em; color:rgb(25,25,25);">Add to Favorites</span></div>');
+							  print('<div class="button1">' . flag_create_link('favorites', $node->nid) . '<br/><span>Add to Favorites</span></div>');
 							}
 	                      }
 	                ?>   
 				  
 			  </li>
-			  <li><div class="button1">Available<br/><span style="font-size:.5em; color:rgb(25,25,25);">July 1st, 2014</span></div></li>
+			  <li>
+				  <?php if($content['field_occupancy']['#items']['0']['value']=='0'):?>
+				  <div class="button1" style="color:#D44332">
+					  	<div class="avail">Occupied</div><p style="display:inline">Until</p>
+				  <?php else:?>
+				  <div class="button1">
+				  		<div class="avail">Available</div>
+				  <?php endif;?>
+				  <?php print render($content['field_move_in_day']);?>
+				  </div>
+			  </li>
 	  		</ul>
   		</div>
   		<div class="large-3 columns">
   			<ul class="small-block-grid-2 homeButtonGrid">
-			  <li><div class="button1"><?php print render($content['field_bed_number']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Beds</span></div></li>
-			  <li><div class="button1"><?php print render($content['field_full_baths']); ?><span style="font-size:.5em; color:rgb(25,25,25);">Baths</span></div></li>
+			  <li><div class="button1"><?php print render($content['field_bed_number']); ?><span>Beds</span></div></li>
+			  <li><div class="button1"><?php print render($content['field_full_baths']); ?><span>Baths</span></div></li>
 			</ul>
   		</div>
 	</div>
@@ -207,8 +217,18 @@
 		</div>
 	</div>
     
-<!---------------------STAT CARD------------------------>    
-	
+<!---------------------DISABLE WITH PRIVACY------------------------>    
+
+<?php if($content['field_privacy']['#items']['0']['value']=='0'):?>
+<div class="privacyBar">
+    <div class="row">
+		<p class="clearTitle">Property Occupied</p>
+		<p>Privacy settings enabled.  Check back for complete property details on:</p>
+		<p><?php print render($content['field_move_in_day']); ?></p> 
+	</div>
+</div>    
+<?php else: ?>
+
 <!---------------------MAGELLAN NUMBER 2------------------------>
 	<a name="lease"></a>
 	<span data-magellan-destination="lease"></span>
@@ -230,7 +250,7 @@
                 <p class="statHeader">Move-in Details</p>
                 	<?php if($content['field_move_in_day']): ?>
 		                <p class="statDescription">Lease available starting:</p>
-	                    <?php print render($content['field_move_in_day']); ?>
+	                    <p class="statDescription"><?php print render($content['field_move_in_day']); ?></p>
                     <?php else:?>
 	                    <p class="statDescription">Not yet specified, contact the owner.</p>
                     <?php endif?>
@@ -344,4 +364,6 @@
 	<div class="row card" style="margin-bottom:50px">
               <?php print render($content['comments']); ?>
 	</div>
-<?php endif ?>
+<?php endif; ?>
+
+<?php endif; ?>
