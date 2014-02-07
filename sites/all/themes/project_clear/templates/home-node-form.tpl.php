@@ -190,6 +190,46 @@
 				      </div>
 				    </div>
 				  </section>
+  				  <section>
+				    <p class="title"><a href="#section3">Occupancy</a></p>
+				    <div class="content" data-slug="section3">
+		                <div class="row stepsRow">
+		                    <div class="large-6 columns">
+				            	<div class="row">
+				                    <div class="large-1 small-1 columns">
+				                        <p class="deckHeader accountNumber" style="font-size:35px">8</p>
+				                    </div>
+				
+				                    <div class="large-11 small-11 columns">
+				                        <p class="formStepH1">Status of Occupancy</span></p>
+				                        <p class="formStep">Once you've filled your house with tenants, make sure to turn your listing into occupied mode.  Preserve your beautiful listing for the next time you need to list.</p>
+				                    </div>
+				            	</div>
+				            </div>
+							<div class="large-6 columns">
+									<?php print drupal_render($form['field_occupancy']);?>
+					        </div>
+				        </div>
+		                <div class="row stepsRow">
+		                    <div class="large-6 columns">
+				            	<div class="row">
+				                    <div class="large-1 small-1 columns">
+				                        <p class="deckHeader accountNumber" style="font-size:35px">9</p>
+				                    </div>
+				
+				                    <div class="large-11 small-11 columns">
+				                        <p class="formStepH1">Looking for Privacy?</span></p>
+				                        <p class="formStep">If you'd like to hide your house details while it's occupied, use this setting for privacy.</p>
+				                    </div>
+				            	</div>
+				            </div>
+							<div class="large-6 columns">
+									<?php print drupal_render($form['field_privacy']);?>
+					        </div>
+				        </div>
+				    </div>
+				  </section>
+
 				</div>
 								
             	<div class="row" style="margin-top:70px">

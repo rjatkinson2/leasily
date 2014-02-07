@@ -137,16 +137,16 @@ function project_clear_preprocess_page(&$variables){
 	/*<?php print $footer_message; ?> to print text*/
 	$variables['top_bar_link_one'] = l($user->name, '#', array('attributes' => array('class' => array('topBarFont'))));
 	$variables['top_bar_link_two'] = l(t('log out'), 'user/logout', array('attributes' => array('class' => array('topBarFont'))));
-	  $variables['view_profile_link'] = l(t('View Profile'), 'profile-main/' . $user->uid, array('attributes' => array('class' => array('holderClass'))));
-	  $variables['account_settings_link'] = l(t('Edit Profile'),'profile-main/' . $user->uid . '/edit', array('attributes' => array('class' => array('holderClass'))));
-	  $variables['edit_account_link'] = l(t('Account Settings'),'user/' . $user->uid . '/edit', array('attributes' => array('class' => array('holderClass'))));
-	  $variables['dropdownClasses'] = t('first leaf has-dropdown');
+	$variables['view_profile_link'] = l(t('View Profile'), 'profile-main/' . $user->uid, array('attributes' => array('class' => array('holderClass'))));
+	$variables['account_settings_link'] = l(t('Edit Profile'),'profile-main/' . $user->uid . '/edit', array('attributes' => array('class' => array('holderClass'))));
+	$variables['edit_account_link'] = l(t('Account Settings'),'user/' . $user->uid . '/edit', array('attributes' => array('class' => array('holderClass'))));
+	$variables['dropdownClasses'] = t('first leaf has-dropdown');
   	}
   else{
-	  $variables['footer_message'] = t('Lullabot loves you.');
-	  $variables['top_bar_link_one'] = l(t('login'), 'user/login', array('attributes' => array('class' => array('topBarFont'))));
-	  $variables['top_bar_link_two'] = l(t('register'), 'user/register', array('attributes' => array('class' => array('topBarFont'))));
-	  $variables['dropdownClasses'] = t('first leaf');
+	$variables['footer_message'] = t('Lullabot loves you.');
+	$variables['top_bar_link_one'] = l(t('login'), 'user/login', array('attributes' => array('class' => array('topBarFont'))));
+	$variables['top_bar_link_two'] = l(t('register'), 'user/register', array('attributes' => array('class' => array('topBarFont'))));
+	$variables['dropdownClasses'] = t('first leaf');
   }
   //add conditional css and javascript - check path to css file.  CSS_THEME is a constant equal to 100 to ensure it is in the very last group.  Higher numbers will be listed even later (or last).  'weight' => 100 can be used to list files in order within different groups.
   if($variables['node']){
@@ -161,6 +161,10 @@ function project_clear_preprocess_page(&$variables){
   //Devel function to pretty print all variables associated with the page
   //kpr($variables);
 
+if ($node->field_occupancy['und'][0]['value'] == 0);{
+	$variables['page']['bugchasing2'] = t('I hope this occupancy test works!!');
+	}
+	
 if ($variables['page']['content']);{
 	$variables['page']['bugchasing'] = t('I hope this test works!!');
 	}
@@ -263,6 +267,7 @@ if($variables['page']['content']['system_main']['nodes']);{
 	//kpr($variables['node']->NEXTLOWERVARIABLE);
 	//$variables['show_messages'] = FALSE;
 	//kpr($variables['page']['content']['system_main']['nodes']);
+	//kpr($variables['node']);
 	//kpr($variables);
 }
 
@@ -419,7 +424,6 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		$form['#markup'][1] = $base_path . $theme_path . '/images/cardDemo/Larrow.png';
 		$form['#markup'][2] = $base_path . $theme_path . '/images/cardDemo/RBarrow.png';
 		$form['#markup'][3] = $base_path . $theme_path . '/images/cardDemo/RTarrow.png';
-				
 		//kpr($form);
 	}
 	
