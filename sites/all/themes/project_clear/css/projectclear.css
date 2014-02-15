@@ -24,7 +24,7 @@ html{
 body{
 	background-color: #F5F5F5;
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-	font-weight: 400;
+	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	color:rgb(83,83,83);
 }
@@ -35,7 +35,7 @@ div.field span{
 }
 
 .alert-box{
-	font-weight: 400;
+	font-weight: 300;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
@@ -188,7 +188,8 @@ input#edit-search-block-form--2{
 }
 
 .top-bar-section a.topBarFont{
-	font-weight: 400;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 }
 
@@ -465,9 +466,9 @@ a {
 }
 
 .deckText div:last-child{
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
-  line-height: 1.3em;
+  line-height: 1.2em;
   margin-bottom: 1.25em;
 }
 
@@ -750,9 +751,7 @@ p.clearTitle{
 
 .profileDescription,
 .profInfo div.field{
-  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1.0em;
   color:rgb(83,83,83);
   text-align: left;
   text-rendering: optimizeLegibility;
@@ -859,14 +858,45 @@ input[type=checkbox] {
 }
 
 
+/*-----------------------------------------------------Sitewide Buttons------------------------------------------*/
+
+
+button{
+	width: 80%;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	padding: 15px 40px;
+	text-align: center;
+	box-shadow: none;
+}
+
+button,
+button:active{
+	color: #FFF;
+	background-color: #0082A6;
+	border: 1px solid #0082A6;
+}
+
+button:hover{
+	color: #0082A6;
+	background-color: transparent;
+}
+
+
+
 /*-----------------------------------------------------Front Page Hover Effect------------------------------------------*/
 
-.view {
+.block-views-most-viewed-block .view,
+.block-views-newest-listings-block .view,
+.page-profile-main .view {
     overflow: hidden;
     position: relative;
     cursor: default;
 }
-.view .mask, .view .content {
+.block-views-most-viewed-block .view .mask, .view .content,
+.block-views-newest-listings-block .view .mask, .view .content,
+.page-profile-main .view .mask, .view .content {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -874,11 +904,15 @@ input[type=checkbox] {
     top: 0;
     left: 0
 }
-.view img {
+.block-views-most-viewed-block .view img,
+.block-views-newest-listings-block .view img,
+.page-profile-main .view img {
     display: block;
     position: relative
 }
-.view h2 {
+.block-views-most-viewed-block .view h2,
+.block-views-newest-listings-block .view h2,
+.page-profile-main .view h2 {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -888,7 +922,9 @@ input[type=checkbox] {
     background: rgba(0, 0, 0, 0.7);
     margin: 20px 0 0 0
 }
-.view p {
+.block-views-most-viewed-block .view p,
+.block-views-newest-listings-block .view p,
+.page-profile-main .view p {
     font-family: Georgia, serif;
     font-style: italic;
     font-size: 12px;
@@ -898,7 +934,9 @@ input[type=checkbox] {
     text-align: center
 }
 
-.view .hoverStat{
+.block-views-most-viewed-block .view .hoverStat,
+.block-views-newest-listings-block .view .hoverStat,
+.page-profile-main .view .hoverStat{
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-style: italic;
 	font-weight: normal;
@@ -1400,6 +1438,14 @@ img.centerTest{
   border-bottom-color: #C3C3C3;
 }
 
+.topBillingBar {
+  padding: 30px 0 35px 0;
+  background: #E16565;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #C3C3C3;
+}
+
 .filterCard{
   padding: 0;
   background: #FFF;
@@ -1491,8 +1537,6 @@ form .row .row .columns .row{
 
 .loginFooterText{
 	text-align:center;
-	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  	font-weight: normal;
   	font-size: 16px;
   	text-rendering: optimizeLegibility;
   	color: #17254C;
@@ -2406,11 +2450,15 @@ div.accountHeader p.accountBack{
 	width: auto;
 }
 
-.location.form-wrapper span.fieldset-legend{
+.location.form-wrapper span.fieldset-legend,
+fieldset#edit-cart-contents legend,
+fieldset#edit-customer-profile-billing legend{
 	display: none;
 }
 
-fieldset.location.form-wrapper{
+fieldset.location.form-wrapper,
+fieldset#edit-cart-contents,
+fieldset#edit-customer-profile-billing{
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -2772,20 +2820,27 @@ div.alert-box.success{
 	height: 100%;
 }
 
-.pricing_table p{
+.pricing_table p,
+.pricing_table .field-content{
 	padding: 0;
 	margin: 0;
 	text-align: center;
 	font-size: 1.1em;
 }
 
-.pricing_table .large-12.small-12 p{
+.pricing_table .large-12.small-12 p,
+.pricing_table .large-12.small-12 div{
 	text-align: right;
 	padding:0 10% 0 20%;
 }
 
-.pricing_table p:nth-child(2){
+.pricing_table .searchRow p:nth-child(2),
+.pricing_table .searchRow div:nth-child(2){
 	font-size: .8em;
+}
+
+.pricing_table .searchRow div:nth-child(2){
+	line-height: 1.6;
 }
 
 #over_map div.row.collapse{
@@ -2831,7 +2886,15 @@ form#views-exposed-form-front-map-block{
 	border-bottom: 1px solid #4D997C;
 }
 
-.signUp div div{
+#edit-line-item-fields,
+#edit-line-item-fields--2,
+#edit-line-item-fields--3{
+	padding: 0;
+	margin: 0;
+}
+
+.signUp div div,
+.signUp div div button{
 	width: 80%;
 	border-radius: 4px 4px 4px 4px;
 	-moz-border-radius: 4px 4px 4px 4px;
@@ -2839,53 +2902,73 @@ form#views-exposed-form-front-map-block{
 	margin: 20px auto;
 	padding: 15px 0;
 	text-align: center;
+	box-shadow: none;
+}
+
+.signUp div div button{
+	width: 100%;
+	margin: 0;
 }
 
 .signUp div a div,
-.signUp div a div:active{
+.signUp div a div:active,
+.signUp div div button,
+.signUp div div button:active{
 	color: #FFF;
 }
 
 .one .signUp div a div,
-.one .signUp div a div:active{
+.one .signUp div a div:active,
+.one .signUp div div button,
+.one .signUp div div button:active{
 	background-color: #4D997C;
 	border: 1px solid #4D997C;
 }
 
-.one .signUp div a div:hover{
+.one .signUp div a div:hover,
+.one .signUp div div button:hover{
 	color: #4D997C;
 	background-color: #FFF;
 }
 
 .two .signUp div a div,
-.two .signUp div a div:active{
+.two .signUp div a div:active,
+.rush_hour .signUp div div button,
+.rush_hour .signUp div div button:active{
 	background-color: #1F3348;
 	border: 1px solid #1F3348;
 }
 
-.two .signUp div a div:hover{
+.two .signUp div a div:hover,
+.rush_hour .signUp div div button:hover{
 	color: #1F3348;
 	background-color: #FFF;
 }
 
 .three .signUp div a div,
-.three .signUp div a div:active{
+.three .signUp div a div:active,
+.prime_time .signUp div div button,
+.prime_time .signUp div div button:active{
 	background-color: #D44332;
 	border: 1px solid #D44332;
 }
 
-.three .signUp div a div:hover{
+.three .signUp div a div:hover,
+.prime_time .signUp div div button:hover{
 	color: #D44332;
 	background-color: #FFF;
 }
 
 .four .signUp div a div,
-.four .signUp div a div:active{
+.four .signUp div a div:active,
+.early_bird .signUp div div button,
+.early_bird .signUp div div button:active{
 	background-color: #0082A6;
 	border: 1px solid #0082A6;
 }
 
-.four .signUp div a div:hover{
+.four .signUp div a div:hover,
+.early_bird .signUp div div button:hover{
 	color: #0082A6;
 	background-color: #FFF;
 }
@@ -2924,17 +3007,17 @@ form#views-exposed-form-front-map-block{
 	border: 1px solid #4d997c;
 }
 
-.pricing_table.two div div.top{
+.pricing_table.rush_hour div div.top{
 	background-color: #1F3348;
 	border: 1px solid #1F3348;
 }
 
-.pricing_table.three div div.top{
+.pricing_table.prime_time div div.top{
 	background-color: #D44332;
 	border: 1px solid #D44332;
 }
 
-.pricing_table.four div div.top{
+.pricing_table.early_bird div div.top{
 	background-color: #0082A6;
 	border: 1px solid #0082A6;
 }
@@ -2970,7 +3053,6 @@ form#views-exposed-form-front-map-block{
 }
 
 #over_map .form-type-select select {
-	color:#17254C;
 	width: 130%;
 	height: 100%;
 	margin: 0;
@@ -3068,20 +3150,20 @@ div#priceDesc .accountNumber{
 @media only screen and (min-width: 768px) {
 	div.topSecondBar.pricing{
 		padding:0;
-		margin: 0 0 570px 0;
+		margin: 0 0 750px 0;
 	}
 	
 	.logoPush{
 		position:absolute;
-		bottom:280px;
+		bottom:350px;
 		width:100%
 	}
 	
 	.whiteDrop{
 		position:absolute;
-		bottom:-46px;
+		bottom:-60px;
 		width:100%;
-		height:525px;
+		height:650px;
 		background-color:#FFF;
 		border-bottom:solid 1px #C2C2C2;
 	}
@@ -3106,20 +3188,20 @@ div#priceDesc .accountNumber{
 @media only screen and (min-width: 1280px) {
 	div.topSecondBar.pricing{
 		padding:0;
-		margin: 0 0 570px 0;
+		margin: 0 0 720px 0;
 	}
 	
 	.logoPush{
 		position:absolute;
-		bottom:350px;
+		bottom:330px;
 		width:100%
 	}
 	
 	.whiteDrop{
 		position:absolute;
-		bottom:-90px;
+		bottom:-70px;
 		width:100%;
-		height:500px;
+		height:650px;
 		background-color:#FFF;
 		border-bottom:solid 1px #C2C2C2;
 	}
@@ -3195,4 +3277,94 @@ div#priceDesc .accountNumber{
 
 .statDescription span.date-display-single{
 	font-size: 1.0em;
+}
+
+p.statDescription,
+.deckText,
+.top-bar-section .dropdown li a,
+.ammenities ul li,
+.date-display-single,
+.footer,
+.button1 span,
+.clearH2,
+.field-name-field-subcity,
+.field,
+.loginFooterText,
+.field-name-field-subcity,
+#views-exposed-form-front-map-block select{
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 300;
+}
+
+#commerce-checkout-form-checkout span.fieldset-legend{
+	display: none;
+}
+
+#commerce-checkout-form-checkout fieldset.form-wrapper{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.view-commerce-cart-summary table{
+	clear: both;
+	float: right;
+	margin-left: 30%;
+}
+
+#edit-customer-profile-billing input[type="text"]{
+	background-color: #FFF;
+	color: #2C333D;
+}
+
+#edit-customer-profile-billing label{
+	color: #2C333D;
+}
+
+.form-required{
+	color: #D44332;
+}
+
+#edit-customer-profile-billing .form-required{
+	color: #FFF;
+}
+
+button.checkout-continue.form-submit{
+	background-color: #4D997C;
+	border-color: #4D997C;
+	margin: 1.0em 10%;
+}
+
+button#edit-cancel,
+button#edit-back{
+	margin: 1.0em 10%;
+}
+
+@media only screen and (min-width: 1280px) {
+	
+	button.checkout-continue.form-submit,
+	button#edit-cancel{
+		margin: 1.0em 10%;
+	}
+
+}
+
+button.checkout-continue.form-submit:hover,
+button.checkout-continue.form-submit:active{
+	background-color: transparent;
+	color: #4D997C;
+}
+
+span.button-operator{
+	display: none;
+}
+
+.pane-data-full label{
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #4D997C;
+	margin-right: .4em;
+}
+
+.registerForm #edit-submit{
+	width: 70%;
 }

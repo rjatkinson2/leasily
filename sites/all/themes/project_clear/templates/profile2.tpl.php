@@ -172,7 +172,7 @@ global $base_path;
             <?php endif?>
             
             
-			<?php if($content['field_user_phone']): ?>
+			<?php if($content['field_phone_number']): ?>
             <?php print('
                 <div class="row profInfo">
                     <div class="large-4 columns">
@@ -180,7 +180,7 @@ global $base_path;
                     </div>
                     <div class="large-8 columns">
                         <p class="profileH2">phone</p>
-                        <p class="profileDescription">' . render($content['field_user_phone']) . '</p>
+                        <p class="profileDescription">' . render($content['field_phone_number']) . '</p>
                     </div>
                 </div>')
 			?>
