@@ -268,6 +268,8 @@ if($variables['page']['content']['system_main']['nodes']);{
 	//$variables['show_messages'] = FALSE;
 	//kpr($variables['page']['content']['system_main']['nodes']);
 	//kpr($variables['node']);
+	//kpr($row);
+	//kpr($variables['view']);
 	//kpr($variables);
 }
 
@@ -446,6 +448,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		//$form['timezone']['#type'] = '';
 		//$form['account']['current_pass_required_values']['#value']['name'] = 'Username';
 		//kpr($form);
+		$form['profile_main']['field_user_phone']['#access'] = FALSE;
 	}
 
 	
@@ -455,6 +458,17 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 	}
 	
 	if($form_id == 'webform_client_form_406'){
+		//kpr($form);
+	}
+	
+	if($form_id == 'commerce_checkout_form_checkout'){
+		$form['buttons']['cancel']['#attributes']['class'][0]='';
+		$form['buttons']['back']['#attributes']['class'][0]='';
+		//kpr($form);
+	}
+	
+	if($form_id == 'commerce_checkout_form_review'){
+		$form['buttons']['back']['#attributes']['class'][0]='';
 		//kpr($form);
 	}
 	//kpr($form_id);
@@ -531,8 +545,9 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 //  }
 //}
 
-//function project_clear_preprocess_views_view(&$variables) {
-//}
+function project_clear_preprocess_views_view(&$variables) {
+	//kpr($variables);
+}
 
 /**
  * Implements template_preprocess_panels_pane().

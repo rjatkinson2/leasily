@@ -57,7 +57,7 @@
 		                    	</div>
 		                    	<div class="row">
 		                    		<div class="large-6 columns">
-		                    			<?php print drupal_render($form['profile_main']['field_user_phone']);?>
+		                    			<?php print drupal_render($form['profile_main']['field_phone_number']);?>
 		                    		</div>
 		                    		<div class="large-6 columns">
 		                    			<?php print drupal_render($form['profile_main']['field_email']);?>

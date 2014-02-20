@@ -75,7 +75,7 @@
 				<?php print $exposed; ?>
 				</div>
 				<?php endif; ?>
-		<div class="bottom"><?php print l(t('List your property +'), 'listing-options'); ?></div>  
+		<div class="bottom"><?php print l(t('List your property +'), 'listing-choices'); ?></div>  
 	</div>
 
 	  <?php if ($attachment_after): ?>
