@@ -34,7 +34,7 @@
 			              <li><?php print $view_profile_link?></li>
 			              <li><?php print $account_settings_link?></li>
 			              <li><?php print $edit_account_link?></li>
-			              <li><?php print l(t('Add Property'), 'node/add/home'); ?></a></li>
+			              <li><?php print l(t('Add Property'), 'listing-choices'); ?></a></li>
 			            </ul>
 		            <?php endif; ?>
 				</li>

@@ -469,7 +469,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 	
 	if($form_id == 'commerce_checkout_form_review'){
 		$form['buttons']['back']['#attributes']['class'][0]='';
-		kpr($form);
+		//kpr($form);
 	}
 	//kpr($form_id);
 	//kpr($form);

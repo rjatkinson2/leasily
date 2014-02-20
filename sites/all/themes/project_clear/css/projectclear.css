@@ -861,7 +861,8 @@ input[type=checkbox] {
 /*-----------------------------------------------------Sitewide Buttons------------------------------------------*/
 
 
-button{
+button,
+div.commerce-payflow-cancel a{
 	width: 80%;
 	border-radius: 4px 4px 4px 4px;
 	-moz-border-radius: 4px 4px 4px 4px;
@@ -872,15 +873,22 @@ button{
 }
 
 button,
-button:active{
+button:active,
+div.commerce-payflow-cancel a,
+div.commerce-payflow-cancel a:active{
 	color: #FFF;
 	background-color: #0082A6;
 	border: 1px solid #0082A6;
 }
 
-button:hover{
+button:hover,
+div.commerce-payflow-cancel a:hover{
 	color: #0082A6;
 	background-color: transparent;
+}
+
+div.commerce-payflow-cancel a{
+	font-weight: 700;
 }
 
 
@@ -1440,7 +1448,7 @@ img.centerTest{
 
 .topBillingBar {
   padding: 30px 0 35px 0;
-  background: #E16565;
+  background: #F5F5F5;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #C3C3C3;
@@ -3315,6 +3323,7 @@ p.statDescription,
 #edit-customer-profile-billing input[type="text"]{
 	background-color: #FFF;
 	color: #2C333D;
+	border: solid 1px #C3C3C3;
 }
 
 #edit-customer-profile-billing label{
@@ -3326,7 +3335,7 @@ p.statDescription,
 }
 
 #edit-customer-profile-billing .form-required{
-	color: #FFF;
+	color: #D44332;
 }
 
 button.checkout-continue.form-submit{
@@ -3367,4 +3376,40 @@ span.button-operator{
 
 .registerForm #edit-submit{
 	width: 70%;
+}
+
+.form-item-customer-profile-billing-commerce-customer-address-und-0-administrative-area{
+	width: 30%;
+}
+
+.checkout-help{
+	display: none;
+	text-align: center;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 3.0em 0;
+}
+
+.form-item-commerce-payment-payment-method label{
+	width: 55%;
+}
+
+.form-item-commerce-payment-payment-method input{
+	margin:12px 0 0 0;
+}
+
+
+.form-item-commerce-payment-payment-method label img{
+	margin: -14px 0px 0 20px;
+}
+
+table.checkout-review{
+	width: 100%;
+}
+
+form#commerce-payflow-link-redirect-form  div iframe{
+	margin: 0 auto;
+}
+
+div.commerce-payflow-cancel a{
+	margin-left: 9%;
 }

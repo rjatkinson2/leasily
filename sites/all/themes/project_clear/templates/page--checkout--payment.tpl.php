@@ -105,44 +105,17 @@
 		        <div class="row addProperty" style="margin-top:20px; margin-bottom:20px">
 		            <div class="large-12 columns">
 		            	<div class="row accountHeader" style="margin-bottom:50px">
-		            		<p class="statHeader">Order Summary</p>
+		            		<p class="statHeader">Submit Payment</p>
 		            	</div>
 		            </div>
 		
-					<div class="large-12 columns">
+					<div class="small-12 columns">
 						<?php print render($page['content']['system_main']); ?>
 					</div>
 		        </div>
 		    </div>
 		</div>
-				
-		<!--<div class="topBillingBar" data-thmr="thmr_454">
-		    <div class="row">
-		        <div class="row addProperty" style="margin-top:20px; margin-bottom:20px">
-		            <div class="large-12 columns">
-		            	<div class="row accountHeader" style="margin-bottom:50px; border-color:#17254C">
-		            		<p class="statHeader" style="color:#17254C">Billing Information</p>
-		            	</div>
-		            </div>
-		            
-					<div class="large-12 columns">
-					<?php //print render($page['content']['system_main']['customer_profile_billing']); ?>
-					</div>
-		        </div>
-		    </div>
-		</div>
-		
-		<div class="topSecondBar" style="background-color:#FFF">
-		    <div class="row">
-		        <div class="row addProperty" style="margin-top:20px; margin-bottom:20px">
-					<div class="large-12 columns">
-						<div class="large-12 columns">
-						</div>
-					</div>
-		        </div>
-		    </div>
-		</div>-->
-		
+								
     <!--/.main region -->
 
     <?php if (!empty($page['sidebar_first'])): ?>

@@ -219,7 +219,10 @@ global $base_path;
 				      <?php print $empty; ?>
 				  <?php endif; ?>
 				
+				<div style="clear:both; padding-top:3.0em"><p style="color:#454C52; text-align:center; margin:0">* All prices are a one time service fee, no additional fees will be incurred.</p></div>
+
 				</div><?php /* class view */ ?>
+				
 
 
 			</div>

@@ -109,16 +109,18 @@
 		            	</div>
 		            </div>
 		
-					<div class="large-6 columns">
-						<?php print render($page['content']['system_main']['checkout_review']); ?>
+					<div class="large-12 columns">
+						<?php print render($page['content']['system_main']); ?>
 					</div>
 					
-					<div class="large-6 columns">
+					<div class="large-12 columns">
 						<div class="large-12 columns">
-							<?php print render($page['content']['system_main']['commerce_payment']); ?>
+
+
 						</div>
 						<div class="large-12 columns">
-							<?php print render($page['content']); ?>
+						
+						
 						</div>
 					</div>
 		        </div>
