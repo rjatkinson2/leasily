@@ -46,7 +46,7 @@
 
 
 
-<div style="width:570px; min-height:200px" class="row">
+<div style="width:590px; min-height:200px" class="row">
     <div style="display:inline-block; float:left; margin-right:10px">    	
         <div class="panel2"><?php print $fields['field_bed_number']->content?><br /><span style="font-size:.8em">beds</span></div>
         <div class="panel2"><span style="letter-spacing:-2px"><?php print $fields['field_full_baths']->content?></span><br /><span style="font-size:.8em">baths</span></div>

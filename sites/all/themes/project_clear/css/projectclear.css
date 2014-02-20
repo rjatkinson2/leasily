@@ -3196,20 +3196,20 @@ div#priceDesc .accountNumber{
 @media only screen and (min-width: 1280px) {
 	div.topSecondBar.pricing{
 		padding:0;
-		margin: 0 0 720px 0;
+		margin: 0 0 830px 0;
 	}
 	
 	.logoPush{
 		position:absolute;
-		bottom:330px;
+		bottom:340px;
 		width:100%
 	}
 	
 	.whiteDrop{
 		position:absolute;
-		bottom:-70px;
+		bottom:-40px;
 		width:100%;
-		height:650px;
+		height:720px;
 		background-color:#FFF;
 		border-bottom:solid 1px #C2C2C2;
 	}
@@ -3412,4 +3412,11 @@ form#commerce-payflow-link-redirect-form  div iframe{
 
 div.commerce-payflow-cancel a{
 	margin-left: 9%;
+}
+
+span.note div{
+	font-size: .8em;
+	padding: .7em 2.0em;
+	text-align: center;
+	line-height: 1.1em;
 }
