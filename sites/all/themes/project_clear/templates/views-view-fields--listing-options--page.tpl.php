@@ -35,7 +35,7 @@
     	</div>
         <div class="large-12 columns searchRow">
 	        <?php print $fields['commerce_price']->content?>
-			<p>(no credit card necessary)</p>
+            <span class="note"><?php print $fields['field_pricing_note']->content?></span>
         </div>
 
 		<?php if ($fields['field_pro_photography']->content !== '<div></div>'): ?>
