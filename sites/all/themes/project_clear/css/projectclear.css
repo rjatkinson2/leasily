@@ -473,7 +473,8 @@ a {
 }
 
 /* Deck Header Style */
-.statHeader {
+.statHeader,
+.profileSelector .field-name-field-profile-type{
   font-family: 'Pacifico', cursive;
   font-weight: normal;
   font-size: 2.1em;
@@ -1439,7 +1440,7 @@ img.centerTest{
 }
 
 .topSecondBar {
-  padding: 30px 0 35px 0;
+  padding: 40px 0 75px 0;
   background: #FFF;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -1464,16 +1465,12 @@ img.centerTest{
 
 .circlePic {
 	margin-left:10%;
-	margin-bottom: -150px;
+	margin-bottom: -130px;
 	display:block;
 	width: 175px;
 	height: 165px;
-	border-radius: 115px;
-	-webkit-border-radius: 115px;
-	-moz-border-radius: 115px;
 	position:relative;
 	z-index:1;
-	border: 5px solid #fff;
 }
 
 form .row .row .columns .row{
@@ -1483,7 +1480,6 @@ form .row .row .columns .row{
 .profileSelector img,
 .accountSettings img{
 	margin-left:10%;
-	margin-bottom: -150px;
 	display:block;
 	width: 165px;
 	height: 165px;
@@ -3419,4 +3415,27 @@ span.note div{
 	padding: .7em 2.0em;
 	text-align: center;
 	line-height: 1.1em;
+}
+
+.profileSelector div.field-name-field-profile-type{
+	font-size: 35px;
+	text-align: right;
+	padding: 0 17% .2em 0;
+    font-family: 'Pacifico',cursive;
+}
+
+a.anythingHere{
+	color: #FFF;
+	padding-right: 3.0em;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a.anythingHere:nth-child(1){
+	margin: 0;
+}
+
+div p.role{
+	text-align: right;
+	margin-right: 17%;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
