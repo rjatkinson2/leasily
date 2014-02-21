@@ -42,19 +42,16 @@ global $base_path;
 <!---------------------MONEY CARD------------------------>    
         <div class="row">
             <div class="large-12 columns">
-                <p style="font-size:35px; text-align:right; margin-right:17%" class="statHeader">New Orleans</p>
+					<?php print render($content['field_profile_type']); ?>
+					<?php //print render(end($user->roles)); ?>
             </div>
         </div>
         <div class="row hide-for-small">
             <div class="profileBar">
                 <div class="large-12 columns">
+					<?php print l(t('Account Settings'),'user/' . $user->uid . '/edit', array('attributes' => array('class' => array('anythingHere'))));?>
+					<?php print l(t('Edit Profile'), 'profile-main/' . $user->uid . '/edit', array('attributes' => array('class' => array('anythingHere')))); ?>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-12 columns">
-                <?php print l(t('Account Settings'),'user/' . $user->uid . '/edit', array('attributes' => array('class' => array('anythingHere'))));?>
-                <?php print l(t('Edit Profile'), 'profile-main/' . $user->uid . '/edit', array('attributes' => array('class' => array('anythingHere')))); ?>
             </div>
         </div>
     </div>
@@ -77,14 +74,26 @@ global $base_path;
                         <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/name40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
-	                        <p class="profileH2">name</p>' . render($content['field_first_name']) . ' ' . render($content['field_last_name']) . '
+	                        <p class="profileH2">name</p>' . strtolower(render($content['field_first_name'])) . ' ' . strtolower(render($content['field_last_name'])) . '
 	                    </div>
 	                </div>')
 				?>
             <?php endif?>
+			
+			<?php $roleCheck = end($user->roles); ?>
+			<?php if($roleCheck=='Early Bird' || $roleCheck=='Prime Time' || $roleCheck=='Rush Hour'): ?>
+	            <?php print('
+                <div class="row profInfo">
+                    <div class="large-4 columns">
+                        <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/name40.png' . '" alt="Ammenity1"></div>
+                    </div>
+                    <div class="large-8 columns">
+	                        <p class="profileH2">premium</p><div class="field">' . strtolower(render(end($user->roles))) . '
+	                    </div></div>
+	                </div>')
+				?>
+            <?php endif?>
 
-            
-            
 			<?php if($content['field_email']): ?>
             <?php print('
                 <div class="row profInfo">
@@ -105,7 +114,7 @@ global $base_path;
                         <div class=button2 style="display:inline-block; margin-left:30px;"><img src="' . $base_path . 'sites/all/themes/project_clear/css/icons/location40.png' . '" alt="Ammenity1"></div>
                     </div>
                     <div class="large-8 columns">
-                        <p class="profileH2">city</p>' . render($content['field_user_city']) . '
+                        <p class="profileH2">city</p>' . strtolower(render($content['field_user_city'])) . '
                     </div>
                 </div>')
 			?>
