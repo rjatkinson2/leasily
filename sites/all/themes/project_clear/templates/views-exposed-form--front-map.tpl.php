@@ -44,6 +44,7 @@
       </div>
     </div>
 -->
+
 	<?php $columnWidthCounter=1;?>
 	<?php foreach ($widgets as $id => $widget): ?>
     	<?php if ($columnWidthCounter<=1):?>
@@ -78,7 +79,9 @@
 		</div>
         <?php $columnWidthCounter++?>
         <?php endforeach; ?>
-        
+		
+		<div class="bottom" style="position:absolute; bottom:0; width:100%"><?php print l(t('List your property +'), 'listing-choices'); ?></div>  
+
         <?php if (!empty($sort_by)): ?>
             <?php print $sort_by; ?>
             <?php print $sort_order; ?>

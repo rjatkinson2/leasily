@@ -67,17 +67,18 @@
 	    <?php print $pager; ?>
 	  <?php endif; ?>
 	  
-	<div id="over_map" class="row">
-		<div class="top">Search Settings</div>
+	<div id="over_map" style="width:25%; clear:none; display:inline-block; float:right; background-color:white; min-height:600px; border-left:solid 1px #C3C3C3">  
+		<div class="row" style="height:600px">
 			<div class="large-12 columns">
 				<?php if ($exposed): ?>
 				<div class="view-filters">
 				<?php print $exposed; ?>
 				</div>
 				<?php endif; ?>
-		<div class="bottom"><?php print l(t('List your property +'), 'listing-choices'); ?></div>  
+			</div>
+		</div>
 	</div>
-
+	
 	  <?php if ($attachment_after): ?>
 	    <div class="attachment attachment-after">
 	      <?php print $attachment_after; ?>
@@ -101,4 +102,6 @@
 	  <?php endif; ?>
 	
 	</div><?php /* class view */ ?>
+	
 </div>
+
