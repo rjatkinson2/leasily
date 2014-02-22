@@ -3316,13 +3316,15 @@ p.statDescription,
 	margin-left: 30%;
 }
 
-#edit-customer-profile-billing input[type="text"]{
+#edit-customer-profile-billing input[type="text"],
+.form-item-account-login-mail input[type="text"]{
 	background-color: #FFF;
 	color: #2C333D;
 	border: solid 1px #C3C3C3;
 }
 
-#edit-customer-profile-billing label{
+#edit-customer-profile-billing label,
+#edit-account .form-item-account-login-mail label{
 	color: #2C333D;
 }
 
@@ -3447,4 +3449,9 @@ div p.role{
 	height: 100%;
 	color: #2B2B2B;
 	padding: 5px;
+}
+
+.alert-box a{
+	color: #FFF;
+	text-decoration: underline;
 }
