@@ -3439,3 +3439,12 @@ div p.role{
 	margin-right: 17%;
 	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+#edit-edit-quantity-0{
+	margin: 0;
+	background: #FFF;
+	border: solid 1px #C3C3C3;
+	height: 100%;
+	color: #2B2B2B;
+	padding: 5px;
+}
