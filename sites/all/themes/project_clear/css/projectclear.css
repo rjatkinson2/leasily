@@ -284,21 +284,17 @@ input#edit-search-block-form--2{
 ----------------------------------------------------*/
   
 #mapWrapper{
-	position: relative;
 	background: #FFF;
 }  
 
 @media only screen and (min-width: 768px) {
 	#over_map {
-		position: absolute;
-		top: 18px;
-		left: 100px;
 		padding-bottom: 0px;
 		width: 225px;
 		z-index: 1;
-		border-radius: 0 0 4px 4px;
+		/*border-radius: 0 0 4px 4px;
 		-moz-border-radius: 0 0 4px 4px;
-		-webkit-border-radius: 0 0 4px 4px;
+		-webkit-border-radius: 0 0 4px 4px;*/
 		-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
 		-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
 		box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
@@ -306,15 +302,15 @@ input#edit-search-block-form--2{
 	}
 	
 	#over_map > div.large-12.columns{
-		border-radius: 0 0 4px 4px;
+		/*border-radius: 0 0 4px 4px;
 		-moz-border-radius: 0 0 4px 4px;
-		-webkit-border-radius: 0 0 4px 4px;
+		-webkit-border-radius: 0 0 4px 4px;*/
 	}
 	
 	#over_map > div.large-12.columns div.searchRow{
-		border-radius: 0 0 4px 4px;
+		/*border-radius: 0 0 4px 4px;
 		-moz-border-radius: 0 0 4px 4px;
-		-webkit-border-radius: 0 0 4px 4px;
+		-webkit-border-radius: 0 0 4px 4px;*/
 	}
 	
 	#over_map .large-12.columns{
@@ -1835,9 +1831,8 @@ a:hover .topBarText{
 	-webkit-border-radius: 4px 4px 4px 4px;
 }
 
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #17254C inset;
-    color: #FFFFFF;
+input#edit-name:-webkit-autofill {
+    color: #FFFFFF !important;
 }
 
 .form-item-pass label,
@@ -2982,20 +2977,21 @@ form#views-exposed-form-front-map-block{
 .pricing_table div.top{
 	background-color: #333C48;
 	font-family: 'Pacifico', cursive;
+	font-size: 1em;
 	color: #FFF;
-	padding: .5em 0;
+	padding: 1em 0;
 	text-align: center;
-	border-radius: 4px 4px 0 0;
+	/*border-radius: 4px 4px 0 0;
 	-moz-border-radius: 4px 4px 0 0;
-	-webkit-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;*/
 }
 
 #over_map div.bottom{
-	background-color: #4D997C;
+	background-color: #4D997C /*#D44332*/;
 	line-height: 2.0em;
-	border-radius: 0 0 4px 4px;
+	/*border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
-	-webkit-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;*/
 }
 
 #over_map div.bottom a{
@@ -3027,10 +3023,10 @@ form#views-exposed-form-front-map-block{
 }
 
 #mapWrapper div.collapse div.large-5.small-5{
-	font-family: 'Pacifico', cursive;
-	text-align: right;
-	color: #17254C;
-	padding: .93em 0;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: left;
+	color: #989898;
+	padding: .93em 1.0em;
 }
 
 .pricing_table div.collapse div.large-12.small-12{
@@ -3053,7 +3049,6 @@ form#views-exposed-form-front-map-block{
 
 #over_map .form-type-select.form-item-city {
     background: #475462 url("icons/dropWhite8.png") no-repeat 80% 50%;
-
 }
 
 #over_map .form-type-select select {
@@ -3072,7 +3067,13 @@ form#views-exposed-form-front-map-block{
 
 #over_map .form-type-select.form-item-city select{
 	color: #FFF;
-	padding-left: 4.0em;
+	padding-left: 2.0em;
+}
+
+@media only screen and (min-width: 1280px) {
+	#over_map .form-type-select.form-item-city select{
+		padding-left: 35%;
+	}
 }
 
 #over_map .form-type-select select:focus {
@@ -3442,7 +3443,7 @@ div p.role{
 	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#edit-edit-quantity-0{
+.views-field-edit-quantity input{
 	margin: 0;
 	background: #FFF;
 	border: solid 1px #C3C3C3;
@@ -3454,4 +3455,29 @@ div p.role{
 .alert-box a{
 	color: #FFF;
 	text-decoration: underline;
+}
+
+input:-webkit-autofill {
+    background-color: #17254C;
+}
+
+#block-views-front-map-block .view-content,
+#block-views-front-map-block .view-empty{
+	width: 75%;
+	display: inline-block;
+	float:left;
+	clear: none;
+}
+
+#block-views-front-map-block{
+	overflow: hidden;
+}
+
+#edit-postal-code{
+	margin-top: .5em;
+	width: 90%;
+}
+
+#views-exposed-form-front-map-block .large-12.searchRow{
+	border-bottom: #EEF0F6 solid 1px;
 }
