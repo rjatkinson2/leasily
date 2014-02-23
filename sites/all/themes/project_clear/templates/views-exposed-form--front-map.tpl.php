@@ -80,13 +80,13 @@
         <?php $columnWidthCounter++?>
         <?php endforeach; ?>
 		
-		<div class="small-10 small-centered columns">
-			<div class="large-3 columns">
-				<p class="deckHeader accountNumber" style="border-color: #4D997C; color:#4D997C; clear:none; margin-top:1.2em">
+		<div class="large-10 large-centered columns listPropertyLink">
+			<div class="large-3 hide-for-medium columns">
+				<p class="deckHeader accountNumber">
 					<?php print l(t('+'), 'listing-choices', array('attributes' => array('class' => array('listPlus', 'another-class'))));?>
 				</p>
 			</div>
-			<div class="large-9 columns" style="margin-top:3.1em">
+			<div class="large-9 medium-12 columns">
 				<?php print l(t('List your property'), 'listing-choices', array('attributes' => array('class' => array('listLink', 'another-class'))));?>
 			</div>
 		</div>  

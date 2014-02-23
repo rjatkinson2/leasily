@@ -3492,3 +3492,27 @@ a.listLink{
 a.listPlus{
 	color: #4D997C;
 }
+
+.listPropertyLink p.deckHeader{
+	border-color: #4D997C;
+	color:#4D997C;
+	clear:none;
+	margin-top:1.2em;
+}
+
+.listPropertyLink .large-9{
+	margin-top: .8em;
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+.listPropertyLink p.deckHeader{
+	margin-top:1.2em;
+}
+
+.listPropertyLink .large-9{
+	margin-top: 3.1em;
+}
+
+}
