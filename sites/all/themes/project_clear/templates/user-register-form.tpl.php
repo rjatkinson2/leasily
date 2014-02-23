@@ -56,6 +56,11 @@
 		                    		</div>
 		                    	</div>
 		                    	<div class="row">
+		                    		<div class="large-12 columns">
+		                    			<?php print drupal_render($form['profile_main']['field_profile_type']);?>
+		                    		</div>
+		                    	</div>
+		                    	<div class="row">
 		                    		<div class="large-6 columns">
 		                    			<?php print drupal_render($form['profile_main']['field_phone_number']);?>
 		                    		</div>
