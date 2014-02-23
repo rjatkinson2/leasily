@@ -60,6 +60,7 @@ div.field span{
 	background-color: #00BAFF;
 }
 
+
 /* Top-bar and Footer Styles ---------------------------------
 ----------------------------------------------------*/
 
@@ -3480,4 +3481,14 @@ input:-webkit-autofill {
 
 #views-exposed-form-front-map-block .large-12.searchRow{
 	border-bottom: #EEF0F6 solid 1px;
+}
+
+a.listLink{
+    font-family: 'Pacifico',cursive;
+    color: #4D997C;
+    font-size: 1.5em;
+}
+
+a.listPlus{
+	color: #4D997C;
 }

@@ -80,7 +80,16 @@
         <?php $columnWidthCounter++?>
         <?php endforeach; ?>
 		
-		<div class="bottom" style="position:absolute; bottom:0; width:100%"><?php print l(t('List your property +'), 'listing-choices'); ?></div>  
+		<div class="small-10 small-centered columns">
+			<div class="large-3 columns">
+				<p class="deckHeader accountNumber" style="border-color: #4D997C; color:#4D997C; clear:none; margin-top:1.2em">
+					<?php print l(t('+'), 'listing-choices', array('attributes' => array('class' => array('listPlus', 'another-class'))));?>
+				</p>
+			</div>
+			<div class="large-9 columns" style="margin-top:3.1em">
+				<?php print l(t('List your property'), 'listing-choices', array('attributes' => array('class' => array('listLink', 'another-class'))));?>
+			</div>
+		</div>  
 
         <?php if (!empty($sort_by)): ?>
             <?php print $sort_by; ?>
