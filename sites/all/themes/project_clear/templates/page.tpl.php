@@ -146,7 +146,7 @@
         <div class="large-7 columns">
             <p class="signUpText">Stay on top of what’s happening here at leasily.com via our friendly emails.</p>
         </div>
-        <div class="large-5 columns<?php if ($logged_in){print ' mailFull';} ?>">
+        <div class="large-5 columns">
 	        <?php print render($page['footer']); ?>
         </div>
     </div>
@@ -208,6 +208,14 @@
 
 
 <div class="footerAccent"></div>
+
+  <?php else: ?>
+	<div style="margin:0 auto">
+		<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/greenCircleLogo.png'; ?>" alt="L-Logo" style="margin-top:85px" width="130px" class="centerTest"/>
+	</div>
+    <p class="loginFooterText" data-thmr="thmr_400">
+    ©2013-2014 All Rights Reserved. Leasily&trade; is a trademark of Leasily LLC. Privacy and Terms
+    </p>
   <?php endif; ?>
 
   <!--.l-footer
@@ -226,7 +234,6 @@
   </footer>
   /.footer-->
 
-  <?php // if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
+  <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->
-<!---------------------BEGIN FOOTER------------------------>
