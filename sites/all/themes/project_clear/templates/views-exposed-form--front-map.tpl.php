@@ -86,7 +86,7 @@
 					<?php print l(t('+'), 'listing-choices', array('attributes' => array('class' => array('listPlus', 'another-class'))));?>
 				</p>
 			</div>
-			<div class="large-9 medium-12 columns">
+			<div class="large-9 columns">
 				<?php print l(t('List your property'), 'listing-choices', array('attributes' => array('class' => array('listLink', 'another-class'))));?>
 			</div>
 		</div>  

@@ -39,8 +39,12 @@ div.field span{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-.alert-box.alert{
+.alert-box.alert,
+.alert-box.secondary{
 	background-color: #D44332;
+	text-align: center;
+	color: #FFF;
+	border: none;
 }
 
 .alert-box.alert .close{
@@ -1319,7 +1323,7 @@ h2.title{
 	border-top-style: solid;
 	border-top-width: 1px;
 	border-top-color: #C3C3C3;
-	padding:22px 0px;
+	padding:22px 0 8px 0;
 	margin-top: 100px;
 	overflow: auto;
 }
@@ -1331,7 +1335,8 @@ h2.title{
   	font-size: 22px;
   	text-rendering: optimizeLegibility;
   	color:#17254C;
-  	margin-bottom: 0;	
+  	margin-bottom: 0;
+  	margin-top: .3em;	
 }
 
 @media only screen and (min-width: 1280px) {
@@ -3507,12 +3512,97 @@ a.listPlus{
 
 @media only screen and (min-width: 1280px) {
 
-.listPropertyLink p.deckHeader{
-	margin-top:1.2em;
+	.listPropertyLink p.deckHeader{
+		margin-top:1.2em;
+	}
+	
+	.listPropertyLink .large-9{
+		margin-top: 3.1em;
+	}
+
 }
 
-.listPropertyLink .large-9{
-	margin-top: 3.1em;
+div#splash{
+	background: url('images/price-photo-10.jpg') no-repeat fixed center;
 }
 
+.block-mailchimp-lists-leasily-launch-subscribers label,
+.block-mailchimp-lists-leasily-launch-subscribers div.description,
+.block-mailchimp-lists-leasily-launch-subscribers h2.block-title{
+	display: none;
 }
+
+.block-mailchimp-lists-leasily-launch-subscribers div{
+	padding: 0;
+	margin: 0;
+}
+
+input#edit-mailchimp-lists-mailchimp-leasily-launch-subscribers-mergevars-email{
+	padding: 0 1em;
+	margin: 0;
+	color: #2b2b2b;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-size: .4em;
+}
+
+div#mailchimp-newsletter-leasily_launch_subscribers{
+	display: inline-block;
+	float: left;
+	clear: none;
+	width: 70%;
+}
+
+.block-mailchimp-lists-leasily-launch-subscribers button{
+	display: inline-block;
+	float: left;
+	clear: none;
+	height: 44px;
+	width: 30%;
+	font-size: .3em;
+	border-radius: 0px;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.mailFull .block-mailchimp-lists-leasily-launch-subscribers button{
+	width: 100%;
+	margin-top: 1.0em;
+}
+
+form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers{
+	margin: 0;
+}
+
+.footerForm .large-5.columns{
+	margin-top: .5em;
+}
+
+.footerForm div.columns{
+	padding: 0 .3em;
+}
+
+@media only screen and (min-width: 1280px) {
+
+	div#mailchimp-newsletter-leasily_launch_subscribers{
+		width: 60%;
+	}
+	
+	.block-mailchimp-lists-leasily-launch-subscribers button{
+		width: 18%;
+	}
+	
+	.mailFull .block-mailchimp-lists-leasily-launch-subscribers button{
+		width: 80%;
+	}
+	
+	.footerForm .large-5.columns{
+		margin-top: 0;
+	}
+	
+	.footerForm div.columns{
+		padding: 0 .6em;
+	}
+
+}
+
+
+
