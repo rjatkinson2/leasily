@@ -2679,11 +2679,8 @@ fieldset#edit-profile-main{
 
 button.btn1{
 	display: block;
-	font-weight: normal;
-	border: none;
 	padding: 5px 30px;
 	background: #CD3528;
-	background-color:rgb(212,67,50);
 	margin: 10px auto;
 	/* Firefox v1.0+ */
 	-moz-border-radius:2%;
@@ -2711,11 +2708,7 @@ div.row.card.ammenities{
 	line-height: 3.0em;
 }
 
-.ammenities ul li:nth-child(even){
-   background:url('icons/aqua32.png') 0% 50% no-repeat no-repeat;
-}
-
-.ammenities ul li:nth-child(odd){
+.ammenities ul li{
    background:url('icons/green32.png') 0% 50% no-repeat no-repeat;
 }
 
@@ -3608,5 +3601,31 @@ form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers{
 
 }
 
+form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers button{
+	background-color: #17254C;
+	border-color: #17254C;
+}
 
+form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers button:hover{
+	background-color: #FFF;
+	color: #17254C;
+}
+
+.btn1{
+	width: 60%;
+	margin: 0 auto;
+	border: 1px solid #CD3528;
+}
+
+.btn1:hover{
+	color: #CD3528;
+	background-color: #FFF;
+	border: 1px solid #CD3528;
+}
+
+.btn1:active{
+	background-color: #CD3528;
+	border: 1px solid #CD3528;
+	color: #FFF;
+}
 

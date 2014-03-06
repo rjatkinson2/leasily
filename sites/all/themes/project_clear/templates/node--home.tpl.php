@@ -276,7 +276,7 @@
 				<span data-magellan-destination="offer"></span>
 
         	
-	            <button class="btn1">Create an offer (it's easy!)</button>
+	            <button class="btn1">Contact the owner</button>
         	</div>
 		</div>
 

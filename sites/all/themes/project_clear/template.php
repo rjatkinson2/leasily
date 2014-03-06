@@ -270,7 +270,7 @@ if($variables['page']['content']['system_main']['nodes']);{
 	//kpr($variables['node']);
 	//kpr($row);
 	//kpr($variables['view']);
-	//kpr($variables);
+	kpr($variables);
 }
 
 function project_clear_preprocess_block(&$variables) {
@@ -458,7 +458,8 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 	}
 	
 	if($form_id == 'webform_client_form_406'){
-		//kpr($form);
+		$form['submitted']['mailto']['#default_value'] = 'rjatkinson2@gmail.com';
+		kpr($form);
 	}
 	
 	if($form_id == 'commerce_checkout_form_checkout'){
@@ -475,8 +476,8 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 	if($form_id == 'mailchimp_lists_user_subscribe_form_leasily_launch_subscribers'){
 		$form['mailchimp_lists']['mailchimp_leasily_launch_subscribers']['mergevars']['EMAIL']['#attributes']['placeholder'] = t( 'johnyappleseed@example.com' );
 		//kpr($form);
-		
 	}
+	
 	//kpr($form_id);
 	//kpr($form);
 	//dsm($form);
