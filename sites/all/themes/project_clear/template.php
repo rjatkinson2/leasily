@@ -270,7 +270,7 @@ if($variables['page']['content']['system_main']['nodes']);{
 	//kpr($variables['node']);
 	//kpr($row);
 	//kpr($variables['view']);
-	kpr($variables);
+	//kpr($variables);
 }
 
 function project_clear_preprocess_block(&$variables) {
@@ -458,8 +458,16 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 	}
 	
 	if($form_id == 'webform_client_form_406'){
-		$form['submitted']['mailto']['#default_value'] = 'rjatkinson2@gmail.com';
-		kpr($form);
+		if (1==1) {
+		  $node = node_load(arg(1));
+		  $account = $node->name;
+		  $profile = user_load_by_name($account);
+		  $form['#profile'] = $profile;
+		  // do stuff with $node
+		}
+		$form['#node2'] = 'test2';
+		$form['submitted']['mailto']['#default_value'] = $form['#profile']->mail;
+		//kpr($form);
 	}
 	
 	if($form_id == 'commerce_checkout_form_checkout'){
