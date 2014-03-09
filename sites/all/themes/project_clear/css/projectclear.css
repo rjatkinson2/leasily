@@ -3629,3 +3629,93 @@ form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers button:hover
 	color: #FFF;
 }
 
+.webform-component-preferred-move-in select{
+	width: 25%;
+}
+
+#webform-component-preferred-move-in label{
+	display: inline-block;
+	clear: both;
+}
+
+form .row.makeOffer .row .large-6.columns{
+	padding: 0 4em;
+}
+
+form .row.makeOffer .row label{
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #17254C;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+form .row.makeOffer .row input{
+	margin-top: .5em
+}
+
+
+form .row.makeOffer .row p:first-child{
+	color: #17254C;
+	font-size: 2.1em;
+	text-align: center;
+	margin: 0;
+}
+
+.makeOffer .statDescription{
+	margin-bottom: 2.5em;
+}
+
+.makeOffer textarea#edit-submitted-message{
+	height: 130px;
+}
+
+div.webform-datepicker{
+	display: inline-block;
+	clear: both;
+	width: 100%;
+}
+
+.webform-datepicker select{
+	width: 30%;
+	margin-bottom: .2em;
+}
+
+#edit-webform-ajax-submit-406,
+#comment-form button{
+	display: block;
+	background: #4D997C;
+	margin: 10px auto;
+	color: #FFF;
+	border: solid 1px #4D997C;
+	box-shadow: 0;
+}
+
+#edit-webform-ajax-submit-406:hover,
+#comment-form button:hover{
+	background: transparent;
+	color: #4D997C;
+}
+
+#comment-form button{
+	width: 100%;
+	background: #2BA6CB;
+	border-color: #2BA6CB;
+}
+
+#comment-form button:hover{
+	color: #2BA6CB;
+}
+
+#graphMessage{
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	position:relative;
+	bottom:220px;
+	left:190px;
+	padding:54px 20px;
+	background-color:rgba(77,153,124,.9);
+	border-radius:100px;
+	width:150px;
+	color:#FFF;
+	text-align: center;
+	line-height: 1.3em;
+}

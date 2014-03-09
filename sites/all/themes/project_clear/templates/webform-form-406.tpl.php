@@ -18,24 +18,21 @@
  */
 ?>
 
-        <div class="row makeOffer">
+        <div class="row makeOffer" style="margin-top:70px">
         
         	<div class="row">
 	        	<div class="large-12 columns">
-		            <div class="large-4 columns" style="padding-top:60px;">
-	                    <p>Build your offer</p>
-						<?php print drupal_render($form['submitted']['rate']);?>
-						<?php print drupal_render($form['submitted']['number_of_tenants']);?>
-		            </div>
-		            <div class="large-4 columns">
-	                    <p>Send offer</p>
-	                    <p>Check in to see if you’ve scored a new place to live.</p>
+		            <div class="large-6 columns">
+	                    <p>Compose your message</p>
+	                    <p class="statDescription">Your note will be delivered to the landlord.</p>
 						<?php print drupal_render($form['submitted']['email']);?>
-						<?php print drupal_render($form['submitted']['phone']);?>
+						<?php print drupal_render($form['submitted']['message']);?>
 		            </div>
-		            <div class="large-4 columns">
-	                    <p>Offer Status</p>
-	                    <p>Check in to see if you’ve scored<br /> a new place to live oh yea.</p>
+		            <div class="large-6 columns">
+	                    <p>Include some details</p>
+	                    <p class="statDescription">The information below is optional.</p>
+						<?php print drupal_render($form['submitted']['phone']);?>
+						<?php print drupal_render($form['submitted']['number_of_tenants']);?>
 						<?php print drupal_render($form['submitted']['preferred_move_in']);?>
 		            </div>
 	        	</div>

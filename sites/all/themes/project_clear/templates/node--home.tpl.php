@@ -237,10 +237,11 @@
 
     <div class="row card">
         <div class="large-7 columns hide-for-small" style="padding-top:40px">
-            <div id="content">
+            <div id="content" style="position:relative">
                 <div class="demo-container">
-                    <div id="placeholder" class="demo-placeholder">
+                    <div id="placeholder" class="demo-placeholder" style="position:relative">
                     </div>
+                    <div id="graphMessage">Not enough data yet!</div>
                 </div>
             </div>
         </div>

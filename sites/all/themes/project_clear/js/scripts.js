@@ -29,12 +29,13 @@
 			
 			$.plot("#placeholder", [
 				{ label: "Rent", data: d1 },
-				{ label: "Neighborhood Average", data: d2 },
-				{ label: "Leasily Average", data: d3 }
+				{ label: "Neighborhood Average", data: d2 }/*
+				{ label: "Leasily Average", data: d3 }*/
 				], {
 					
-					colors: ["#D44332", "#0082A6", "#2EBFA2"],
-					
+					/*colors: ["#D44332", "#0082A6", "#2EBFA2"],*/
+					colors: ["#0082A6", "#D44332"],
+
 					legend:{
 						noColumns: 3
 					},
