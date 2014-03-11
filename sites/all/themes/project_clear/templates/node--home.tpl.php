@@ -173,41 +173,41 @@
 	<span data-magellan-destination="location"></span>
 
 <?php if($content['field_subcity']): ?>
-	<?php print '<div class="large-6 columns">
-            	<div style="display:inline-block; float:left; margin-left:1em;">' ?>
+	<?php print '<div class="large-6 small-12 columns">'; ?>
+<?php else: ?>
+	<?php print '<div class="large-7 large-centered small-12 columns">'; ?>
 <?php endif; ?>
-<?php if(!$content['field_subcity']): ?>
-	<?php print '<div class="large-12 columns">
-            	<div style="display:inline-block; float:left; margin-left:310px;;">' ?>
-<?php endif; ?>
-                    <img src="<?php print $base_path . $theme_path . '/css/icons/location64.png'; ?>" alt="Google Pin" style="margin-right: 1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:left" class="hide-for-small">
 
-                    <p class="clearH2" style="display:inline; float:left">
-                        <?php if ($location['street']) : ?> 
-                            <?php print $location['street'] ?>
-                        <?php endif; ?>
-                        <?php if ($location['additional']) : ?> 
-                            <?php print $location['additional'] ?><!--8243 Magazine Street-->
-                        <?php endif; ?>
-                    </p>
-            	</div>
+					<div class="large-3 small-4 columns">
+	                    <img src="<?php print $base_path . $theme_path . '/css/icons/location64.png'; ?>" alt="Google Pin" class="locationIcon">
+					</div>
+					
+					<div class="large-9 small-8 columns">
+	                    <p class="clearH2">
+	                        <?php if ($location['street']) : ?> 
+	                            <?php print $location['street'] ?>
+	                        <?php endif; ?>
+	                        <?php if ($location['additional']) : ?> 
+	                            <?php print $location['additional'] ?>
+	                        <?php endif; ?>
+	                    </p>
+					</div>
        		</div>
 
 <?php if($content['field_subcity']): ?>
-            <div class="large-6 columns hide-for-small">
-            	<div style="display:inline-block; float:right; margin-right:1em" class="hide-for-small">
+            <div class="small-6 columns hide-for-small">
             	
-                    <div style="display:inline-block; float:right">
-                        <img src="<?php print $base_path . $theme_path . '/css/icons/compass64.png'; ?>" alt="Google Pin" style="margin-left:1em; margin-top:1em; margin-bototm:1.5em; display:inline; float:right">
-                    </div>
-                    
-            		<?php print render($content['field_subcity']); ?>
+					<div class="large-9 small-9 columns">
+	            		<?php print render($content['field_subcity']); ?>
+					</div>
 
-            	</div>
+					<div class="large-3 small-3 columns">
+	                    <img src="<?php print $base_path . $theme_path . '/css/icons/compass64.png'; ?>" alt="Google Pin" style="margin:1.0em 0">
+					</div>
         	</div>
 <?php endif; ?>
 
-    		<div class="large-12 columns">            					
+    		<div class="small-12 columns">            					
 <!--Causes warning: invalid argument supplied foreach() in element_children() AND multiple warning: illegal string offsets-->				
 				<?php 
                 $block = module_invoke('views', 'block_view', 'node_mini_map-block');
