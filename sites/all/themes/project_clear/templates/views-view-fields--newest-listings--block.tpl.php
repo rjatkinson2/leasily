@@ -29,14 +29,12 @@
 <div class="row" style="margin-bottom:25px; margin-left:0px; margin-right:0px; padding-left:15px; padding-right:15px">
     <div class="view view-first">
         <?php print $fields['field_money_shot']->content?>
-        <div class="hide-for-touch">
-	        <div class="mask">
-	            <h2><?php print $fields['title']->content?></h2>
-	            <div class="hoverStat" style="margin-left:85px; width:50px"><?php print $fields['field_bed_number']->content?><span>beds</span></div>
-	            <div class="hoverStat"><?php print $fields['field_full_baths']->content?><span>baths</span></div>
-	            <div class="hoverStat"><?php print $fields['field_base_price']->content?><span>$/mo</span></div>
-	            <div style="float:left; margin:20px 0 0 180px"><?php print $fields['nid']->content?></div>
-	        </div>
+        <div class="mask hide-for-touch hide-for-small">
+            <h2 class="hide-for-small"><?php print $fields['title']->content?></h2>
+            <div class="hoverStat hide-for-small" style="margin-left:85px; width:50px"><?php print $fields['field_bed_number']->content?><span>beds</span></div>
+            <div class="hoverStat hide-for-small"><?php print $fields['field_full_baths']->content?><span>baths</span></div>
+            <div class="hoverStat hide-for-small"><?php print $fields['field_base_price']->content?><span>$/mo</span></div>
+            <div class="hide-for-small" style="float:left; margin:20px 0 0 180px"><?php print $fields['nid']->content?></div>
         </div>
     </div>
 </div>

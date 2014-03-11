@@ -339,7 +339,7 @@ input#edit-search-block-form--2{
   border-style: solid;
   border-width: 1px 0;
   border-color: #C3C3C3;
-  padding:1.0em .3em;
+  padding: 2.0em;
   background: #FFFFFF; }
   
 .searchCard {
@@ -896,6 +896,7 @@ div.commerce-payflow-cancel a{
 
 
 /*-----------------------------------------------------Front Page Hover Effect------------------------------------------*/
+@media only screen and (min-width: 768px) {
 
 .block-views-most-viewed-block .view,
 .block-views-newest-listings-block .view,
@@ -1090,7 +1091,7 @@ div.commerce-payflow-cancel a{
    -ms-transition-delay: 0.2s;
    transition-delay: 0.2s;
 }
-
+}
 /*-----------------------------COVER PHOTO MASK----------------------------------------*/
 .coverPhoto{
 	position:relative;
