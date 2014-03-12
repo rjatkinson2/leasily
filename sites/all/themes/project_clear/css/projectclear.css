@@ -3543,17 +3543,13 @@ div#mailchimp-newsletter-leasily_launch_subscribers{
 	display: inline-block;
 	float: left;
 	clear: none;
-	width: 70%;
+	width: 100%;
 }
 
 .block-mailchimp-lists-leasily-launch-subscribers button{
-	display: inline-block;
-	float: left;
-	clear: none;
 	height: 44px;
-	width: 30%;
+	width: 100%;
 	font-size: .3em;
-	border-radius: 0px;
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
@@ -3567,7 +3563,7 @@ form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers{
 }
 
 .footerForm .large-5.columns{
-	margin-top: .5em;
+	margin-top: .3em;
 }
 
 .footerForm div.columns{
@@ -3581,7 +3577,11 @@ form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers{
 	}
 	
 	.block-mailchimp-lists-leasily-launch-subscribers button{
-		width: 18%;
+		width: 30%;
+		display: inline-block;
+		float: left;
+		margin-left: -10%;
+		clear: none;
 	}
 	
 	.mailFull .block-mailchimp-lists-leasily-launch-subscribers button{
@@ -3694,7 +3694,6 @@ div.webform-datepicker{
 }
 
 #edit-webform-ajax-submit-406:hover,
-#comment-form button:hover,
 edit-submit--4:hover{
 	background: transparent;
 	color: #4D997C;
@@ -3702,14 +3701,15 @@ edit-submit--4:hover{
 
 #comment-form button{
 	margin-top: 1.0em;
-	background: #EEEEEE;
+	background-color: #EEEEEE;
 	border-color: #C3C3C3;
-	color: #4D997C;
+	color: #17254C;
 	width: 100%;
 }
 
 #comment-form button:hover{
-	border-color: #4D997C;
+	background: transparent;
+	border-color: #17254C;
 }
 
 #graphMessage{

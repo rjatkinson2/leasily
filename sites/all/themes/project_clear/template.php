@@ -482,7 +482,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 	}
 	
 	if($form_id == 'mailchimp_lists_user_subscribe_form_leasily_launch_subscribers'){
-		$form['mailchimp_lists']['mailchimp_leasily_launch_subscribers']['mergevars']['EMAIL']['#attributes']['placeholder'] = t( 'johnyappleseed@example.com' );
+		$form['mailchimp_lists']['mailchimp_leasily_launch_subscribers']['mergevars']['EMAIL']['#attributes']['placeholder'] = t( 'jappleseed@example.com' );
 		//kpr($form);
 	}
 	
