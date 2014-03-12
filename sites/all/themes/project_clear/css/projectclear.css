@@ -1931,10 +1931,36 @@ button.loginSubmit:active{
 }
 
 .form-item-remember-me{
-	margin-right:21.5%;
+	display: none;
+}
+
+.forgotLinks{
+	padding: 2.0em;
+	margin-right: 0;
+	color: #4D997C;
+}
+
+@media only screen and (min-width: 768px) {
+	.form-item-remember-me{
+		display: block;
+		margin-right:21.5%;
+		float:right;
+		margin-top:-215px;
+		clear:both;
+	}
+	
+	.forgotLinks{
+	font-size:14px;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color:#17254C;
 	float:right;
-	margin-top:-215px;
+	line-height:16px;
+	margin-top:-188px;
+	margin-right:21.5%;
 	clear:both;
+	padding: 0;
+	}
+
 }
 
 input#edit-remember-me{
@@ -1953,17 +1979,6 @@ label.option{
 
 .form-item-name{
 	margin-bottom:25px;
-}
-
-.forgotLinks{
-	font-size:14px;
-	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-	color:#17254C;
-	float:right;
-	line-height:16px;
-	margin-top:-188px;
-	margin-right:21.5%;
-	clear:both;
 }
 
 .searchColumns{
