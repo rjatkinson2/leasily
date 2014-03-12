@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="row card hide-for-medium-up">
+<div class="row card show-for-touch">
 	<div class="large-12 columns" style="padding:0px">
 	    <p class="statHeader" style="text-align:center; margin-bottom:5px">Maps!</p>
 	    <p class="statDescription" style="font-size:1em; text-align:center; margin-bottom:20px; padding: 0 1.0em">Run to your nearest desktop to view our map features. We're working hard to integrate with mobile!</p>
