@@ -3659,11 +3659,12 @@ form .row.makeOffer .row p:first-child{
 	color: #17254C;
 	font-size: 2.1em;
 	text-align: center;
-	margin: 0;
+	margin: 1.2em 0 .3em 0;
+	line-height: 1.0em;
 }
 
 .makeOffer .statDescription{
-	margin-bottom: 2.5em;
+	margin-bottom: .5em;
 }
 
 .makeOffer textarea#edit-submitted-message{
@@ -3700,13 +3701,15 @@ edit-submit--4:hover{
 }
 
 #comment-form button{
+	margin-top: 1.0em;
+	background: #EEEEEE;
+	border-color: #C3C3C3;
+	color: #4D997C;
 	width: 100%;
-	background: #2BA6CB;
-	border-color: #2BA6CB;
 }
 
 #comment-form button:hover{
-	color: #2BA6CB;
+	border-color: #4D997C;
 }
 
 #graphMessage{
@@ -3738,3 +3741,10 @@ img.locationIcon{
 		margin: 1em auto;
 	}
 }
+
+.stats div.field-name-field-base-price{
+	margin-bottom:15px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
