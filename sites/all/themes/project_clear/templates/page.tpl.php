@@ -146,7 +146,7 @@
         <div class="large-7 columns">
             <p class="signUpText">Stay on top of what’s happening here at leasily.com via our friendly emails.</p>
         </div>
-        <div class="large-5 columns">
+        <div class="large-5 columns<?php if ($logged_in){print ' mailFull';} ?>">
 	        <?php print render($page['footer']); ?>
         </div>
     </div>
