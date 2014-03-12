@@ -34,7 +34,7 @@
 	</div>
 </div>
 
-<div id="mapWrapper" class="hide-for-small">
+<div id="mapWrapper" class="hide-for-touch">
 	<div class="<?php print $classes; ?>">
 	  <?php print render($title_prefix); ?>
 	  <?php if ($title): ?>

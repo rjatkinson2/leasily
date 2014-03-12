@@ -2,13 +2,13 @@
 
   Drupal.behaviors.project_clear = {
     attach: function(context, settings) {
-
+    
 			var offer = $(".makeOffer");
 			var hideButton = $(".btn1")
 			$(offer).hide();
 			
 			$(hideButton).click(function(){
-			$(offer).slideToggle();
+				$(offer).slideToggle();
 			});
 						
 			// $("#views-exposed-form-front-map-block").addClass("custom");
