@@ -240,12 +240,14 @@
 		                    </div>
 		
 		                    <div class="large-11 columns">
-		                        <p class="deckDescription" style="margin-top:12px"><span style="color:#182956">Save changes, or cancel to get back to where you started!</span></p>
+		                        <p class="deckDescription" style="margin-top:12px"><span style="color:#182956">Save changes and continue to edit, submit to finalize changes, or cancel.</span></p>
 		                    </div>
 		            	</div>
 		            </div>
 					<div class="large-6 columns">
-						<p class="cancelButton"><?php print l(t('Cancel'), 'profile-main/' . $user->uid); ?></p>
+						<?php print drupal_render($form['actions']['cancel']);?>
+						<?php print drupal_render($form['actions']['submit']);?>
+						<?php print drupal_render($form['actions']['save_and_edit']);?>
 						<?php print drupal_render_children($form);?>
 			        </div>
 		        </div>

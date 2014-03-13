@@ -1892,9 +1892,15 @@ div.password-confirm{
 	max-width: 50%;
 }
 
+#edit-actions{
+	width: 100%;
+}
+
 button.loginSubmit,
-.registerForm button#edit-submit{
-	float:right;
+.registerForm button#edit-submit,
+#edit-save-and-edit{
+	clear: none;
+	float:left;
 	font-family: 'Pacifico', cursive;
 	font-size:35px;
 	text-align:right;
@@ -1915,6 +1921,13 @@ button.loginSubmit,
 	.registerForm button#edit-submit{
 		margin-right: 22%;
 	}
+}
+
+#edit-save-and-edit{
+	width: auto;
+	color: #4D997C;
+	float: right;
+	margin-right: .9em;
 }
 
 .registerForm button#edit-submit{
@@ -2201,6 +2214,7 @@ input[type=checkbox].form-checkbox:checked + label.option {
 
 .accountSettings button.loginSubmit,
 .addProperty button.loginSubmit{
+	width: auto;
 	float: right;
 	margin-right:20px;
 	display: inline;
@@ -2208,7 +2222,9 @@ input[type=checkbox].form-checkbox:checked + label.option {
 }
 
 .accountSettings .cancelButton,
-.addProperty .cancelButton{
+.addProperty .cancelButton,
+button#edit-cancel{
+	clear: none;
 	float: right;
 	margin-right: 0;
 	font-family: 'Pacifico', cursive;
@@ -2219,9 +2235,12 @@ input[type=checkbox].form-checkbox:checked + label.option {
 	display: inline;
 	margin-top: 16px;
 	padding: 0 20px;
-	border-left-style: solid;
+	border-style: none none none solid;
 	border-width: 1px;
 	border-color: #C3C3C3;
+	background-color: transparent;
+	border-radius: 0;
+	width: auto;
 }
 
 .profileSelector .cancelButton{
@@ -3360,16 +3379,20 @@ button.checkout-continue.form-submit{
 
 button#edit-cancel,
 button#edit-back{
-	margin: 1.0em 10%;
+	margin: .5em 0;
 }
 
 @media only screen and (min-width: 1280px) {
 	
 	button.checkout-continue.form-submit,
 	button#edit-cancel{
-		margin: 1.0em 10%;
+		margin: .5em 0;
 	}
 
+}
+
+.accountSettings #edit-actions{
+	width: auto;
 }
 
 button.checkout-continue.form-submit:hover,
@@ -3766,3 +3789,10 @@ img.locationIcon{
 	font-size: 1.2em;
 }
 
+.progress .meter{
+	background-color: #4D997C;
+}
+
+.addProperty button#edit-cancel{
+	border: none;
+}
