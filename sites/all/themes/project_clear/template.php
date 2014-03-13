@@ -413,6 +413,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		$form['revision_information']['#access'] = FALSE;
 		$form['actions']['preview']['#access'] = FALSE;
 		$form['actions']['delete']['#access'] = FALSE;
+		$form['actions']['submit']['#value'] = 'Submit';
 		$form['actions']['submit']['#attributes']['class'][0] = 'loginSubmit';
 		for($x=1; $x<=10; $x++){
 			$form['field_card_photo' . $x]['und']['#theme_wrappers']='';
@@ -426,7 +427,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		$form['#markup'][1] = $base_path . $theme_path . '/images/cardDemo/Larrow.png';
 		$form['#markup'][2] = $base_path . $theme_path . '/images/cardDemo/RBarrow.png';
 		$form['#markup'][3] = $base_path . $theme_path . '/images/cardDemo/RTarrow.png';
-		//kpr($form);
+		kpr($form);
 	}
 	
 	if($form_id == 'user_register_form'){
