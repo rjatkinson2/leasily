@@ -3701,7 +3701,7 @@ div.webform-datepicker{
 #edit-webform-ajax-submit-406,
 #comment-form button,
 #edit-submit--4,
-edit-submit--3{
+#edit-submit--3{
 	display: block;
 	background: #4D997C;
 	margin: 10px auto;
@@ -3711,8 +3711,8 @@ edit-submit--3{
 }
 
 #edit-webform-ajax-submit-406:hover,
-edit-submit--4:hover,
-edit-submit--3:hover{
+#edit-submit--4:hover,
+#edit-submit--3:hover{
 	background: transparent;
 	color: #4D997C;
 }
