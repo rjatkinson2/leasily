@@ -3815,3 +3815,7 @@ button#prevtab:active{
 	background-color: transparent;
 	border: none;
 }
+
+div#webform-component-mailto{
+	display: none;
+}

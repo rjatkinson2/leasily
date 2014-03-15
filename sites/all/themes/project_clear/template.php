@@ -469,6 +469,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		  // do stuff with $node
 		}
 		$form['#node2'] = 'test2';
+		unset($form['submitted']['mailto']['#value']);
 		$form['submitted']['mailto']['#default_value'] = $form['#profile']->mail;
 		//kpr($form);
 	}
