@@ -81,12 +81,12 @@
         <?php endforeach; ?>
 		
 		<div class="large-10 large-centered columns listPropertyLink">
-			<div class="large-3 hide-for-medium columns">
+			<div class="large-3 show-for-large-up columns">
 				<p class="deckHeader accountNumber">
 					<?php print l(t('+'), 'listing-choices', array('attributes' => array('class' => array('listPlus', 'another-class'))));?>
 				</p>
 			</div>
-			<div class="large-9 columns">
+			<div class="large-9 small-12 columns">
 				<?php print l(t('List your property'), 'listing-choices', array('attributes' => array('class' => array('listLink', 'another-class'))));?>
 			</div>
 		</div>  

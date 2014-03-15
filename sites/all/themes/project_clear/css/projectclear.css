@@ -2885,7 +2885,7 @@ form#views-exposed-form-front-map-block{
 }
 
 #over_map div.searchRow:nth-child(n+2){
-	padding: 1em 0;
+	padding: .7em 0;
 }
 
 #over_map div.large-12.columns.searchRow:nth-child(1){
@@ -3545,11 +3545,11 @@ a.listPlus{
 @media only screen and (min-width: 1280px) {
 
 	.listPropertyLink p.deckHeader{
-		margin-top:1.2em;
+		margin-top:.9em;
 	}
 	
 	.listPropertyLink .large-9{
-		margin-top: 3.1em;
+		margin-top: 2.5em;
 	}
 
 }
