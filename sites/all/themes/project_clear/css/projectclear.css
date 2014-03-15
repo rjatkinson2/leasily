@@ -3325,6 +3325,7 @@ p.statDescription,
 .date-display-single,
 .footer,
 .button1 span,
+.button1 p,
 .clearH2,
 .field-name-field-subcity,
 .field,
@@ -3333,6 +3334,16 @@ p.statDescription,
 #views-exposed-form-front-map-block select{
 	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 300;
+}
+
+.button1 span{
+	padding: .5em 0 .2em 0;
+	display: inline-block;
+	clear: both;
+}
+
+.button1 p{
+	line-height: 2.0em;
 }
 
 #commerce-checkout-form-checkout span.fieldset-legend{

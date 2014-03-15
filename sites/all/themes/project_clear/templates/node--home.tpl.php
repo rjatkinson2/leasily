@@ -127,11 +127,11 @@
   		
   		<div class="large-4 columns">
 	  		<ul class="small-block-grid-<?php if(!$logged_in && !$is_admin_or_author){print('1');}else{print('2');} ?> large-block-grid-2 homeButtonGrid">
-			  <li>
+				<li>
 				  
 					<?php
 	                    if ($is_admin_or_author){
-	                      print('<div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<br/><span>Your Property</span></div>');
+	                      print('<div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<span>Your Property</span></div>');
 	                      }
 	                    else{
 							if ($logged_in){	  
@@ -140,20 +140,30 @@
 	                      }
 	                ?>   
 				  
-			  </li>
-			  <li>
-				  <?php if($content['field_occupancy']['#items']['0']['value']=='0'):?>
-				  <div class="button1" style="color:#D44332">
-					  	<div class="avail">Occupied</div><p style="display:inline">Until</p>
-				  <?php else:?>
-				  <div class="button1">
-				  		<div class="avail">Available</div>
-				  <?php endif;?>
-				  <?php print render($content['field_move_in_day']);?>
-				  </div>
-			  </li>
-	  		</ul>
-  		</div>
+				</li>
+				<li>
+					<div class="button1">
+
+					<?php if($content['field_occupancy']['#items']['0']['value']=='0'):?>
+						  	<div class="avail" style="color:#D44332">Occupied</div>
+							<?php if($content['field_move_in_day']): ?>
+							  	<p style="display:inline">Until</p><?php print render($content['field_move_in_day']);?>
+							<?php else:?>
+							  	<p style="display:inline">Check back later!</p>
+						  	<?php endif;?>
+				  	<?php else:?>
+							<div class="avail">Available</div>
+							<?php if($content['field_move_in_day']): ?>
+							  	<?php print render($content['field_move_in_day']);?>
+							<?php else:?>
+							  	<p style="display:inline">Contact owner!</p>
+						  	<?php endif;?>
+				  	<?php endif; ?>
+				  	
+					</div>
+				</li>
+			</ul>
+		</div>
   		<div class="large-3 columns">
   			<ul class="small-block-grid-2 homeButtonGrid">
 			  <li><div class="button1"><?php print render($content['field_bed_number']); ?><span>Beds</span></div></li>
@@ -222,9 +232,24 @@
 <?php if($content['field_privacy']['#items']['0']['value']=='0'):?>
 <div class="privacyBar">
     <div class="row">
-		<p class="clearTitle">Property Occupied</p>
-		<p>Privacy settings enabled.  Check back for complete property details on:</p>
-		<p><?php print render($content['field_move_in_day']); ?></p> 
+		<?php if($content['field_occupancy']['#items']['0']['value']=='0'):?>
+			<p class="clearTitle">Property Occupied</p>
+			
+			<?php if($content['field_move_in_day']): ?>
+				<p>Privacy settings enabled.  Check back for complete property details on:</p>
+				<p><?php print render($content['field_move_in_day']); ?></p> 
+			<?php else:?>
+				<p>Privacy settings enabled.  Check back later for complete property details.</p>
+		  	<?php endif;?>
+	  	<?php else:?>		
+			<p class="clearTitle">Property Available</p>
+			<?php if($content['field_move_in_day']): ?>
+				<p>Privacy settings enabled.  Check back for complete property details on:</p>
+				<p style="color:#4D997C"><?php print render($content['field_move_in_day']); ?></p> 
+			<?php else:?>
+				<p>Privacy settings enabled.  Check back later for complete property details.</p>
+		  	<?php endif;?>
+		<?php endif;?>
 	</div>
 </div>    
 <?php else: ?>
