@@ -411,6 +411,8 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		$form['field_card_description']['#access'] = FALSE;
 		$form['field_card_photo']['#access'] = FALSE;
 		$form['revision_information']['#access'] = FALSE;
+		$form['field_card_title']['#access'] = FALSE;
+		$form['field_price_history']['#access'] = FALSE;
 		$form['actions']['preview']['#access'] = FALSE;
 		$form['actions']['delete']['#access'] = FALSE;
 		$form['actions']['submit']['#value'] = 'Submit';

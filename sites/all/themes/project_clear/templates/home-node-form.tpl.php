@@ -9,7 +9,7 @@
             	</div>
             	
 				<div class="section-container auto" data-section>
-				  <section class="active">
+				  <section id="hometab1"  class="topLevel active">
 				    <p class="title"><a href="#section1">Main Info</a></p>
 				    <div class="content" data-slug="section1">
 		                <div class="row stepsRow">
@@ -85,7 +85,7 @@
 				        </div>
 				    </div>
 				  </section>
-				  <section>
+				  <section id="hometab2" class="topLevel">
 				    <p class="title"><a href="#section2">Location</a></p>
 				    <div class="content" data-slug="section2">
 		                <div class="row stepsRow">
@@ -108,7 +108,7 @@
 				        </div>
 				    </div>
 				  </section>
-				  <section>
+				  <section id="hometab3" class="topLevel">
 				    <p class="title"><a href="#section3">Pricing</a></p>
 				    <div class="content" data-slug="section3">
 		                <div class="row stepsRow">
@@ -131,7 +131,7 @@
 				        </div>
 				    </div>
 				  </section>
-				  <section>
+				  <section id="hometab4" class="topLevel">
 				    <p class="title"><a href="#section4">Cards</a></p>
 				    <div class="content" data-slug="section4">
 		                <div class="row stepsRow">
@@ -190,7 +190,7 @@
 				      </div>
 				    </div>
 				  </section>
-  				  <section>
+  				  <section id="hometab5" class="topLevel">
 				    <p class="title"><a href="#section3">Occupancy</a></p>
 				    <div class="content" data-slug="section3">
 		                <div class="row stepsRow">
@@ -227,31 +227,45 @@
 									<?php print drupal_render($form['field_privacy']);?>
 					        </div>
 				        </div>
+
+				        
 				    </div>
 				  </section>
-
+				  
+				<div class="row" style="padding-top:70px">
+					<div class="large-2 columns">
+						<button class="deckHeader btn" id="prevtab" type="button" style="font-size:37px">Back</button>
+					</div>
+					<div class="large-8 columns">
+						<div class="progress round" style="margin-top:27px"><span class="meter" style="width: 20%"></span></div>
+					</div>
+					<div class="large-2 columns">
+						<button class="deckHeader btn" id="nexttab" type="button" style="font-size:37px">Next</button>
+					</div>
 				</div>
-								
-            	<div class="row" style="margin-top:70px">
-		            <div class="large-6 columns">
-		            	<div class="row accountRowFour">
-		                    <div class="large-1 columns">
-		                        <p class="deckHeader accountNumber" style="font-size:35px">!</p>
-		                    </div>
-		
-		                    <div class="large-11 columns">
-		                        <p class="deckDescription" style="margin-top:12px"><span style="color:#182956">Save changes and continue to edit, submit to finalize changes, or cancel.</span></p>
-		                    </div>
-		            	</div>
-		            </div>
+				  
+				<div class="row" style="margin-top:70px">
+				    <div class="large-6 columns">
+				    	<div class="row accountRowFour">
+				            <div class="large-1 columns">
+				                <p class="deckHeader accountNumber" style="font-size:35px">!</p>
+				            </div>
+				
+				            <div class="large-11 columns">
+				                <p class="deckDescription" style="margin-top:12px"><span style="color:#182956">All done?  Be sure to submit your changes to complete the process.</span></p>
+				            </div>
+				    	</div>
+				    </div>
 					<div class="large-6 columns">
 						<?php print drupal_render($form['actions']['cancel']);?>
 						<?php print drupal_render($form['actions']['submit']);?>
 						<?php print drupal_render($form['actions']['save_and_edit']);?>
 						<?php print drupal_render_children($form);?>
-			        </div>
-		        </div>
-
+				    </div>
+				</div>
+				
+				
+				</div>
 			</div>
         </div>
     </div>

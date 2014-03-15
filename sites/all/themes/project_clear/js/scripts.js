@@ -3,6 +3,38 @@
   Drupal.behaviors.project_clear = {
     attach: function(context, settings) {
     
+			var $tabs = $('section');
+			
+			var setProgress = function(){
+				var checkId = $tabs.filter('.active.topLevel').attr('id');
+				var multiplier = checkId.substr(checkId.length - 1);
+			    var spanWidth = $('div.progress').width() * .2 * multiplier;
+			    $('span.meter').css('width', spanWidth);
+			}
+			
+			$('#prevtab').on('click', function() {
+				if(percentage != '1') {
+					var currentID = $tabs.filter('.active.topLevel').attr('id');
+					var percentage = currentID.substr(currentID.length - 1);
+					var locale = parseInt(percentage) - 1;
+					var linkIdent = '#hometab' + locale + ' > p > a';
+					$(linkIdent).trigger( 'click' );
+					setProgress();
+				}
+			});
+			
+			$('#nexttab').on('click', function() {
+				if(percentage != '5') {
+					var currentID = $tabs.filter('.active.topLevel').attr('id');
+					var percentage = currentID.substr(currentID.length - 1);
+					var locale = parseInt(percentage) + 1;
+					var linkIdent = '#hometab' + locale + ' > p > a';
+					$(linkIdent).trigger( 'click' );
+					setProgress();
+				}
+			});
+						
+			    
 			var offer = $(".makeOffer");
 			var hideButton = $(".btn1")
 			$(offer).hide();

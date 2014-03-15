@@ -3793,6 +3793,25 @@ img.locationIcon{
 	background-color: #4D997C;
 }
 
-.addProperty button#edit-cancel{
+.progressNumber{
+	font-size:30px;
+	text-align: center;
+	margin:0 1.5em;
+}
+
+button#nexttab,
+button#prevtab{
+	background-color: transparent;
+	border: none;
+}
+
+button#nexttab{
+	float: right;
+}
+
+
+button#nexttab:active,
+button#prevtab:active{
+	background-color: transparent;
 	border: none;
 }
