@@ -72,7 +72,7 @@ function project_clear_preprocess_node(&$variables) {
   else {
     $variables['is_admin_or_author'] = FALSE;
   }
-  
+    
     // define $node object, so it's be easier to use it
   //$node = $variables['node'];
 
@@ -263,6 +263,9 @@ if($variables['page']['content']['system_main']['nodes']);{
 		
 	//kpr($variables['node']);
 }
+	
+	unset($variables['page']['content']['system_main']['nodes'][413]['links']['statistics']);
+	
 	
 	//kpr($variables['node']->NEXTLOWERVARIABLE);
 	//$variables['show_messages'] = FALSE;
