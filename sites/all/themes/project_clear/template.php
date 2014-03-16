@@ -265,7 +265,7 @@ if($variables['page']['content']['system_main']['nodes']);{
 }
 	
 	unset($variables['page']['content']['system_main']['nodes'][413]['links']['statistics']);
-	
+	unset($variables['page']['content']['system_main']['nodes'][427]['links']['statistics']);
 	
 	//kpr($variables['node']->NEXTLOWERVARIABLE);
 	//$variables['show_messages'] = FALSE;
