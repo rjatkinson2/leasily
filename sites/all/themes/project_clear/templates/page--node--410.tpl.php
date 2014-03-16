@@ -47,7 +47,8 @@ global $base_path;
 			              <li><?php print $view_profile_link?></li>
 			              <li><?php print $account_settings_link?></li>
 			              <li><?php print $edit_account_link?></li>
-			              <li><?php print l(t('Add Property'), 'node/add/home'); ?></a></li>
+			              <li><?php print l(t('Add Property'), 'node/add/home'); ?></li>
+			              <li><?php print l(t('Home'),'<front>'); ?></li>
 			            </ul>
 		            <?php endif; ?>
 				</li>
@@ -471,7 +472,7 @@ global $base_path;
 	    		<div class="large-5 small-3 columns">
 					<ul class="inline-list">
 						<li><a href="#">About</a></li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li><?php print l(t('Privacy Policy'),'privacy-policy'); ?></li>
 						<li><a href="#">Terms</a></li>
 					</ul>
 	    		</div>

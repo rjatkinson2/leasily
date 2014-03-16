@@ -201,7 +201,7 @@
 	    		<div class="large-5 small-3 columns">
 					<ul class="inline-list">
 						<li><a href="#">About</a></li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li><?php print l(t('Privacy Policy'),'privacy-policy'); ?></li>
 						<li><a href="#">Terms</a></li>
 					</ul>
 	    		</div>
