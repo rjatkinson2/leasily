@@ -196,7 +196,7 @@ global $base_path;
 					            <div class="row collapse">
 					                <div class="large-12 small-12 columns">
 					                    <p>Property Manager</p>
-					                    <p>For quickly and easily creating and managing listings</p>
+					                    <p>for quickly and easily creating and managing listings</p>
 					                </div>
 					            </div>
 					        </div>
@@ -219,7 +219,7 @@ global $base_path;
 				      <?php print $empty; ?>
 				  <?php endif; ?>
 				
-				<div style="clear:both; padding-top:3.0em"><p style="color:#454C52; text-align:center; margin:0">* All prices are a one time service fee, no additional fees will be incurred.</p></div>
+				<div style="clear:both; padding-top:3.0em"><p style="color:#454C52; text-align:center; margin:0">* All prices are a one time service fee per activation, no additional fees will be incurred.</p></div>
 
 				</div><?php /* class view */ ?>
 				
