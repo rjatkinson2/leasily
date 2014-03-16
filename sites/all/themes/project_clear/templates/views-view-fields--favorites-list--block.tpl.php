@@ -34,7 +34,7 @@
             <div class="hoverStat hide-for-small" style="margin-left:115px; width:50px"><?php print $fields['field_bed_number']->content?><span>beds</span></div>
             <div class="hoverStat hide-for-small"><?php print $fields['field_full_baths']->content?><span>baths</span></div>
             <div class="hoverStat hide-for-small"><?php print $fields['field_base_price']->content?><span>$/mo</span></div>
-            <div class="hide-for-small" style="float:left; margin:20px 0 0 215px"><?php print $fields['nid']->content?></div>
+            <div class="hide-for-small" style="float:left; margin:10px 0 0 200px"><?php print $fields['nid']->content?></div>
         </div>
     </div>
 </div>
