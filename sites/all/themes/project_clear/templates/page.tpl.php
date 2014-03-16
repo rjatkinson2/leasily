@@ -23,10 +23,8 @@
             <?php //if ($top_bar_main_menu) :?>
               <?php //print $top_bar_main_menu; ?>
             <?php //endif; ?>
-            <?php //if ($top_bar_secondary_menu) :?>
-              <?php //print $top_bar_secondary_menu; ?>
-            <?php //endif; ?>
 			<ul id="secondary-menu" class="secondary link-list right" data-thmr="thmr_400">
+				<!--<li class="divider topDivide show-for-large-up"></li>-->
 				<li class="<?php print $dropdownClasses?>" title="">
 					<?php print $top_bar_link_one;?>
 					<?php if ($logged_in):?>
@@ -34,7 +32,8 @@
 			              <li><?php print $view_profile_link?></li>
 			              <li><?php print $account_settings_link?></li>
 			              <li><?php print $edit_account_link?></li>
-			              <li><?php print l(t('Add Property'), 'node/add/home'); ?></a></li>
+			              <li><?php print l(t('Add Property'), 'node/add/home'); ?></li>
+			              <li><?php print l(t('Home'),'<front>'); ?></li>
 			            </ul>
 		            <?php endif; ?>
 				</li>
@@ -43,6 +42,12 @@
 					<?php print $top_bar_link_two;?>
 				</li>
 			</ul>
+			<!--<span class="topBarHome">
+            <?php // if ($top_bar_secondary_menu) :?>
+              <?php // print $top_bar_secondary_menu; ?>
+            <?php // endif; ?>
+			</span>-->
+			
           </section>
         </nav>
       <?php if ($top_bar_classes): ?>
