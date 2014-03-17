@@ -131,11 +131,11 @@
 				  
 					<?php
 	                    if ($is_admin_or_author){
-	                      print('<div class="button1">' . l('Edit', 'node/' . $nid . '/edit') . '<span>Your Property</span></div>');
+	                      print('<div class="button1 flabBut">' . l('Edit', 'node/' . $nid . '/edit') . '<span>Your Property</span></div>');
 	                      }
 	                    else{
 							if ($logged_in){	  
-							  print('<div class="button1">' . flag_create_link('favorites', $node->nid) . '<br/><span>Add to Favorites</span></div>');
+							  print('<div class="button1 flagBut">' . flag_create_link('favorites', $node->nid) . '<span>Add to Favorites</span></div>');
 							}
 	                      }
 	                ?>   

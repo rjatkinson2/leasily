@@ -1551,6 +1551,7 @@ form .row .row .columns .row{
 	line-height:20px;
 	margin: 20px auto;
 	max-width: 350px;
+	padding: 0 1.0em;
 }
 
 .searchNumber{
@@ -3838,4 +3839,23 @@ div#webform-component-mailto{
 	border: solid 1px #fff;
 	border-radius: 10px;
 	padding: .5em;
+}
+
+.button1 span.flag-wrapper{
+	padding: 0;
+}
+
+.button1 span.flag-wrapper a{
+	display: block;
+	padding: 0;
+	height: 26px;
+	width: 30px;
+}
+
+span.flag-throbber{
+	display: none;
+}
+
+.button1.flagBut{
+	padding-top: 4px;
 }
