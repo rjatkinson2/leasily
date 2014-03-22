@@ -1,3 +1,5 @@
+<?php render($page['content']['metatags']); ?>
+
 <!--.page -->
 <div role="document" class="page">
 
@@ -123,6 +125,7 @@
   </div>
 </form>
 -->
+
 <!---------------------HOME PAGE CARD------------------------>    
 
 <div class="row card" style="margin-top:25px">
