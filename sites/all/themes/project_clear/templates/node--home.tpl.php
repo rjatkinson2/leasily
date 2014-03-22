@@ -85,6 +85,7 @@
 
 	global $theme_path;
 	global $base_path;
+	$currentAlias = url(NULL, array('absolute' => TRUE)) . drupal_get_path_alias(current_path());
   
 ?>
 
@@ -372,10 +373,18 @@
                     <?php endwhile; ?>
             	</ul>
 				<div class="social" style="position:absolute; bottom:80px; <?php if ($cardNumberCount % 2 != 0): ?>left:25px;<?php else: ?>right:30px;<?php endif; ?> z-index:300">
-					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px"></a>
-					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/pinterest-small@2x.png';?>" width="32px" height="32px"></a>
-					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/twitter-small@2x.png';?>" width="32px" height="32px"></a>
-					<a href="https://plus.google.com/share?url=<?php print current_path(); ?>"><img src="<?php print $base_path . $theme_path . '/css/icons/social/googleplus-small@2x.png';?>" width="32px" height="32px"></a>
+					<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
+						<img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px">
+					</a>
+					<a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=<?php print $currentAlias; ?>">
+						<img src="<?php print $base_path . $theme_path . '/css/icons/social/pinterest-small@2x.png';?>" width="32px" height="32px">
+					</a>
+					<a rel="nofollow" href="http://twitter.com/share?url=<?php print $currentAlias; ?>">
+						<img src="<?php print $base_path . $theme_path . '/css/icons/social/twitter-small@2x.png';?>" width="32px" height="32px">
+					</a>
+					<a rel="nofollow" href="https://plus.google.com/share?url=<?php print $currentAlias; ?>">
+						<img src="<?php print $base_path . $theme_path . '/css/icons/social/googleplus-small@2x.png';?>" width="32px" height="32px">
+					</a>
 				</div>
             	<?php endif;?>
             </div>
