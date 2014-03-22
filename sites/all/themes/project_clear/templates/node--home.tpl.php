@@ -375,7 +375,7 @@
 					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px"></a>
 					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/pinterest-small@2x.png';?>" width="32px" height="32px"></a>
 					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/twitter-small@2x.png';?>" width="32px" height="32px"></a>
-					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/email-small@2x.png';?>" width="32px" height="32px"></a>
+					<a href="https://plus.google.com/share?url=<?php print current_path(); ?>"><img src="<?php print $base_path . $theme_path . '/css/icons/social/googleplus-small@2x.png';?>" width="32px" height="32px"></a>
 				</div>
             	<?php endif;?>
             </div>
