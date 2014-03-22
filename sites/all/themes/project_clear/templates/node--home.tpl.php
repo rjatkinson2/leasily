@@ -360,7 +360,7 @@
                 <?php print render($content['descriptionArray'][$cardNumberCount]); ?>
             </div>
         
-            <div class="large-8 <?php if ($cardNumberCount % 2 != 0): ?>pull-4<?php endif;?> columns">
+            <div class="large-8 <?php if ($cardNumberCount % 2 != 0): ?>pull-4<?php endif;?> columns" style="position:relative">
             	<?php if($content['subphotoArray'][$cardNumberCount] == 1):?>
                 	<?php print render($content['photoArray'][$cardNumberCount]); ?>
             	<?php else:?>	
@@ -371,6 +371,12 @@
 	                    <?php $subCounter++;?>
                     <?php endwhile; ?>
             	</ul>
+				<div class="social" style="position:absolute; bottom:80px; <?php if ($cardNumberCount % 2 != 0): ?>left:25px;<?php else: ?>right:30px;<?php endif; ?> z-index:300">
+					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px"></a>
+					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/pinterest-small@2x.png';?>" width="32px" height="32px"></a>
+					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/twitter-small@2x.png';?>" width="32px" height="32px"></a>
+					<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/email-small@2x.png';?>" width="32px" height="32px"></a>
+				</div>
             	<?php endif;?>
             </div>
         </div>

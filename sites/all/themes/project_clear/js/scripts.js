@@ -3,6 +3,11 @@
   Drupal.behaviors.project_clear = {
     attach: function(context, settings) {
     
+    		/*$('.socialImg img').hover(function(){
+    			alert('heyo!');
+    			}
+    		);*/
+    
 			var $tabs = $('section');
 			
 			var setProgress = function(){

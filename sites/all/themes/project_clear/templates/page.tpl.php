@@ -187,6 +187,19 @@
 		      <?php endif; ?>
 		    </section>
 	    <!--/.footer-columns-->
+	    
+		<!--<div class="row socialImg" style="padding-top:4.0em;">
+				<div class="large-6 large-centered columns" style="position:relative; padding:0">
+					<img src="<?php print $base_path . $theme_path . '/images/L8.jpg';?>">
+					<div class="social" style="position:absolute; bottom:20px; left: 20px">
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px"></a>
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/pinterest-small@2x.png';?>" width="32px" height="32px"></a>
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/twitter-small@2x.png';?>" width="32px" height="32px"></a>
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/email-small@2x.png';?>" width="32px" height="32px"></a>
+					</div>
+				</div>
+			</div>-->
+	    
 	    	<div class="row footerLinks" style="padding-top:50px;">
 	    		<div class="large-5 small-3 columns">
 					<ul class="inline-list firstFooterList">
