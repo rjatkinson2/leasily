@@ -3863,3 +3863,7 @@ span.flag-throbber{
 .social img{
 	margin: 0 .5em;
 }
+
+.button1.social a{
+	padding: 0 1px;
+}

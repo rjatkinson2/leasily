@@ -122,6 +122,7 @@
 	<span data-magellan-destination="money"></span>
 		
 	<div class="row" style="padding-top:50px">
+	
   		<div class="large-5 columns">
     		<p class="clearTitle"><?php print $node->title;?></p>
   		</div>
@@ -132,11 +133,21 @@
 				  
 					<?php
 	                    if ($is_admin_or_author){
-	                      print('<div class="button1 flabBut">' . l('Edit', 'node/' . $nid . '/edit') . '<span>Your Property</span></div>');
+	                      print('
+	                      <div class="button1">
+	                      	<div class="avail" style="color:#0082A6">' . l('Edit', 'node/' . $nid . '/edit') . '</div>
+	                      	<p style=display:inline">Your Property</p>
+	                      </div>
+	                      ');
 	                      }
 	                    else{
 							if ($logged_in){	  
-							  print('<div class="button1 flagBut">' . flag_create_link('favorites', $node->nid) . '<span>Add to Favorites</span></div>');
+							  print('
+							  <div class="button1" style="padding-top:4px">
+							  	<div class="avail">' . flag_create_link('favorites', $node->nid) . '</div>
+							  	<p style=display:inline>Add to Favorites</p>
+							  </div>
+							  ');
 							}
 	                      }
 	                ?>   
@@ -171,6 +182,24 @@
 			  <li><div class="button1"><?php print render($content['field_full_baths']); ?><span>Baths</span></div></li>
 			</ul>
   		</div>
+  		
+  		<div class="large-12 columns show-for-small" style="margin-bottom:1.0em">
+  			<div class="button1 social" style="background-color:transparent; border:none">
+				<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
+					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/facebook-small@2x.png';?>" width="32px" height="32px">
+				</a>
+				<a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=<?php print $currentAlias; ?>">
+					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/pinterest-small@2x.png';?>" width="32px" height="32px">
+				</a>
+				<a rel="nofollow" href="http://twitter.com/share?url=<?php print $currentAlias; ?>">
+					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/twitter-small@2x.png';?>" width="32px" height="32px">
+				</a>
+				<a rel="nofollow" href="https://plus.google.com/share?url=<?php print $currentAlias; ?>">
+					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/googleplus-small@2x.png';?>" width="32px" height="32px">
+				</a>
+  			</div>
+  		</div>
+  		
 	</div>
 
 <!---------------------MONEY CARD------------------------>
@@ -372,7 +401,7 @@
 	                    <?php $subCounter++;?>
                     <?php endwhile; ?>
             	</ul>
-				<div class="social" style="position:absolute; bottom:80px; <?php if ($cardNumberCount % 2 != 0): ?>left:25px;<?php else: ?>right:30px;<?php endif; ?> z-index:300">
+				<div class="social hide-for-small" style="position:absolute; bottom:80px; <?php if ($cardNumberCount % 2 != 0): ?>left:25px;<?php else: ?>right:30px;<?php endif; ?> z-index:300">
 					<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
 						<img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px">
 					</a>
