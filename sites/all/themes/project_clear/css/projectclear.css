@@ -194,7 +194,7 @@ input#edit-search-block-form--2{
 
 .top-bar-section a.topBarFont,
 .top-bar-section span.topBarHome a{
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
 }
@@ -1186,10 +1186,7 @@ div.commerce-payflow-cancel a{
 	}
 	
 	.makeOffer div.large-4{
-		border-left: 1px solid #C3C3C3;
-		font-size: 1.2em;
 		text-align: center;
-		margin-bottom: 1.25em;
 	}
 	
 	.makeOffer div:nth-child(1){
@@ -3334,8 +3331,7 @@ p.statDescription,
 .loginFooterText,
 .field-name-field-subcity,
 #views-exposed-form-front-map-block select{
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
 }
 
 .button1 span{
@@ -3696,7 +3692,7 @@ form .row.makeOffer .row .large-6.columns{
 }
 
 form .row.makeOffer .row label{
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #17254C;
 	font-size: 1em;
 	font-weight: 300;
@@ -3769,7 +3765,7 @@ div.webform-datepicker{
 }
 
 #graphMessage{
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Raleway', sans-serif;
 	position:relative;
 	bottom:220px;
 	left:190px;
@@ -3831,7 +3827,8 @@ button#prevtab:active{
 	border: none;
 }
 
-div#webform-component-mailto{
+div#webform-component-mailto,
+div#webform-component-property{
 	display: none;
 }
 
@@ -3866,4 +3863,22 @@ span.flag-throbber{
 
 .button1.social a{
 	padding: 0 1px;
+}
+
+#priceCalc{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 48px;
+	color: #4D997C;
+	margin-top: 0;
+}
+
+.makeOffer .statDescription{
+	font-size: 1.0em;
+	margin-bottom: 2.5em;
+}
+
+.priceSub{
+	font-family: 'Raleway', sans-serif;
+	font-size: .9em;
 }

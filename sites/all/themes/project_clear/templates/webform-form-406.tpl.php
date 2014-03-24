@@ -26,15 +26,29 @@
 	                    <p>Compose your message</p>
 	                    <p class="statDescription">Your note will be delivered to the landlord.</p>
 						<?php print drupal_render($form['submitted']['email']);?>
+						<?php print drupal_render($form['submitted']['number_of_tenants']);?>
 						<?php print drupal_render($form['submitted']['message']);?>
 		            </div>
 		            <div class="large-6 columns">
 	                    <p>Include some details</p>
 	                    <p class="statDescription">The information below is optional.</p>
+						<?php print drupal_render($form['submitted']['name']);?>
 						<?php print drupal_render($form['submitted']['phone']);?>
-						<?php print drupal_render($form['submitted']['number_of_tenants']);?>
 						<?php print drupal_render($form['submitted']['preferred_move_in']);?>
 		            </div>
+	        	</div>
+	        	<div class="large-12 columns" style="margin-top:3.0em">
+                    <p>Build your offer (optional)</p>
+                    <p class="statDescription">Your offer is non-binding, up to the landlord's discretion.</p>
+	                <div class="large-8 large-centered columns">
+		                <div class="large-8 columns" style="padding:0 2.0em">
+							<?php print drupal_render($form['submitted']['rate']);?>
+		                </div>
+		                <div class="large-4 columns">
+		                	<p id="priceCalc">$ --</p>
+		                	<p class="priceSub">per person, per month</p>
+		                </div>
+	                </div>    
 	        	</div>
         	</div>
         	

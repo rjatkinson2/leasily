@@ -7,6 +7,33 @@
     			alert('heyo!');
     			}
     		);*/
+    		var getOffer = $('#edit-submitted-rate').val();
+    		
+    		$("#edit-submitted-rate")
+				.keyup(function () {
+					var rate = $('#edit-submitted-rate').val();
+					if($('#edit-submitted-number-of-tenants').val() == ''){
+						var str = '$' + ' --';
+					}
+					else{
+						var str = '$' + Math.ceil(rate/$('#edit-submitted-number-of-tenants').val());
+					}
+					$("#priceCalc").text(str);
+				})
+				
+    		$("#edit-submitted-number-of-tenants")
+				.change(function () {
+					var rate = $('#edit-submitted-rate').val();
+					if($('#edit-submitted-rate').val() == ''){
+						var str = '$' + ' --';
+					}
+					else{
+						var str = '$' + Math.ceil(rate/$('#edit-submitted-number-of-tenants').val());
+					}
+					$("#priceCalc").text(str);
+				})
+
+    		
     
 			var $tabs = $('section');
 			

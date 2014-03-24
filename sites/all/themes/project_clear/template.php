@@ -92,6 +92,7 @@ function project_clear_preprocess_node(&$variables) {
 function project_clear_preprocess_html(&$variables) {
     $variables['left_sidebar'] = block_get_blocks_by_region('left_sidebar');
 	drupal_add_css('http://fonts.googleapis.com/css?family=Pacifico', array('type' => 'external'));
+	drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:100,200', array('type' => 'external'));
 	//kpr($variables);
 }
 
@@ -466,6 +467,7 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 	if($form_id == 'webform_client_form_406'){
 		if (1==1) {
 		  $node = node_load(arg(1));
+		  $form['#parentNode'] = $node;
 		  $account = $node->name;
 		  $profile = user_load_by_name($account);
 		  $form['#profile'] = $profile;
@@ -474,6 +476,8 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		$form['#node2'] = 'test2';
 		unset($form['submitted']['mailto']['#value']);
 		$form['submitted']['mailto']['#default_value'] = $form['#profile']->mail;
+		unset($form['submitted']['property']['#value']);
+		$form['submitted']['property']['#default_value'] = $form['#parentNode']->title;
 		//kpr($form);
 	}
 	
