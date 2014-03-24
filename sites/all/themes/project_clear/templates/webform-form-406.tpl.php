@@ -39,7 +39,7 @@
 	        	</div>
 	        	<div class="large-12 columns" style="margin-top:3.0em">
                     <p>Build your offer (optional)</p>
-                    <p class="statDescription">Your offer is non-binding, up to the landlord's discretion.</p>
+                    <p class="statDescription">Your offer is non-binding information for the landlord.</p>
 	                <div class="large-8 large-centered columns">
 		                <div class="large-8 columns" style="padding:0 2.0em">
 							<?php print drupal_render($form['submitted']['rate']);?>
