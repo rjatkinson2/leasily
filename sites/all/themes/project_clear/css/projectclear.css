@@ -3748,7 +3748,8 @@ div.webform-datepicker{
 }
 
 #edit-webform-ajax-submit-406:hover,
-#edit-submit--4:hover{
+#edit-submit--4:hover,
+#webform-client-form-406 #edit-submit--3:hover{
 	background: transparent;
 	color: #4D997C;
 }

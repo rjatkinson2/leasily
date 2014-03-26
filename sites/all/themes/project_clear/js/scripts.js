@@ -68,8 +68,15 @@
 						
 			    
 			var offer = $(".makeOffer");
-			var hideButton = $(".btn1")
-			$(offer).hide();
+			var hideButton = $(".btn1");
+		    if($('form.webform-client-form').find('.required.error').length != 0){
+			    $('html, body').animate({
+			        scrollTop: $("form.webform-client-form").offset().top
+			    });
+			}
+			else{
+				$(offer).hide();
+			}
 			
 			$(hideButton).click(function(){
 				$(offer).slideToggle();
