@@ -1479,7 +1479,8 @@ form .row .row .columns .row{
 }
 
 .profileSelector img,
-.accountSettings img{
+.accountSettings .field img,
+.registerForm .image-widget img{
 	margin-left:10%;
 	display:block;
 	width: 165px;
@@ -1547,7 +1548,7 @@ form .row .row .columns .row{
   	color: #17254C;
 	line-height:20px;
 	margin: 20px auto;
-	max-width: 350px;
+	max-width: 370px;
 	padding: 0 1.0em;
 }
 
@@ -3883,4 +3884,8 @@ span.flag-throbber{
 	font-family: 'Raleway', sans-serif;
 	font-size: .9em;
 	text-align: center;
+}
+
+.accountSettings table{
+	width: 100%;
 }
