@@ -344,11 +344,17 @@ input#edit-search-block-form--2{
   background: #FFFFFF; }
   
 .wideCard{
-  padding: 6.0em 0;
+  padding: 3.0em 0;
   border-style: solid;
   border-width: 1px 0;
   border-color: #C3C3C3;
   background: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+	.wideCard{
+		padding: 5.0em 0;
+	}
 }
   
 .searchCard {
@@ -3915,10 +3921,7 @@ span.flag-throbber{
 #mailchimp-lists-user-subscribe-form-landlord-signup button,
 #webform-client-form-415 button,
 #webform-client-form-429 button{
-
-	width: 40%;
-	display: inline-block;
-	float: left;
+	width: 100%;
 	background-color: #E16565;
 	border-color: #E16565;
 	font-family: 'Raleway', sans-serif;
@@ -3939,26 +3942,134 @@ span.flag-throbber{
 #webform-client-form-429 input{
 	font-size: 1.3em;
 	font-family: 'Raleway', sans-serif;
-	margin: 0 0 0 -1px;
 	text-align: center;
 }
 
-#mailchimp-lists-user-subscribe-form-landlord-signup div,
-#webform-client-form-415 div,
-#webform-client-form-429 div{
-	margin: 0;
+.stats h1{
+	color:#4D997C;
+	margin-bottom: .1em;
 }
 
-#mailchimp-newsletter-landlord_signup,
-#webform-component-landlord-email{
-	width: 60%;
-	display: inline-block;
-	float: right;
+.stats .large-8{
+	padding-right: 0;
+	padding-left: 0;
 }
 
-form#mailchimp-lists-user-subscribe-form-landlord-signup,
-form#webform-client-form-415,
-form#webform-client-form-429{
-	width: 60%;
-	margin: 0 auto;
+.wideCard.listing .large-7 img{
+ 	padding:40px 5px;
+ }
+ 
+.wideCard .large-4.large-offset-1 h5{
+	padding-bottom: 2.0em;
 }
+
+.row.card.base{
+	width: 100%;
+	border-radius: 0;
+	padding: 1.0em;
+}
+
+.offer{
+	 padding:5.5em 1.0em
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	#mailchimp-lists-user-subscribe-form-landlord-signup button,
+	#webform-client-form-415 button,
+	#webform-client-form-429 button{
+		margin: 0 0 1.25em 0;
+		width: 40%;
+		display: inline-block;
+		float: left;
+	}
+		
+	#mailchimp-lists-user-subscribe-form-landlord-signup input,
+	#webform-client-form-415 input,
+	#webform-client-form-429 input{
+		font-size: 1.3em;
+		font-family: 'Raleway', sans-serif;
+		margin: 0 0 0 -1px;
+		text-align: center;
+	}
+	
+	#mailchimp-lists-user-subscribe-form-landlord-signup div,
+	#webform-client-form-415 div,
+	#webform-client-form-429 div{
+		margin: 0;
+	}
+	
+	#mailchimp-newsletter-landlord_signup,
+	#webform-component-landlord-email{
+		width: 60%;
+		display: inline-block;
+		float: right;
+	}
+	
+	form#mailchimp-lists-user-subscribe-form-landlord-signup,
+	form#webform-client-form-415,
+	form#webform-client-form-429{
+		width: 60%;
+		margin: 0 auto;
+	}
+
+
+	.stats h1{
+		text-align:right;
+		color:#4D997C;
+	}
+	
+	.stats h5{
+		text-align:left;
+		padding-top:1.1em
+	}
+	
+	.stats .large-8{
+		padding-right: 0;
+	}
+	
+	.wideCard h1,
+	.wideCard h5{
+		text-align: left;
+	}
+	
+	.offer h1, .offer h5{
+		text-align: right;
+	}
+	
+	.wideCard.listing .large-7 img{
+	 	padding:10px 5px;
+	}
+	
+	.wideCard .large-4.large-offset-1{
+		padding: 1.7em 0;
+	}
+	
+	.row.card.base{
+		 padding:1.0em 0;
+		 width:60%;
+		 margin: 2.0em auto;
+		 border-radius:15px;
+	}
+	
+	.row.card.base h1{
+		font-size:2.5em;
+		margin-bottom:.2em;
+		text-align:left;		
+	}
+	
+	.row.card.base h5{
+		text-align: left;
+	}
+	
+	.offer{
+		 padding:5.5em 1.0em
+	}
+	
+	.offer h1{
+		padding-top: 1.3em;
+	}
+}
+

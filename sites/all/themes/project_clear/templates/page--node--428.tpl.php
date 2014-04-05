@@ -116,38 +116,38 @@
 
 <h1 style="margin-bottom:.3em">Home sweet home.</h1>
 
-<div class="row">
-	<div class="large-12 columns">
-		<div class="large-3 columns">
+<div class="row stats">
+	<div class="small-12 columns">
+		<div class="large-3 small-6 columns">
 			<div class="large-4 columns">
-				<h1 style="text-align:right; color:#4D997C">2</h1>
+				<h1>2</h1>
 			</div>
 			<div class="large-8 columns">
-				<h6 style="text-align:left; padding-top:1.1em">properties photographed</h6>
+				<h6>properties photographed</h6>
 			</div>
 		</div>      								  
-		<div class="large-3 columns">				  
+		<div class="large-3 small-6 columns">				  
 			<div class="large-4 columns">
-				<h1 style="text-align:right; color:#4D997C">30</h1>
-			</div>
-			<div class="large-8 columns" style="padding-right:0">
-				<h6 style="text-align:left; padding-top:1.1em">average tenants interested</h6>
-			</div>
-		</div>      								  
-		<div class="large-3 columns">				  
-			<div class="large-4 columns">
-				<h1 style="text-align:right; color:#4D997C">3</h1>
+				<h1>30</h1>
 			</div>
 			<div class="large-8 columns">
-				<h6 style="text-align:left; padding-top:1.1em">average days to fill property</h6>
+				<h6>average tenants interested</h6>
 			</div>
 		</div>      								  
-		<div class="large-3 columns">				  
+		<div class="large-3 small-6 columns">				  
 			<div class="large-4 columns">
-				<h1 style="text-align:right; color:#4D997C">10</h1>
+				<h1>3</h1>
 			</div>
 			<div class="large-8 columns">
-				<h6 style="text-align:left; padding-top:1.1em">happy tenants and landlords</h6>
+				<h6>average days to fill property</h6>
+			</div>
+		</div>      								  
+		<div class="large-3 small-6 columns">				  
+			<div class="large-4 columns">
+				<h1>10</h1>
+			</div>
+			<div class="large-8 columns">
+				<h6>happy tenants and landlords</h6>
 			</div>
 		</div>      
 	</div>
@@ -156,7 +156,7 @@
 
 <div class="row" style="padding:5.0em 0 .5em 0">
 	<?php if ($logged_in):?>
-		<?php $block = module_invoke('webform', 'block_view', 'client-block-429');
+		<?php $block = module_invoke('webform', 'block_view', 'client-block-415');
 		print render($block['content']);?>
 	<?php else: ?>
 	    <?php print render($page['footer']); ?>
@@ -171,7 +171,11 @@
 
 <div class="wideCard">      
 	<div class="row">
-		<div class="large-7 columns">
+		<div class="large-4 large-offset-1 push-7 columns">
+			<h1>Photos worth a thousand words</h1>
+			<h5>Photography is at the heart and soul of Leasily.com.  We will photograph your home in all its beauty, delivering tenants with the complete experience before a tour is ever required.</h5>
+		</div>  
+		<div class="large-7 pull-5 columns">
 	    	<ul class="bxslider">
 	                <li><img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/slideDemo/slideDemo1.jpg'; ?>"/></li>
 	                <li><img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/slideDemo/slideDemo2.jpg'; ?>"/></li>
@@ -197,44 +201,40 @@
 				</a>
 			</div>
 		</div>
-		<div class="large-4 large-offset-1 columns">
-			<h1 style="text-align:left">Photos worth a thousand words</h1>
-			<h5 style="text-align:left">Photography is at the heart and soul of Leasily.com.  We will photograph your home in all its beauty, delivering tenants with the complete experience before a tour is ever required.</h5>
-		</div>  
 	</div>
 </div>
 
-<div style="padding:4.0em 0">      
+<div class="offer">      
 	<div class="row">
-		<div class="large-4 columns" style="padding:3.0em 1.0em">
-			<h1 style="text-align:right">Make an offer</h1>
-			<h5 style="text-align:right">Each tenant inquiry may be accompanied by an offer, creating tremendous opportunity for a market driven increase in your rental income.</h5>
+		<div class="large-4 columns">
+			<h1>Make an offer</h1>
+			<h5>Each tenant inquiry may be accompanied by an offer, creating tremendous opportunity for a market driven increase in your rental income.</h5>
 		</div>
 		<div class="large-8 columns">
-            <img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/OfferBrowser@2x.png'; ?>"/>
+            <img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/OfferBrowser2@2x.png'; ?>"/>
 		</div>  
 	</div>
 </div>
 
-<div class="wideCard">      
+<div class="wideCard listing">      
 	<div class="row">
-		<div class="large-6 columns" style="margin-top:1.5em">
+		<div class="large-6 push-6 columns">
+			<h1>Maximum listing exposure</h1>
+			<h5>Our listings can optionally be posted on other rental property platforms as well, expanding the audience to maximize visibility of the listing and further increase demand.</h5>
+		</div>  
+		<div class="large-6 pull-6 columns" style="margin-top:1.5em">
 			<div class="large-12 columns">
 	            <img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/craigslist-logo.jpeg'; ?>" width="215" class="centerTest"/>
 			</div>
 			<div class="large-12 columns" style="margin-top:1.5em">
             	<div class="large-5 columns">
-	            	<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/trulia-logo.png'; ?>" width="215"/>
+	            	<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/trulia-logo.png'; ?>" width="215" class="centerTest"/>
             	</div>
             	<div class="large-7 columns">
-					<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/zillow-logo.jpg'; ?>" width="215" style="padding:10px 5px"/>
+					<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/zillow-logo.jpg'; ?>" width="215" class ="centerTest"/>
             	</div>
 			</div>
 		</div>
-		<div class="large-6 columns">
-			<h1 style="text-align:left">Maximum listing exposure</h1>
-			<h5 style="text-align:left">Our listings can optionally be posted on other rental property platforms as well, expanding the audience to maximize visibility of the listing and further increase demand.</h5>
-		</div>  
 	</div>
 </div>
 
@@ -253,27 +253,27 @@
 	</div>
 </div>
 
-<div class="row card" id="signupReturn" style="padding:1.0em 0; width:60%; margin: 2.0em auto; border-radius:15px">
+<div class="row card base" id="signupReturn">
 	<div class="large-12 large-centered columns" style="">
-		<div class="large-9 columns">
-			<h1 style="font-size:2.5em; margin-bottom:.2em">Landlord sign-up</h1>
-			<h5>Click here to return to the sign-up (at the top).</h5>
-		</div>
 		<div class="large-3 columns">
-			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Arrow@2x.png';?>" width="60px" class="centerTest" style="padding:1.0em 0; margin-left:0">
+			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Arrow@2x.png';?>" width="60px" class="centerTest" style="padding:1.1em 0 1.0em 0">
+		</div>
+		<div class="large-9 columns">
+			<h1>Landlord sign-up</h1>
+			<h5>Click here to return to the sign-up (at the top).</h5>
 		</div>
 	</div>
 </div>
 
 
-<div class="row card" style="padding:1.0em 0; width:60%; margin: 2.0em auto; border-radius:15px">
+<div class="row card base">
 	<div class="large-12 large-centered columns" style="">
-		<div class="large-9 columns">
-			<h1 style="font-size:2.5em; margin-bottom:.2em">Still have questions?</h1>
-			<h5>Shoot! Let's get those answered quickly. Contact us at founders@leasily.com.</h5>
-		</div>
 		<div class="large-3 columns">
-			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Question@2x.png';?>" width="60px" class="centerTest" style="padding:1.0em 0; margin-left:0">
+			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Question@2x.png';?>" width="60px" class="centerTest" style="padding:1.7em 0 1.0em 0">
+		</div>
+		<div class="large-9 columns">
+			<h1>Still have questions?</h1>
+			<h5>Shoot! Let's get those answered quickly. Contact us at founders@leasily.com.</h5>
 		</div>
 	</div>
 </div>
