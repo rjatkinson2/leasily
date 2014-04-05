@@ -343,6 +343,14 @@ input#edit-search-block-form--2{
   border-color: #C3C3C3;
   background: #FFFFFF; }
   
+.wideCard{
+  padding: 6.0em 0;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #C3C3C3;
+  background: #FFFFFF;
+}
+  
 .searchCard {
   margin-top:10px;
   border-style: solid;
@@ -525,20 +533,25 @@ span.date-display-single{
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-	font-family:"Baskerville Old Face";
-	line-height:120%;
+	font-family: 'Raleway', sans-serif;
 	text-align:center;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em; }
-  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    font-size: 60%;
-    color: #6f6f6f;
-    line-height: 0; }
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	color: #17254C;
+	line-height: 120%;
+	font-weight: 200;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+ }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-size: 60%;
+	color: #6f6f6f;
+	line-height: 0;
+}
 
 h1 {
-  font-size: 2.125em; }
+  font-size: 3.0em; }
 
 h2 {
   font-size: 1.6875em; }
@@ -550,10 +563,12 @@ h4 {
   font-size: 1.125em; }
 
 h5 {
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  color: #909090; }
 
 h6 {
-  font-size: 1em; }
+  font-size: 1em;
+  color: #909090; }
 
 hr {
   border: solid #dddddd;
@@ -3570,7 +3585,8 @@ div#splash{
 
 .block-mailchimp-lists-leasily-launch-subscribers label,
 .block-mailchimp-lists-leasily-launch-subscribers div.description,
-.block-mailchimp-lists-leasily-launch-subscribers h2.block-title{
+.block-mailchimp-lists-leasily-launch-subscribers h2.block-title,
+.block-mailchimp-lists-landlord-signup label{
 	display: none;
 }
 
@@ -3889,4 +3905,54 @@ span.flag-throbber{
 
 .accountSettings table{
 	width: 100%;
+}
+
+.mask h2,
+.footer h2{
+	font-family:"Baskerville Old Face";
+}
+
+#mailchimp-lists-user-subscribe-form-landlord-signup button,
+#webform-client-form-415 button{
+	width: 40%;
+	display: inline-block;
+	float: left;
+	background-color: #E16565;
+	border-color: #E16565;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	padding: 15px 40px;
+}
+
+#mailchimp-lists-user-subscribe-form-landlord-signup button:hover,
+#webform-client-form-415 button:hover{
+	background-color: transparent;
+	color: #E16565;
+}
+
+#mailchimp-lists-user-subscribe-form-landlord-signup input,
+#webform-client-form-415 input{
+	font-size: 1.3em;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 0 0 -1px;
+	text-align: center;
+}
+
+#mailchimp-lists-user-subscribe-form-landlord-signup div,
+#webform-client-form-415 div{
+	margin: 0;
+}
+
+#mailchimp-newsletter-landlord_signup,
+#webform-component-landlord-email{
+	width: 60%;
+	display: inline-block;
+	float: right;
+}
+
+form#mailchimp-lists-user-subscribe-form-landlord-signup,
+form#webform-client-form-415{
+	width: 60%;
+	margin: 0 auto;
 }

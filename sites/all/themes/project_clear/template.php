@@ -497,6 +497,13 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		//kpr($form);
 	}
 	
+	if($form_id == 'mailchimp_lists_user_subscribe_form_landlord_signup'){
+		$form['mailchimp_lists']['mailchimp_landlord_signup']['mergevars']['EMAIL']['#attributes']['placeholder'] = t( 'jappleseed@example.com' );
+		//kpr($form);
+	}
+
+	
+	
 	//kpr($form_id);
 	//kpr($form);
 	//dsm($form);

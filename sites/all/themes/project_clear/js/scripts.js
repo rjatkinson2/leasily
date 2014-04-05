@@ -7,6 +7,16 @@
     			alert('heyo!');
     			}
     		);*/
+    		
+			$("#signupReturn").click(function(){
+			    $('html, body').animate({
+			        scrollTop: 0
+			    },
+			    {
+				    duration: 1500
+			    });
+			});    		
+    		
     		var getOffer = $('#edit-submitted-rate').val();
     		
     		$("#edit-submitted-rate")
