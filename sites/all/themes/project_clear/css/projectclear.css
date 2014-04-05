@@ -3913,7 +3913,9 @@ span.flag-throbber{
 }
 
 #mailchimp-lists-user-subscribe-form-landlord-signup button,
-#webform-client-form-415 button{
+#webform-client-form-415 button,
+#webform-client-form-429 button{
+
 	width: 40%;
 	display: inline-block;
 	float: left;
@@ -3926,13 +3928,15 @@ span.flag-throbber{
 }
 
 #mailchimp-lists-user-subscribe-form-landlord-signup button:hover,
-#webform-client-form-415 button:hover{
+#webform-client-form-415 button:hover,
+#webform-client-form-429 button:hover{
 	background-color: transparent;
 	color: #E16565;
 }
 
 #mailchimp-lists-user-subscribe-form-landlord-signup input,
-#webform-client-form-415 input{
+#webform-client-form-415 input,
+#webform-client-form-429 input{
 	font-size: 1.3em;
 	font-family: 'Raleway', sans-serif;
 	margin: 0 0 0 -1px;
@@ -3940,7 +3944,8 @@ span.flag-throbber{
 }
 
 #mailchimp-lists-user-subscribe-form-landlord-signup div,
-#webform-client-form-415 div{
+#webform-client-form-415 div,
+#webform-client-form-429 div{
 	margin: 0;
 }
 
@@ -3952,7 +3957,8 @@ span.flag-throbber{
 }
 
 form#mailchimp-lists-user-subscribe-form-landlord-signup,
-form#webform-client-form-415{
+form#webform-client-form-415,
+form#webform-client-form-429{
 	width: 60%;
 	margin: 0 auto;
 }
