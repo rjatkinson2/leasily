@@ -4071,5 +4071,10 @@ span.flag-throbber{
 	.offer h1{
 		padding-top: 1.3em;
 	}
+	
+	.stats h6{
+		padding: 1.1em 0 0 .5em;
+		text-align: left;
+	}
 }
 
