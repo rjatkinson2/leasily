@@ -3978,6 +3978,9 @@ span.flag-throbber{
 	 padding:5.5em 1.0em
 }
 
+.offer h5{
+	padding-bottom: 2.0em;
+}
 
 
 @media only screen and (min-width: 768px) {
