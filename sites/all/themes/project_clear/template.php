@@ -274,7 +274,7 @@ if($variables['page']['content']['system_main']['nodes']);{
 	//kpr($variables['node']);
 	//kpr($row);
 	//kpr($variables['view']);
-	kpr($variables);
+	//kpr($variables);
 }
 
 function project_clear_preprocess_block(&$variables) {
