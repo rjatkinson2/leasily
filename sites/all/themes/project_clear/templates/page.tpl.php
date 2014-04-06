@@ -25,22 +25,35 @@
             <?php //endif; ?>
 			<ul id="secondary-menu" class="secondary link-list right" data-thmr="thmr_400">
 				<!--<li class="divider topDivide show-for-large-up"></li>-->
-				<li class="<?php print $dropdownClasses?>" title="">
+
+				<li>
+					<?php print l(t('landlords'), 'landlords', array('attributes' => array('class' => array('topBarFont')))); ?>
+				</li>
+				
+				
+				<?php if ($top_bar_link_one): ?>
+				<li class="divider topDivide show-for-large-up"></li>
+				
+				<li title="">
 					<?php print $top_bar_link_one;?>
+				</li>
+				<?php endif; ?>
+
+				<li class="divider topDivide show-for-large-up"></li>
+
+				<li class="<?php print $dropdownClasses?> last leaf">
+					<?php print $top_bar_link_two;?>
 					<?php if ($logged_in):?>
 			            <ul class="dropdown">
+			              <li><?php print l(t('Home'),'<front>'); ?></li>
 			              <li><?php print $view_profile_link?></li>
 			              <li><?php print $account_settings_link?></li>
 			              <li><?php print $edit_account_link?></li>
-			              <li><?php print l(t('Add Property'), 'node/add/home'); ?></li>
-			              <li><?php print l(t('Home'),'<front>'); ?></li>
+			              <li><?php print l(t('log out'), 'user/logout'); ?></li>
 			            </ul>
 		            <?php endif; ?>
 				</li>
-				<li class="divider topDivide show-for-large-up"></li>
-				<li class="last leaf">
-					<?php print $top_bar_link_two;?>
-				</li>
+
 			</ul>
 			<!--<span class="topBarHome">
             <?php // if ($top_bar_secondary_menu) :?>

@@ -106,7 +106,8 @@
 
 <!---------------------MAGELLAN------------------------>
 	<div data-magellan-expedition="fixed" class="hide-for-small">
-	  <dl class="sub-nav">
+	<div style="margin:0 auto">
+	  <dl class="sub-nav" style="max-width:520px; margin-left: auto; margin-right:auto">
 	  	<dd data-magellan-arrival="money"><a href="#money">Cover Photo</a></dd>
 	    <dd data-magellan-arrival="location"><a href="#location">Location</a></dd>
 	    <dd data-magellan-arrival="lease"><a href="#lease">Lease Details</a></dd>
@@ -114,6 +115,7 @@
 	    <dd data-magellan-arrival="cards"><a href="#cards">Cards</a></dd>
 	    <dd data-magellan-arrival="comments"><a href="#comments">Comments</a></dd>
 	  </dl>
+	</div>
 	</div>
 <!---------------------END MAGELLAN------------------------>
 

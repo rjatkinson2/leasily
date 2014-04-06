@@ -17,34 +17,52 @@
 			<!--<li class="has-form left">
 				<?php if (!empty($page['header'])): ?>
 				<?php print render($page['header']); ?>
-				<?php endif; ?>
-			</li>-->
+				<?php endif; ?>-->
+			</li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
           </ul>
           <section class="top-bar-section">
             <?php //if ($top_bar_main_menu) :?>
               <?php //print $top_bar_main_menu; ?>
             <?php //endif; ?>
-            <?php //if ($top_bar_secondary_menu) :?>
-              <?php //print $top_bar_secondary_menu; ?>
-            <?php //endif; ?>
 			<ul id="secondary-menu" class="secondary link-list right" data-thmr="thmr_400">
-				<li class="<?php print $dropdownClasses?>" title="">
+				<!--<li class="divider topDivide show-for-large-up"></li>-->
+
+				<li>
+					<?php print l(t('landlords'), 'landlords', array('attributes' => array('class' => array('topBarFont')))); ?>
+				</li>
+				
+				
+				<?php if ($top_bar_link_one): ?>
+				<li class="divider topDivide show-for-large-up"></li>
+				
+				<li title="">
 					<?php print $top_bar_link_one;?>
+				</li>
+				<?php endif; ?>
+
+				<li class="divider topDivide show-for-large-up"></li>
+
+				<li class="<?php print $dropdownClasses?> last leaf">
+					<?php print $top_bar_link_two;?>
 					<?php if ($logged_in):?>
 			            <ul class="dropdown">
+			              <li><?php print l(t('Home'),'<front>'); ?></li>
 			              <li><?php print $view_profile_link?></li>
 			              <li><?php print $account_settings_link?></li>
 			              <li><?php print $edit_account_link?></li>
-			              <li><?php print l(t('Add Property'), 'listing-choices'); ?></li>
+			              <li><?php print l(t('log out'), 'user/logout'); ?></li>
 			            </ul>
 		            <?php endif; ?>
 				</li>
-				<li class="divider topDivide show-for-large-up"></li>
-				<li class="last leaf">
-					<?php print $top_bar_link_two;?>
-				</li>
+
 			</ul>
+			<!--<span class="topBarHome">
+            <?php // if ($top_bar_secondary_menu) :?>
+              <?php // print $top_bar_secondary_menu; ?>
+            <?php // endif; ?>
+			</span>-->
+			
           </section>
         </nav>
       <?php if ($top_bar_classes): ?>

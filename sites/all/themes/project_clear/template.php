@@ -92,7 +92,7 @@ function project_clear_preprocess_node(&$variables) {
 function project_clear_preprocess_html(&$variables) {
     $variables['left_sidebar'] = block_get_blocks_by_region('left_sidebar');
 	drupal_add_css('http://fonts.googleapis.com/css?family=Pacifico', array('type' => 'external'));
-	drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:100,200', array('type' => 'external'));
+	drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:100,200,400', array('type' => 'external'));
 	//kpr($variables);
 }
 
@@ -136,8 +136,8 @@ function project_clear_preprocess_page(&$variables){
   	global $user;
 	$variables['footer_message'] = t('Welcome @username, Lullabot loves you', array('@username' => $variables['user']->name));
 	/*<?php print $footer_message; ?> to print text*/
-	$variables['top_bar_link_one'] = l($user->name, '#', array('attributes' => array('class' => array('topBarFont'))));
-	$variables['top_bar_link_two'] = l(t('log out'), 'user/logout', array('attributes' => array('class' => array('topBarFont'))));
+	//$variables['top_bar_link_one'] = l(t('landlords'), 'landlords', array('attributes' => array('class' => array('topBarFont'))));
+	$variables['top_bar_link_two'] = l($user->name, 'profile-main/', array('attributes' => array('class' => array('topBarFont'))));
 	$variables['view_profile_link'] = l(t('View Profile'), 'profile-main/' . $user->uid, array('attributes' => array('class' => array('holderClass'))));
 	$variables['account_settings_link'] = l(t('Edit Profile'),'profile-main/' . $user->uid . '/edit', array('attributes' => array('class' => array('holderClass'))));
 	$variables['edit_account_link'] = l(t('Account Settings'),'user/' . $user->uid . '/edit', array('attributes' => array('class' => array('holderClass'))));

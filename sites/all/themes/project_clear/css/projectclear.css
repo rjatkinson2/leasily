@@ -29,6 +29,10 @@ body{
 	color:rgb(83,83,83);
 }
 
+p{
+	font-weight: 200;
+}
+
 div.field span{
 	display: inline;
 	clear: none;
@@ -97,7 +101,7 @@ section.footerSection{
 .footer, .footer h2{
 	color: #ffffff;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .footer h2{
@@ -183,20 +187,46 @@ input#edit-search-block-form--2{
 }
 
 .top-bar-section > ul > .divider.topDivide{
-	border-bottom: none;
-	border-top: none;
-	border-right: solid 1px #ffffff;
-	border-left:none;
+	border: 1px solid #4D997C;
+	border-bottom-width: 21px;
+	border-top-width: 21px;
 	clear: none;
-	height: 45px;
-	width: 0px;
+	height: 58px;
+	width: 3px;
+	background-color:#FFF;
 }
 
 .top-bar-section a.topBarFont,
 .top-bar-section span.topBarHome a{
 	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 16px;
+}
+
+@media only screen and (min-width: 1280px) {
+	.top-bar{
+		height: 58px;
+	}
+	
+	.top-bar-section ul li > a{
+		height: 58px;
+	}
+	
+	.top-bar-section li a:not(.button){
+		padding-top: 6px;
+	}
+	
+	.top-bar-section .has-dropdown > a:after {
+	    margin-top: 5px;
+	}
+	
+	img.logo{
+		height: 40px;
+		margin-top: 7px;
+		padding-top: 4px;
+		padding-left: 10px;
+	}
+
 }
 
 .parent-link.js-generated{
@@ -234,7 +264,7 @@ input#edit-search-block-form--2{
   
 .topBarText{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   font-size: 1.2em;
   text-align: center;
   text-rendering: optimizeLegibility;
@@ -243,7 +273,7 @@ input#edit-search-block-form--2{
 
 .topBarTextDropdown{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   font-size: 1em;
   text-align: left;
   text-rendering: optimizeLegibility;
@@ -407,7 +437,7 @@ a {
 /* Headline 1*/
 .clearH1{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   text-align:left;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -419,7 +449,7 @@ a {
 /* Headline 2*/
 .clearH2{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   text-align:left;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -431,7 +461,7 @@ a {
 
 .field-name-field-subcity{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   text-align:left;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -631,7 +661,7 @@ code {
 
 .button3 {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  	font-weight: normal;
+  	font-weight: 200;
   	font-size: 1.8em;
   	text-align: center;
   	line-height: .45em;
@@ -656,7 +686,7 @@ code {
 
 .button2 {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  	font-weight: normal;
+  	font-weight: 200;
   	font-size: 1.8em;
   	color:rgb(56,132,31);
   	text-align: center;
@@ -681,7 +711,7 @@ code {
 
 .button2Description{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   font-size:.85em;
   color:rgb(83,83,83);
   text-align: center;
@@ -714,7 +744,7 @@ p.clearTitle{
 
 .button1 {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  	font-weight: normal;
+  	font-weight: 200;
   	font-size: 1.8em;
   	color:#4D997C;
   	text-align: center;
@@ -1418,7 +1448,7 @@ img.centerTest{
 
 .footerHeader{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   font-size: 2.0em;
   text-align: center;
   line-height: 1.2;
@@ -1429,7 +1459,7 @@ img.centerTest{
 
 .footerDescription{
   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: normal;
+  font-weight: 200;
   font-size: 1.0em;
   text-align: center;
   line-height: 1.2;
@@ -1563,7 +1593,7 @@ form .row .row .columns .row{
   height:50px;
   margin: 0 auto;
   min-width:400px;
-  style=z-index:80;
+  z-index:80;
   width:60%;
 }
 
@@ -1883,7 +1913,7 @@ input#edit-name:-webkit-autofill {
   	color: #525252;
 	margin-left:15%;
 	display: inline;
-	width:300px;
+	width:200px;
 	margin-top:-5px;
 	font-weight: 100;
 }
@@ -2027,7 +2057,7 @@ label.option{
 
 .searchStats {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  	font-weight: normal;
+  	font-weight: 200;
   	font-size: 1.4em;
   	text-align: center;
   	line-height: .65em;
@@ -2331,7 +2361,7 @@ button#edit-cancel{
 	padding-left: 130px;
 	font-size: 20px;
 	line-height: 16px;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .form-item .description{
@@ -3723,7 +3753,7 @@ form .row.makeOffer .row label{
 	font-family: 'Raleway', sans-serif;
 	color: #17254C;
 	font-size: 1em;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 form .row.makeOffer .row input{
@@ -3930,7 +3960,7 @@ span.flag-throbber{
 	background-color: #E16565;
 	border-color: #E16565;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 	color: #FFFFFF;
 	padding: 15px 40px;
 }
@@ -4001,6 +4031,7 @@ span.flag-throbber{
 		font-family: 'Raleway', sans-serif;
 		margin: 0 0 0 -1px;
 		text-align: center;
+		font-weight: 200;
 	}
 	
 	#mailchimp-lists-user-subscribe-form-landlord-signup div,
