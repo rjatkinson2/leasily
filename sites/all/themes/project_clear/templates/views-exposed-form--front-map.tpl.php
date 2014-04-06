@@ -87,7 +87,7 @@
 				</p>
 			</div>
 			<div class="large-9 small-12 columns">
-				<?php print l(t('List your property'), 'listing-choices', array('attributes' => array('class' => array('listLink', 'another-class'))));?>
+				<?php print l(t('List your property'), 'landlords', array('attributes' => array('class' => array('listLink', 'another-class'))));?>
 			</div>
 		</div>  
 
