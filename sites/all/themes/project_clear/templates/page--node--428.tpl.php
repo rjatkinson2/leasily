@@ -133,7 +133,7 @@
 	<div class="small-12 columns">
 		<div class="large-3 small-6 columns">
 			<div class="large-4 columns">
-				<h1>2</h1>
+				<h1>1</h1>
 			</div>
 			<div class="large-8 columns">
 				<h6>properties photographed</h6>
