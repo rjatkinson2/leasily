@@ -157,7 +157,7 @@
 		</div>      								  
 		<div class="large-3 small-6 columns">				  
 			<div class="large-4 columns">
-				<h1>10</h1>
+				<h1>5</h1>
 			</div>
 			<div class="large-8 columns">
 				<h6>happy tenants and landlords</h6>
