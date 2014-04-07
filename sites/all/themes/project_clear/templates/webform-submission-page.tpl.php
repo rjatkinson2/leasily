@@ -33,5 +33,3 @@
     <?php print $submission_navigation; ?>
   </div>
 <?php endif; ?>
-
-<h1>Testing 345</h1>

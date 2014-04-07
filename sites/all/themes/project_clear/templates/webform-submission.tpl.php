@@ -17,5 +17,3 @@
 ?>
 
 <?php print drupal_render_children($renderable); ?>
-
-<h1>Testing 123</h1>
