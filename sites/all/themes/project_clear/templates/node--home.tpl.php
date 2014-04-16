@@ -335,7 +335,7 @@
 				<span data-magellan-destination="offer"></span>
 
         	
-	            <button class="btn1">Contact the owner</button>
+	            <button class="btn1" onclick="_gaq.push(['_trackPageview', 'contactOwner']);">Contact the owner</button>
         	</div>
 		</div>
 

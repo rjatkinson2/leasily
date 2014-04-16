@@ -266,8 +266,8 @@
 	</div>
 </div>
 
-<div class="row card base" id="signupReturn">
-	<div class="large-12 large-centered columns" style="">
+<div class="row card base" id="signupReturn"  onclick="_gaq.push(['_trackPageview', '/landlords/signupReturn']);">
+	<div class="large-12 large-centered columns">
 		<div class="large-3 columns">
 			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Arrow@2x.png';?>" width="60px" class="centerTest" style="padding:1.1em 0 1.0em 0">
 		</div>
@@ -280,7 +280,7 @@
 
 
 <div class="row card base">
-	<div class="large-12 large-centered columns" style="">
+	<div class="large-12 large-centered columns">
 		<div class="large-3 columns">
 			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Question@2x.png';?>" width="60px" class="centerTest" style="padding:1.7em 0 1.0em 0">
 		</div>
