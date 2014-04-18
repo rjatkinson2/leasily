@@ -72,7 +72,7 @@ function project_clear_preprocess_node(&$variables) {
   else {
     $variables['is_admin_or_author'] = FALSE;
   }
-    
+
     // define $node object, so it's be easier to use it
   //$node = $variables['node'];
 
@@ -86,7 +86,8 @@ function project_clear_preprocess_node(&$variables) {
       // also you can rewrite those variables which already exists
       // for example variable: $title
       //$variables['title'] = t('The new title');
-  //}  
+  //}
+	//kpr($variables);
 }
 
 function project_clear_preprocess_html(&$variables) {
@@ -94,6 +95,14 @@ function project_clear_preprocess_html(&$variables) {
 	drupal_add_css('http://fonts.googleapis.com/css?family=Pacifico', array('type' => 'external'));
 	drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:100,200,400', array('type' => 'external'));
 	//kpr($variables);
+		
+	  $fbnoscript = array(
+	    '#type' => 'html_tag',
+	    '#tag' => 'noscript',
+	    '#weight' => '-1900.5',
+		'#suffix' => '<img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6014737813819&amp;value=0.01&amp;currency=USD" /></noscript>',
+	  );
+	  drupal_add_html_head($fbnoscript, 'fbnoscript');	
 }
 
  
@@ -157,6 +166,11 @@ function project_clear_preprocess_page(&$variables){
 		drupal_add_js(path_to_theme(). '/js/scripts.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));  
   }
   
+	if (drupal_get_path_alias() == 'landlords') {
+		drupal_add_js(path_to_theme(). '/js/fbpixel.js', array('group' => 2000, 'every_page' => TRUE, 'weight' => -19.5));
+		kpr($variables);
+	}
+    
   //drupal_add_js works exactly the same as drupal_add_css above
   //drupal_add_js(path_to_theme(). '/js/custom.js', array('group' => -99, 'every_page' => TRUE, 'weight' => -19.5));  
   //Devel function to pretty print all variables associated with the page
