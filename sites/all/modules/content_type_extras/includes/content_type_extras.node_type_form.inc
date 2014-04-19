@@ -15,21 +15,6 @@ function content_type_extras_node_type_form(&$form) {
   // We need to check whether the description field should be required or not.
   $form['description']['#required'] = content_type_extras_get_setting('content_type_extras_descriptions_required', $type);
   
-  if (!empty($form['#node_type']->is_new)) {
-    // I decided to make this option only available when creating content types because:
-    // 1. Once the content type is created, the admin can manage the body field just like
-    //    any other field under "Manage fields"
-    // 2. We would have to provide some kind of data checking on existing content types
-    //    to see if there was already data entered in the body field for that content type
-    //    and, if so, how the admin wanted to handle that...that just doesn't make sense!
-    $form['submission']['content_type_extras_remove_body'] = array(
-      '#type'          => 'checkbox',
-      '#title'         => t('Remove body field from this content type'),
-      '#default_value' => content_type_extras_get_setting('content_type_extras_remove_body', $type),
-      '#weight'        => 1,
-    );
-  }
-  
   // Add Preview button text option
   $form['submission']['content_type_extras_preview_button'] = array(
     '#type'          => 'textfield',
@@ -140,7 +125,20 @@ function content_type_extras_node_type_form(&$form) {
     $form['xmlsitemap']['status']['#default_value'] = $xmlsitemap_settings['status'];
     $form['xmlsitemap']['priority']['#default_value'] = $xmlsitemap_settings['priority'];
   }
-  
+
+  if (module_exists('scheduler')) {
+    // Scheduler stores its variables a little differently, so we have to adjust for it here.
+    $scheduler_settings = content_type_extras_get_setting('scheduler_settings', 'node_' . $type);
+    
+    $form['scheduler']['publish']['scheduler_publish_enable']['#default_value'] = $scheduler_settings['publish_enable'];
+    $form['scheduler']['publish']['scheduler_publish_touch']['#default_value'] = $scheduler_settings['publish_touch'];
+    $form['scheduler']['publish']['scheduler_publish_require']['#default_value'] = $scheduler_settings['publish_require'];
+    $form['scheduler']['publish']['scheduler_publish_revision']['#default_value'] = $scheduler_settings['publish_revision'];
+    $form['scheduler']['unpublish']['scheduler_unpublish_enable']['#default_value'] = $scheduler_settings['unpublish_enable'];
+    $form['scheduler']['unpublish']['scheduler_unpublish_require']['#default_value'] = $scheduler_settings['unpublish_require'];
+    $form['scheduler']['unpublish']['scheduler_unpublish_revision']['#default_value'] = $scheduler_settings['unpublish_revision'];
+  }
+
   // Get all available user roles
   $roles = user_roles();
   $admin_role = variable_get('user_admin_role', 0);
@@ -209,8 +207,46 @@ function content_type_extras_node_type_form(&$form) {
       '#title'         => t('Hide node titles from displaying'),
       '#description'   => t('If checked, node titles for this content type will be hidden by default. Users with the <a href="/admin/people/permissions#module-content_type_extras">appropriate permission</a> can override this on a per-node basis.'),
       '#default_value' => content_type_extras_get_setting('content_type_extras_title_hide', $type),
+      '#weight'        => 0,
     ),
   );
+  
+  if (!empty($form['#node_type']->is_new)) {
+    // I decided to make this option only available when creating content types because:
+    // 1. Once the content type is created, the admin can manage the body field just like
+    //    any other field under "Manage fields"
+    // 2. We would have to provide some kind of data checking on existing content types
+    //    to see if there was already data entered in the body field for that content type
+    //    and, if so, how the admin wanted to handle that...that just doesn't make sense!
+    $form['extras']['content_type_extras_remove_body'] = array(
+      '#type'          => 'checkbox',
+      '#title'         => t('Remove body field from this content type'),
+      '#default_value' => content_type_extras_get_setting('content_type_extras_remove_body', $type),
+      '#weight'        => 10,
+    );
+  }
+  
+  if (module_exists('pathauto')) {
+    $form['extras']['pathauto_node'] = array(
+      '#type'          => 'textfield',
+      '#title'         => t('Path alias'),
+      '#description'   => t('This is a shortcut method to using the normal !link.', array('!link' => l(t('pathauto settings'), 'admin/config/search/path/patterns'))) . '<br>' . t('If this field is left blank the default node pattern of') . ' <strong>' . variable_get('pathauto_node_pattern') . '</strong> ' . t('will be used.'),
+      '#default_value' => content_type_extras_get_setting('pathauto_node', $type . '_pattern'),
+      '#weight'        => 20,
+    );
+    
+    $form['extras']['token_help'] = array(
+      '#title'       => t('Replacement patterns'),
+      '#type'        => 'fieldset',
+      '#collapsible' => TRUE,
+      '#collapsed'   => TRUE,
+      'help' => array(
+        '#theme'       => 'token_tree',
+        '#token_types' => array('node'),
+      ),
+      '#weight' => 30,
+    );
+  }
   
   // Custom form submission handler
   // See why this is done in the notes for the redirect function in
@@ -258,6 +294,13 @@ function content_type_extras_node_type_form_submit(&$form, &$form_state) {
     $instance = field_read_instance('node', 'body', $values['type']);
     field_delete_instance($instance);
   }
+  // Remove variable that is automatically created, it's not needed
+  variable_del('content_type_extras_remove_body_' . $values['type']);
+  
+  // We have to rename the pathauto variable. Drupal by default creates one, but
+  // it's not named properly for pathauto to recognize it.
+  variable_set('pathauto_node_' . $values['type'] . '_pattern', variable_get('pathauto_node_' . $values['type']));
+  variable_del('pathauto_node_' . $values['type']);
 }
 
 
@@ -265,6 +308,7 @@ function content_type_extras_get_selected_roles($permissions, $perm_type = NULL)
   $selected_perms = array();
   foreach ($permissions as $type => $group) {
     foreach ($group as $rid => $value) {
+      $selected_perms[$type] = array();
       if ($value != 0) {
         $selected_perms[$type][$rid] = $rid;
       }

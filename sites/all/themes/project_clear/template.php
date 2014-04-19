@@ -168,7 +168,7 @@ function project_clear_preprocess_page(&$variables){
   
 	if (drupal_get_path_alias() == 'landlords') {
 		drupal_add_js(path_to_theme(). '/js/fbpixel.js', array('group' => 2000, 'every_page' => TRUE, 'weight' => -19.5));
-		kpr($variables);
+		//kpr($variables);
 	}
     
   //drupal_add_js works exactly the same as drupal_add_css above

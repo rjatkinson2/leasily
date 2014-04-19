@@ -60,10 +60,24 @@ function apachesolr_location_ctools_plugin_post_alter(&$widget, &$plugin_type_in
  *   An array containing all the fields that needs to be indexed.
  */
 function apachesolr_location_fields_indexing_callback($entity, $field_name, $index_key, $field_info) {
+  variable_set('apachesolr_index_user', 1);
   $fields = array();
+  // Check if it is profile2 specific
+  $is_profile2 = NULL;
+  if (function_exists('profile2_type_load')) {
+    $is_profile2 = profile2_type_load($entity->type);
+    if (!empty($is_profile2)) {
+      $entity_type = 'profile2';
+    }
+  }
+  else {
+    $entity_type = $entity->type;
+  }
+
   if (!empty($entity->$field_name)) {
-    $field_location = field_get_items('node', $entity, $field_name);
-    if (!empty($field_location)) { 
+    // field_get_items does not work as expected...
+    $field_location = $entity->{$field_name}[LANGUAGE_NONE];
+    if (!empty($field_location)) {
       foreach ($field_location as $delta => $item) {
         // Latitude/Longitude indexing.
         if (isset($item['latitude']) && isset($item['longitude'])) {
@@ -75,7 +89,7 @@ function apachesolr_location_fields_indexing_callback($entity, $field_name, $ind
 
         // City.
         if (!empty($item['city'])) {
-          $field = array('index_type' => 'string', 'name' => 'locs_city');
+          $field = array('index_type' => 'string', 'name' => 'locs_city', 'multiple' => TRUE);
           $field_index_key = apachesolr_index_key($field);
           $fields[] = array(
             'key' => $field_index_key,
@@ -85,7 +99,7 @@ function apachesolr_location_fields_indexing_callback($entity, $field_name, $ind
 
         // Postal code.
         if (!empty($item['postal_code'])) {
-          $field = array('index_type' => 'string', 'name' => 'locs_postal_code');
+          $field = array('index_type' => 'string', 'name' => 'locs_postal_code', 'multiple' => TRUE);
           $field_index_key = apachesolr_index_key($field);
           $fields[] = array(
             'key' => $field_index_key,
@@ -95,7 +109,7 @@ function apachesolr_location_fields_indexing_callback($entity, $field_name, $ind
 
         // Province.
         if (!empty($item['province'])) {
-          $field = array('index_type' => 'string', 'name' => 'locs_province');
+          $field = array('index_type' => 'string', 'name' => 'locs_province', 'multiple' => TRUE);
           $field_index_key = apachesolr_index_key($field);
           $fields[] = array(
             'key' => $field_index_key,
@@ -105,7 +119,7 @@ function apachesolr_location_fields_indexing_callback($entity, $field_name, $ind
 
         // Province name.
         if (!empty($item['province_name'])) {
-          $field = array('index_type' => 'string', 'name' => 'locs_province_name');
+          $field = array('index_type' => 'string', 'name' => 'locs_province_name', 'multiple' => TRUE);
           $field_index_key = apachesolr_index_key($field);
           $fields[] = array(
             'key' => $field_index_key,
@@ -115,7 +129,7 @@ function apachesolr_location_fields_indexing_callback($entity, $field_name, $ind
 
         // Country.
         if (!empty($item['country'])) {
-          $field = array('index_type' => 'string', 'name' => 'locs_country');
+          $field = array('index_type' => 'string', 'name' => 'locs_country', 'multiple' => TRUE);
           $field_index_key = apachesolr_index_key($field);
           $fields[] = array(
             'key' => $field_index_key,
@@ -125,7 +139,7 @@ function apachesolr_location_fields_indexing_callback($entity, $field_name, $ind
 
         // Country name.
         if (!empty($item['country_name'])) {
-          $field = array('index_type' => 'string', 'name' => 'locs_country_name');
+          $field = array('index_type' => 'string', 'name' => 'locs_country_name', 'multiple' => TRUE);
           $field_index_key = apachesolr_index_key($field);
           $fields[] = array(
             'key' => $field_index_key,
@@ -157,7 +171,7 @@ function apachesolr_location_facetapi_facet_info($searcher_info) {
     'name' => 'city',
     'label' => t('City'),
     'description' => t('Filter by city.'),
-    'field' => 'ss_locs_city',
+    'field' => 'sm_locs_city',
     'field alias' => 'city',
     'field api bundles' => array('node'),
     'facet mincount allowed' => TRUE,
@@ -168,7 +182,7 @@ function apachesolr_location_facetapi_facet_info($searcher_info) {
     'name' => 'postal_code',
     'label' => t('Zip code'),
     'description' => t('Filter by zip code.'),
-    'field' => 'ss_locs_postal_code',
+    'field' => 'sm_locs_postal_code',
     'field alias' => 'postal_code',
     'field api bundles' => array('node'),
     'facet mincount allowed' => TRUE,
@@ -179,7 +193,7 @@ function apachesolr_location_facetapi_facet_info($searcher_info) {
     'name' => 'province',
     'label' => t('Province'),
     'description' => t('Filter by province code.'),
-    'field' => 'ss_locs_province',
+    'field' => 'sm_locs_province',
     'field alias' => 'province',
     'field api bundles' => array('node'),
     'facet mincount allowed' => TRUE,
@@ -190,7 +204,7 @@ function apachesolr_location_facetapi_facet_info($searcher_info) {
     'name' => 'province_name',
     'label' => t('Province name'),
     'description' => t('Filter by province name.'),
-    'field' => 'ss_locs_province_name',
+    'field' => 'sm_locs_province_name',
     'field alias' => 'province_name',
     'field api bundles' => array('node'),
     'facet mincount allowed' => TRUE,
@@ -201,7 +215,7 @@ function apachesolr_location_facetapi_facet_info($searcher_info) {
     'name' => 'country',
     'label' => t('Country'),
     'description' => t('Filter by country code.'),
-    'field' => 'ss_locs_country',
+    'field' => 'sm_locs_country',
     'field alias' => 'country',
     'field api bundles' => array('node'),
     'facet mincount allowed' => TRUE,
@@ -212,7 +226,7 @@ function apachesolr_location_facetapi_facet_info($searcher_info) {
     'name' => 'country_name',
     'label' => t('Country name'),
     'description' => t('Filter by country name.'),
-    'field' => 'ss_locs_country_name',
+    'field' => 'sm_locs_country_name',
     'field alias' => 'country_name',
     'field api bundles' => array('node'),
     'facet mincount allowed' => TRUE,
@@ -257,7 +271,6 @@ function apachesolr_location_facetapi_widgets() {
  * @return type
  */
 function apachesolr_location_map_callback(array $values, array $options) {
-  dsm($values);
   $map = array();
   foreach ($values as $key) {
     $map[$key] = substr($key, 1) . 'km';

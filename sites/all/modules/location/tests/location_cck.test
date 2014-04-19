@@ -5,7 +5,7 @@
  * Tests for location_cck.module.
  */
 
-require_once drupal_get_path('module', 'location') . '/tests/location_testcase.php';
+require_once drupal_get_path('module', 'location') . '/tests/location_testcase.test';
 
 class LocationCCKTest extends LocationCCK2Test {
   /**
@@ -27,7 +27,7 @@ class LocationCCKTest extends LocationCCK2Test {
     return array(
       'name' => t('Location CCK checks(broken!!!)'),
       'description' => t('Test corner cases of the CCK Location module.'),
-      'group' => t('Location'),
+      'group' => t('Location', array(), array('context' => 'geolocation')),
     );
   }
 
