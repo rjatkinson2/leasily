@@ -184,7 +184,7 @@
 
 <div class="row">
 	<div class="large-10 large-centered columns">
-		<h6 style="margin-bottom:5.0em; font-size:1.4em; line-height: 150%;"><span style="color:#E16565; font-size:1.3em">Sign up</span> to have your house listed! Get all the features <span style="font-weight:400">below</span> for&nbsp;<span style="color:#4D997C; font-size:1.8em; text-decoration: underline;">free.</span><br />Plus - get a <span style="font-weight:400; color:#FF9900; text-decoration:underline">$20 Amazon Gift Card</span> on us, for a short period of time.</h6>
+		<h6 style="margin-bottom:5.0em; font-size:1.4em; line-height: 150%;"><span style="color:#E16565; font-size:1.3em">Sign up</span> to have your house listed! Get all the features <span style="font-weight:400">below</span> for&nbsp;<span style="color:#4D997C; font-size:1.8em; text-decoration: underline;">free.</span><br />Plus - get a <span style="font-weight:400; color:#FF9900; text-decoration:underline">$20 Amazon Gift Card</span> on us, for a short period of time.<br /><span style="font-size:.8em">(Offer open to New Orleans residencies.  More cities to come!)</h6>
 	</div>
 </div>
 
