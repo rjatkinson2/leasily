@@ -133,7 +133,7 @@
 	<div class="small-12 columns">
 		<div class="large-3 small-6 columns">
 			<div class="large-4 columns">
-				<h1>1</h1>
+				<h1>2</h1>
 			</div>
 			<div class="large-8 columns">
 				<h6>properties photographed</h6>
@@ -157,7 +157,7 @@
 		</div>      								  
 		<div class="large-3 small-6 columns">				  
 			<div class="large-4 columns">
-				<h1>5</h1>
+				<h1>10</h1>
 			</div>
 			<div class="large-8 columns">
 				<h6>happy tenants and landlords</h6>
@@ -167,13 +167,19 @@
 </div>
 
 
-<div class="row" style="padding:5.0em 0 .5em 0">
-	<?php if ($logged_in):?>
-		<?php $block = module_invoke('webform', 'block_view', 'client-block-429');
-		print render($block['content']);?>
-	<?php else: ?>
-	    <?php print render($page['footer']); ?>
-    <?php endif; ?>
+<div class="row" style="padding:3.0em 1.0em 1.5em 1.0em">
+	<div class="large-9 columns" style="padding:0, margin:0">
+		<?php if ($logged_in):?>
+			<?php $block = module_invoke('webform', 'block_view', 'client-block-429');
+			print render($block['content']);?>
+		<?php else: ?>
+		    <?php print render($page['footer']); ?>
+	    <?php endif; ?>
+	</div>
+	<div class="large-3 columns">
+		<h2 style="color:#4A4A4A; font-size:2.0em; margin-bottom:10px">$20 gift to</h1>
+		<img src="<?php print $base_path . $theme_path . '/images/amazonlogo.png';?>" alt="Logo" class="centerTest" width="200px" style="margin:0 auto">
+	</div>
 </div>
 
 <div class="row">

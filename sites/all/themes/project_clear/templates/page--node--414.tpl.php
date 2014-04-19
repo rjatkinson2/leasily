@@ -127,7 +127,7 @@
       <?php endif; ?>-->
 <img src="<?php print $base_path . $theme_path . '/images/greenCircleLogo.png';?>" alt="Logo" class="centerTest" width="125px" style="margin:60px auto 30px auto">
 
-<h1 style="margin-bottom:.3em">Home sweet home.</h1>
+<h1 style="margin-bottom:.3em; color:#4A4A4A">Home sweet home.</h1>
 
 <div class="row stats">
 	<div class="small-12 columns">
@@ -166,19 +166,24 @@
 	</div>
 </div>
 
-
-<div class="row" style="padding:5.0em 0 .5em 0">
-	<?php if ($logged_in):?>
-		<?php $block = module_invoke('webform', 'block_view', 'client-block-415');
-		print render($block['content']);?>
-	<?php else: ?>
-	    <?php print render($page['footer']); ?>
-    <?php endif; ?>
+<div class="row" style="padding:3.0em 1.0em 1.5em 1.0em">
+	<div class="large-9 columns" style="padding:0, margin:0">
+		<?php if ($logged_in):?>
+			<?php $block = module_invoke('webform', 'block_view', 'client-block-415');
+			print render($block['content']);?>
+		<?php else: ?>
+		    <?php print render($page['footer']); ?>
+	    <?php endif; ?>
+	</div>
+	<div class="large-3 columns">
+		<h2 style="color:#4A4A4A; font-size:2.0em; margin-bottom:10px">$20 gift to</h1>
+		<img src="<?php print $base_path . $theme_path . '/images/amazonlogo.png';?>" alt="Logo" class="centerTest" width="200px" style="margin:0 auto">
+	</div>
 </div>
 
 <div class="row">
-	<div class="large-7 large-centered columns">
-		<h6 style="margin-bottom:5.0em; font-size:1.1em; line-height: 150%;"><span style="color:#E16565; font-size:1.7em">Sign up</span> to have your house listed! It's&nbsp;&nbsp;<span style="color:#4D997C; font-size:2.8em; text-decoration: underline;">free</span>&nbsp;&nbsp;for a short time, and you'll get all the features <span style="text-decoration: underline">described below!</span></h6>
+	<div class="large-10 large-centered columns">
+		<h6 style="margin-bottom:5.0em; font-size:1.4em; line-height: 150%;"><span style="color:#E16565; font-size:1.3em">Sign up</span> to have your house listed! Get all the features <span style="font-weight:400">below</span> for&nbsp;<span style="color:#4D997C; font-size:1.8em; text-decoration: underline;">free.</span><br />Plus - get a <span style="font-weight:400; color:#FF9900; text-decoration:underline">$20 Amazon Gift Card</span> on us, for a short period of time.</h6>
 	</div>
 </div>
 
