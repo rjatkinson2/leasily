@@ -183,8 +183,8 @@
 </div>
 
 <div class="row">
-	<div class="large-7 large-centered columns">
-		<h6 style="margin-bottom:5.0em; font-size:1.1em; line-height: 150%;"><span style="color:#E16565; font-size:1.7em">Sign up</span> to have your house listed! It's&nbsp;&nbsp;<span style="color:#4D997C; font-size:2.8em; text-decoration: underline;">free</span>&nbsp;&nbsp;for a short time, and you'll get all the features <span style="text-decoration: underline">described below!</span></h6>
+	<div class="large-10 large-centered columns">
+		<h6 style="margin-bottom:5.0em; font-size:1.4em; line-height: 150%;"><span style="color:#E16565; font-size:1.3em">Sign up</span> to have your house listed! Get all the features <span style="font-weight:400">below</span> for&nbsp;<span style="color:#4D997C; font-size:1.8em; text-decoration: underline;">free.</span><br />Plus - get a <span style="font-weight:400; color:#FF9900; text-decoration:underline">$20 Amazon Gift Card</span> on us, for a short period of time.</h6>
 	</div>
 </div>
 
