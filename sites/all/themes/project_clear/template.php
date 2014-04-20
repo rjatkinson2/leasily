@@ -141,6 +141,8 @@ function project_clear_preprocess_comment(&$variables) {
 function project_clear_preprocess_page(&$variables){  
   //add new variables to page.tpl - use <?php print $footer_message
   
+  //kpr($variables);
+  
   if($variables['logged_in']){
   	global $user;
 	$variables['footer_message'] = t('Welcome @username, Lullabot loves you', array('@username' => $variables['user']->name));
@@ -166,7 +168,7 @@ function project_clear_preprocess_page(&$variables){
 		drupal_add_js(path_to_theme(). '/js/scripts.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));  
   }
   
-	if (drupal_get_path_alias() == 'landlords') {
+	if (drupal_get_path_alias() == 'signup-confirmation') {
 		drupal_add_js(path_to_theme(). '/js/fbpixel.js', array('group' => 2000, 'every_page' => TRUE, 'weight' => -19.5));
 		//kpr($variables);
 	}
