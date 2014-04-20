@@ -140,18 +140,19 @@
 		<div class="large-11 columns large-centered">
 			<div class="large-6 columns">
 				<div class="large-12 columns socialsign" style="text-align:center; padding: .7em 0">
-					<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
+					<?php print $base_path . 'landlords'; ?>
+					<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=http://www.leasily.com/landlords">
 						<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/confirmation/fb-color@2x.png';?>" width="61px" height="61px">
 					</a>
-					<a rel="nofollow" href="http://twitter.com/share?url=<?php print $currentAlias; ?>">
+					<a rel="nofollow" href="http://twitter.com/share?url=http://www.leasily.com/landlords">
 						<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/confirmation/twitter-color@2x.png';?>" width="61px" height="61px">
 					</a>
 				</div>
 				<div class="large-12 columns socialsign" style="text-align:center; padding:.4em 0 1.0em 0">
-					<a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=<?php print $currentAlias; ?>">
+					<a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=http://www.leasily.com/landlords">
 						<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/confirmation/pin-color@2x.png';?>" width="61px" height="61px">
 					</a>
-					<a rel="nofollow" href="https://plus.google.com/share?url=<?php print $currentAlias; ?>">
+					<a rel="nofollow" href="https://plus.google.com/share?url=http://www.leasily.com/landlords">
 						<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/confirmation/google-color@2x.png';?>" width="61px" height="61px">
 					</a>
 				</div>
