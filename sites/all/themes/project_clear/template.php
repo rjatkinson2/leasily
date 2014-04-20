@@ -516,7 +516,15 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 		//kpr($form);
 	}
 
-	
+	if($form_id == 'webform_client_form_415'){
+		$form['submitted']['landlord_email']['#attributes']['placeholder'] = t( 'jappleseed@example.com' );
+		//kpr($form);
+	}
+
+	if($form_id == 'webform_client_form_429'){
+		$form['submitted']['landlord_email']['#attributes']['placeholder'] = t( 'jappleseed@example.com' );
+		//kpr($form);
+	}
 	
 	//kpr($form_id);
 	//kpr($form);
