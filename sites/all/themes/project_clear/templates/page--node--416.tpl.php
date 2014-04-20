@@ -2,6 +2,7 @@
 
 	global $theme_path;
 	global $base_path;
+	$currentAlias = url(NULL, array('absolute' => TRUE)) . drupal_get_path_alias(current_path());
   
 ?>
 
