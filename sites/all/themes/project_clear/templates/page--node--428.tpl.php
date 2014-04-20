@@ -127,7 +127,7 @@
       <?php endif; ?>-->
 <img src="<?php print $base_path . $theme_path . '/images/greenCircleLogo.png';?>" alt="Logo" class="centerTest" width="125px" style="margin:60px auto 30px auto">
 
-<h1 style="margin-bottom:.3em">Home sweet home.</h1>
+<h1 style="margin-bottom:.3em; color:#4A4A4A">Home sweet home.</h1>
 
 <div class="row stats">
 	<div class="small-12 columns">
