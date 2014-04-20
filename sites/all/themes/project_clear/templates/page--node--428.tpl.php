@@ -169,15 +169,11 @@
 
 <div class="row" style="padding:3.0em 1.0em 1.5em 1.0em">
 	<div class="large-9 columns" style="padding:0, margin:0">
-		<?php if ($logged_in):?>
 			<?php $block = module_invoke('webform', 'block_view', 'client-block-429');
 			print render($block['content']);?>
-		<?php else: ?>
-		    <?php print render($page['footer']); ?>
-	    <?php endif; ?>
 	</div>
 	<div class="large-3 columns">
-		<h2 style="color:#4A4A4A; font-size:2.0em; margin-bottom:10px">$20 gift to</h1>
+		<h2 style="color:#4A4A4A; font-size:2.0em; margin-bottom:10px">$20 card to</h1>
 		<img src="<?php print $base_path . $theme_path . '/images/amazonlogo.png';?>" alt="Logo" class="centerTest" width="200px" style="margin:0 auto">
 	</div>
 </div>
