@@ -140,7 +140,6 @@
 		<div class="large-11 columns large-centered">
 			<div class="large-6 columns">
 				<div class="large-12 columns socialsign" style="text-align:center; padding: .7em 0">
-					<?php print $base_path . 'landlords'; ?>
 					<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=http://www.leasily.com/landlords">
 						<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/confirmation/fb-color@2x.png';?>" width="61px" height="61px">
 					</a>
