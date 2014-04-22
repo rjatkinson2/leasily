@@ -187,16 +187,16 @@
   		
   		<div class="large-12 columns show-for-small" style="margin-bottom:1.0em">
   			<div class="button1 social" style="background-color:transparent; border:none">
-				<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
+				<a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
 					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/facebook-small@2x.png';?>" width="32px" height="32px">
 				</a>
-				<a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=<?php print $currentAlias; ?>">
+				<a rel="nofollow" target="_blank" href="http://pinterest.com/pin/create/button/?url=<?php print $currentAlias; ?>">
 					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/pinterest-small@2x.png';?>" width="32px" height="32px">
 				</a>
-				<a rel="nofollow" href="http://twitter.com/share?url=<?php print $currentAlias; ?>">
+				<a rel="nofollow" target="_blank" href="http://twitter.com/share?url=<?php print $currentAlias; ?>">
 					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/twitter-small@2x.png';?>" width="32px" height="32px">
 				</a>
-				<a rel="nofollow" href="https://plus.google.com/share?url=<?php print $currentAlias; ?>">
+				<a rel="nofollow" target="_blank" href="https://plus.google.com/share?url=<?php print $currentAlias; ?>">
 					<img src="<?php print $base_path . $theme_path . '/css/icons/social/mobile/green/googleplus-small@2x.png';?>" width="32px" height="32px">
 				</a>
   			</div>
@@ -404,16 +404,16 @@
                     <?php endwhile; ?>
             	</ul>
 				<div class="social hide-for-small" style="position:absolute; bottom:80px; <?php if ($cardNumberCount % 2 != 0): ?>left:25px;<?php else: ?>right:30px;<?php endif; ?> z-index:300">
-					<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
+					<a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=<?php print $currentAlias; ?>">
 						<img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px">
 					</a>
-					<a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=<?php print $currentAlias; ?>">
+					<a rel="nofollow" target="_blank" href="http://pinterest.com/pin/create/button/?url=<?php print $currentAlias; ?>">
 						<img src="<?php print $base_path . $theme_path . '/css/icons/social/pinterest-small@2x.png';?>" width="32px" height="32px">
 					</a>
-					<a rel="nofollow" href="http://twitter.com/share?url=<?php print $currentAlias; ?>">
+					<a rel="nofollow" target="_blank" href="http://twitter.com/share?url=<?php print $currentAlias; ?>">
 						<img src="<?php print $base_path . $theme_path . '/css/icons/social/twitter-small@2x.png';?>" width="32px" height="32px">
 					</a>
-					<a rel="nofollow" href="https://plus.google.com/share?url=<?php print $currentAlias; ?>">
+					<a rel="nofollow" target="_blank" href="https://plus.google.com/share?url=<?php print $currentAlias; ?>">
 						<img src="<?php print $base_path . $theme_path . '/css/icons/social/googleplus-small@2x.png';?>" width="32px" height="32px">
 					</a>
 				</div>
