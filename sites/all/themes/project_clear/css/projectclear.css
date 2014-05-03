@@ -4229,7 +4229,7 @@ div.dotted > div{
 }
 
 .dotted{
-	padding:2.2em 0 0 3.0em;
+	padding:2.2em 1.0em 0 2.0em;
 }
 
 
@@ -4262,8 +4262,7 @@ div.dotted > div{
 
 .fade h1{
 	color:#FFF;
-	text-align:left;
-	font-size:2.0em;
+	font-size:1.9em;
 	margin-top:.3em;
 }
 
@@ -4297,6 +4296,7 @@ div.dotted > div{
 	.fade h1{
 		font-size:2.6em;
 		margin-top:.3em;
+		text-align: left;
 	}
 
 }
