@@ -161,7 +161,7 @@ function project_clear_preprocess_page(&$variables){
 	$variables['dropdownClasses'] = t('first leaf');
   }
   //add conditional css and javascript - check path to css file.  CSS_THEME is a constant equal to 100 to ensure it is in the very last group.  Higher numbers will be listed even later (or last).  'weight' => 100 can be used to list files in order within different groups.
-  if($variables['node']){
+  if($variables['node'] or drupal_is_front_page()){
 		//drupal_add_css(path_to_theme(). '/css/front.css', array('group' => CSS_THEME));
 		drupal_add_js(path_to_theme(). '/js/jquery.bxslider.min.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));  
 		drupal_add_js(path_to_theme(). '/js/jquery.flot.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));

@@ -18,7 +18,7 @@
  */
 ?>
 
-        <div class="row makeOffer" style="margin-top:70px">
+        <div class="row makeOffer" style="margin-top:70px; display:none">
         
         	<div class="row">
 	        	<div class="large-12 columns">

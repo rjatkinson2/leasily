@@ -2550,7 +2550,9 @@ div.accountHeader p.accountBack{
 
 .location.form-wrapper span.fieldset-legend,
 fieldset#edit-cart-contents legend,
-fieldset#edit-customer-profile-billing legend{
+fieldset#edit-customer-profile-billing legend,
+#webform-component-your-email .form-required,
+#webform-component-your-landlords-email .form-required{
 	display: none;
 }
 
@@ -4135,3 +4137,166 @@ span.flag-throbber{
 	  margin-top: 0; }
 }
 
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(255, 255, 255, 0.7);
+	
+}
+
+#webform-component-your-email label,
+#webform-component-your-landlords-email label{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFF;
+	padding-left: 4px;
+
+}
+
+#webform-component-your-email input,
+#webform-component-your-landlords-email input{
+	background: transparent;
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 1px solid #FFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	color: #FFF;
+	padding:0 1.5em;
+	height: 3.0em;
+}
+
+#webform-component-your-email input.error,
+#webform-component-your-landlords-email input.error{
+	border:solid 2px #D44332;
+	background-color: #FFF;
+	color: #4D997C;
+}
+
+
+#webform-component-your-landlords-email{
+	margin: 1.5em 0;	
+}
+
+.frontForm button.button.secondary{
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	color: #4D997C;
+	width: 60%;
+	-webkit-transition: .5s; /* For Safari 3.1 to 6.0 */
+	transition: .5s;
+}
+
+.frontForm button.button.secondary:hover{
+	background-color: #00BAFF;
+	border-color: #00BAFF;
+	color: #FFF;
+}
+
+div.dotted > div{
+	border-left: 3px dotted #FFF;
+	margin-bottom: 1.4em;
+	padding-bottom: .05em;
+}
+
+.dotted > div > div{
+    background: none;
+    border: 2px solid #FFF;
+    border-radius: 16px;
+    height: 16px;
+    margin-left: -10px;
+    margin-top: -18px;
+    width: 16px;
+    float: left;
+}
+
+.dotted h4{
+	color:#FFF;
+	text-align:left;
+	padding-left:1.5em;
+	top:-24px;
+	position:relative;
+	font-weight:400;
+}
+
+.dotted{
+	padding:2.2em 0 0 3.0em;
+}
+
+
+.amazon {
+	margin-left:2.5em;
+}
+
+.offer h4 a{
+	border:solid 1px #4D997C;
+	border-radius:4px;
+	padding: .9em;
+	background-color: #4D997C;
+	color: #FFF;
+	-webkit-transition: .5s; /* For Safari 3.1 to 6.0 */
+	transition: .5s;
+}
+
+.offer h4 a:hover{
+	background-color: #FFF;
+	color: #4D997C;
+}
+
+.mapLink{
+	margin-bottom: 3.0em;
+}
+
+#details{
+	text-decoration: underline;
+}
+
+.fade h1{
+	color:#FFF;
+	text-align:left;
+	font-size:2.0em;
+	margin-top:.3em;
+}
+
+.fade h4{
+	color:#FFF;
+	text-align: left;
+}
+
+.fade li{
+	
+}
+
+.frontLink{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+	.amazon {
+		margin-left:10.3em;
+	}
+	
+	.dotted{
+		padding:2.2em 0 0 7.0em;
+	}
+	
+	.mapLink{
+		text-align:right;
+	}
+	
+	.fade h1{
+		font-size:2.6em;
+		margin-top:.3em;
+	}
+
+}

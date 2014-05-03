@@ -141,13 +141,11 @@
 		<div class="large-4 columns frontForm" style="padding:0, margin:0">
 			<?php $block = module_invoke('webform', 'block_view', 'client-block-418');
 			print render($block['content']);?>
-			<?php $block = module_invoke('webform', 'block_view', 'client-block-431');
-			print render($block['content']);?>
 		</div>
 		<div class="large-8 columns dotted">
 			<div>
 				<div></div>
-				<h4>Enter both you and your landlord’s emails. They'll get lots of <?php print l(t('features'), 'landlords', array('attributes' => array('class' => array('frontLink')))); ?> without any effort.</h4>
+				<h4>Enter both you and your landlord’s emails. They'll get lots of <?php print l(t('features'), 'landlords', array('attributes' => array('class' => array('frontLink'))));?> without any effort.</h4>
 			</div>
 			<div>
 				<div></div>
@@ -174,6 +172,7 @@
 				<h4>- We'll ask for a good time to to come photograph the house.  Any tidying up would be awesome, and we're confident your landlord won't mind either.</h4>
 				<h4>- Our terms and conditions require that the user obtain permission from their landlord.  This shouldn't be hard given all the free features and flexibility they'll receive, as shown at leasily.com/landlords.</h4>
 				<h4>- We'll ask for a good time to to come photograph the house.  We'd really appreciate a little tidying up, and we're confident your landlord won't mind either.</h4>
+				<h4>- </h4>
 				<h4>- <span id="seeDetails">Click here</span> for additional details and terms.</h4>
 			
 		</div>
