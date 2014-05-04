@@ -224,7 +224,7 @@
 		<div class="large-4 columns">
 			<h1>Map search</h1>
 			<h5 style="padding-bottom:2.0em">Find our crystal clear listings by location using our map-based search and advanced filters.</h5>
-			<h4 class="mapLink"><?php print l(t('Head to the map'),'<front>'); ?></h4>
+			<h4 class="mapLink"><?php print l(t('Head to the map'),'map'); ?></h4>
 		</div>
 		<div class="large-8 columns">
             <img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/MapBrowser@2x.png'; ?>"/>
