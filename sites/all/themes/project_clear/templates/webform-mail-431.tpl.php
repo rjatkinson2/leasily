@@ -19,6 +19,8 @@
  * when using the "default" e-mail template.
  */
 ?>
+<h1>Hi how are ya doing?</h1>
+
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted on %date'). ($email['html'] ? '</p>' : ''); ?>
 
 <?php if ($user->uid): ?>
