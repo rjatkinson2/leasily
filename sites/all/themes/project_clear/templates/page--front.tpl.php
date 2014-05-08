@@ -253,22 +253,7 @@
 	</div>
 </div>
 
-<div>      
-	<div class="row" style="padding:5.0em 0">
-		<div class="large-6 columns" style="padding:1.0em">
-			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Listing@2x.png';?>" width="117px" class="centerTest" style="padding:1.0em 0">
-			<h1 style="font-size:2.5em">Hands-free listing</h1>
-			<h5>Sit back and relax.  We’ll take care of creating the listing so you can focus on finding the best match.</h5>
-		</div>
-		<div class="large-6 columns" style="padding:1.0em">
-			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Clock@2x.png';?>" width="117px" class="centerTest" style="padding:1.0em 0">
-			<h1 style="font-size:2.5em">Use it again next year</h1>
-			<h5>We’ll hang on to your gorgeous listing.  Next time you need tenants, it’ll be a flip of the switch away.</h5>
-		</div>  
-	</div>
-</div>
-
-<div class="row card base" id="signupReturn"  onclick="_gaq.push(['_trackPageview', '/landlords/signupReturn']);">
+<div class="row card base" id="signupReturn"  onclick="_gaq.push(['_trackPageview', '/landlords/tenantSignupReturn']);" style="margin-top:100px">
 	<div class="large-12 large-centered columns">
 		<div class="large-3 columns">
 			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Arrow@2x.png';?>" width="60px" class="centerTest" style="padding:1.1em 0 1.0em 0">
