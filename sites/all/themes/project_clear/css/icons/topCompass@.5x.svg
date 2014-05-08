@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>topCompass@.5x</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="TopBar" sketch:type="MSLayerGroup" transform="translate(-1087.000000, -327.000000)">
+            <g id="Map-Icon" transform="translate(1080.000000, 321.000000)" sketch:type="MSShapeGroup">
+                <g id="TopBar-+-Triangle-4-+-Triangle-5" transform="translate(18.000000, 18.000000)">
+                    <polygon id="Triangle-4" stroke="#FFFFFF" points="22.5 1 28 17 17 17 "></polygon>
+                    <polygon id="Triangle-5" fill="#FFFFFF" points="9.5 13 15 28 4 28 "></polygon>
+                </g>
+                <path d="M34,58 C47.8071187,58 59,45.5 59,33 C59,20.5 47.8071187,8 34,8 C20.1928813,8 9,19.1928813 9,33 C9,46.8071187 20.1928813,58 34,58 Z" id="Oval-49" stroke="#FFFFFF" stroke-width="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

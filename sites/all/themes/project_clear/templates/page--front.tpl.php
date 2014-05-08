@@ -32,12 +32,12 @@
               <?php //print $top_bar_main_menu; ?>
             <?php //endif; ?>
 			<ul id="secondary-menu" class="secondary link-list right" data-thmr="thmr_400">
+				
 				<!--<li class="divider topDivide show-for-large-up"></li>-->
 
-				<li>
-					<?php print l(t('landlords'), 'landlords', array('attributes' => array('class' => array('topBarFont')))); ?>
-				</li>
-				
+				<?php if ($top_bar_link_other): ?>
+					<?php print $top_bar_link_other;?>
+				<?php endif; ?>
 				
 				<?php if ($top_bar_link_one): ?>
 				<li class="divider topDivide show-for-large-up"></li>
@@ -147,40 +147,39 @@
 		<div class="large-8 columns dotted">
 			<div>
 				<div></div>
-				<h4>Enter both you and your landlord’s emails. They'll get lots of <?php print l(t('features'), 'landlords', array('attributes' => array('class' => array('frontLink')))); ?> without any effort.</h4>
+				<h4>Sign up with your landlord's email. Don't worry, they'll be getting lots of <?php print l(t('features'), 'landlords', array('attributes' => array('class' => array('frontLink')))); ?> with no commitment.</h4>
 			</div>
 			<div>
 				<div></div>
-				<h4>Plan to live there for a while? We'll have the listing waiting whenever the landlord needs new tenants.</h4>
+				<h4>Living in your place for a while? Great! We're building the listing for whenever your landlord needs it.</h4>
 			</div>
 			<div>
 				<div></div>
-				<h4>We’ll come photograph the property.</h4>
+				<h4>Once we schedule a time that works best for you, we'll stop by to professionaly photograph your house.</h4>
 			</div>
-			<div style="padding-bottom:2.0em">
+			<div style="padding-bottom:1.8em">
 				<div></div>
 				<h4 style="margin-bottom:0">Get your free <span style="text-decoration:underline; font-size:1.1em">$20 gift card</span> to amazon.com.</h4>
 				<img src="<?php print $base_path . $theme_path . '/images/AmazonLogoWhite.png';?>" alt="Amazon Logo" class="amazon" width="130.5px">
 			</div>
 			<div style="border:none">
 				<div style="margin-left:-7px"></div>
-				<h4 id="seeDetails"><span id="details">Click here</span> for additional details and terms.</h4>
+				<h4 id="seeDetails">That's it, easy money! <span id="details">Click here</span> for some more details that we couldn't fit in these bullets.</h4>
 			</div>
 		</div>
 	</div>
 	
 	<div class="row fade" id="promoDetails" style="padding:0 0 20px 0; display:none">
 		<div class="large-12 columns">
-				<h4>- We'll ask for a good time to to come photograph the house.  Any tidying up would be awesome, and we're confident your landlord won't mind either.</h4>
-				<h4>- Our terms and conditions require that the user obtain permission from their landlord.  This shouldn't be hard given all the free features and flexibility they'll receive, as shown at leasily.com/landlords.</h4>
-				<h4>- We'll ask for a good time to to come photograph the house.  We'd really appreciate a little tidying up, and we're confident your landlord won't mind either.</h4>
-				<h4>- <span id="seeDetails">Click here</span> for additional details and terms.</h4>
-			
+				<h4>Leasily was created by a New Orleans based team with a passion for photography, and our mission is to reinvent the way renters look for their new home.</h4>
+				<h4>We're giving away gift cards because we love our product and want to share it with the world as fast as possible.</h4>
+				<h4>Our <span style="text-decoration: underline">only requirement</span> is that you obtain permission from your landlord before signing up.</h4>
+				<h4>If you could tidy-up a bit before the shoot it would really help the photographs shine, and we're confident your landlord won't mind a little cleaning.</h4>
 		</div>
 	</div>
 	<div id="learn" style="position:absolute; bottom:-150px; left:20%">
-		<h3 class="" style="color:rgba(255, 255, 255, 0.7); margin-top:3.0em">learn more about leasily</h3>
-		<div class="arrow-down" style="margin: 0 auto"></div>
+		<h3 class="hide-for-small" style="color:rgba(255, 255, 255, 0.7); margin-top:3.0em">learn more about leasily</h3>
+		<div class="arrow-down hide-for-small" style="margin: 0 auto"></div>
 	</div>
 </div>
 
@@ -275,7 +274,7 @@
 			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Arrow@2x.png';?>" width="60px" class="centerTest" style="padding:1.1em 0 1.0em 0">
 		</div>
 		<div class="large-9 columns">
-			<h1>Landlord sign-up</h1>
+			<h1>Tenant sign-up</h1>
 			<h5>Click here to return to the sign-up (at the top).</h5>
 		</div>
 	</div>
@@ -295,6 +294,23 @@
 </div>
 
 <!---------------------BEGIN FOOTER------------------------>
+  <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
+    <!--.triptych-->
+    <section class="l-triptych row">
+      <div class="triptych-first large-4 columns">
+        <?php print render($page['triptych_first']); ?>
+      </div>
+      <div class="triptych-middle large-4 columns">
+        <?php print render($page['triptych_middle']); ?>
+      </div>
+      <div class="triptych-last large-4 columns">
+        <?php print render($page['triptych_last']); ?>
+      </div>
+    </section>
+    <!--/.triptych -->
+  <?php endif; ?>
+
+<!---------------------BEGIN FOOTER------------------------>
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
   <?php global $theme_path; ?>
     <!--.footer-columns -->
@@ -309,9 +325,49 @@
     </div>
 </div>
 
-<div class="footer" style="min-height:0">
+<div class="footer">
     <div class="row row2">
 		<div class="large-12 columns">
+		    <section class="row l-footer-columns footerSection">
+		      <?php if (!empty($page['footer_firstcolumn'])): ?>
+		        <div class="footer-first large-3 columns">
+		          <img src="<?php print $base_path . $theme_path . '/images/footerSearch-03.png';?>" width="80px" alt="Search" class="centerTest">
+		          <?php print render($page['footer_firstcolumn']); ?>
+		        </div>
+		      <?php endif; ?>
+		      <?php if (!empty($page['footer_secondcolumn'])): ?>
+		        <div class="footer-second large-3 columns">
+		          <img src="<?php print $base_path . $theme_path . '/images/footerDollar_Artboard 5.png';?>" width="80px" alt="Dollar" class="centerTest">
+		          <?php print render($page['footer_secondcolumn']); ?>
+		        </div>
+		      <?php endif; ?>
+		      <?php if (!empty($page['footer_thirdcolumn'])): ?>
+		        <div class="footer-third large-3 columns">
+		          <img src="<?php print $base_path . $theme_path . '/images/footerHouse-02.png';?>" width="80px" alt="House" class="centerTest">
+		          <?php print render($page['footer_thirdcolumn']); ?>
+		        </div>
+		      <?php endif; ?>
+		      <?php if (!empty($page['footer_fourthcolumn'])): ?>
+		        <div class="footer-fourth large-3 columns">
+				  <img src="<?php print $base_path . $theme_path . '/images/footerCamera_Artboard 4.png';?>" width="110px" alt="Camera" class="centerTest" style="padding:4px 0">
+		          <?php print render($page['footer_fourthcolumn']); ?>
+		        </div>
+		      <?php endif; ?>
+		    </section>
+	    <!--/.footer-columns-->
+	    
+		<!--<div class="row socialImg" style="padding-top:4.0em;">
+				<div class="large-6 large-centered columns" style="position:relative; padding:0">
+					<img src="<?php print $base_path . $theme_path . '/images/L8.jpg';?>">
+					<div class="social" style="position:absolute; bottom:20px; left: 20px">
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/facebook-small@2x.png';?>" width="32px" height="32px"></a>
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/pinterest-small@2x.png';?>" width="32px" height="32px"></a>
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/twitter-small@2x.png';?>" width="32px" height="32px"></a>
+						<a href="#"><img src="<?php print $base_path . $theme_path . '/css/icons/social/email-small@2x.png';?>" width="32px" height="32px"></a>
+					</div>
+				</div>
+			</div>-->
+	    
 	    	<div class="row footerLinks" style="padding-top:50px;">
 	    		<div class="large-5 small-3 columns">
 					<ul class="inline-list firstFooterList">

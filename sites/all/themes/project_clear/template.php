@@ -160,12 +160,31 @@ function project_clear_preprocess_page(&$variables){
 	$variables['top_bar_link_two'] = l(t('register'), 'user/register', array('attributes' => array('class' => array('topBarFont'))));
 	$variables['dropdownClasses'] = t('first leaf');
   }
+	$image_html = '<img src="' . base_path() . drupal_get_path('theme', 'project_clear') . '/css/icons/topMap@2x.png" width="26px" style="margin-right:10px">';
+  	$variables['top_bar_link_other'] = 
+	  	'<li>' .
+		  	l($image_html . 'map', 'map', array('html' => TRUE, 'attributes' => array('class' => array('topBarFont'))))
+		. '</li>'
+		. '<li class="divider topDivide show-for-large-up"></li>'
+		. '<li>' .
+			l(t('landlords'), 'landlords', array('attributes' => array('class' => array('topBarFont'))))
+		. '</li>';
+
+  
   //add conditional css and javascript - check path to css file.  CSS_THEME is a constant equal to 100 to ensure it is in the very last group.  Higher numbers will be listed even later (or last).  'weight' => 100 can be used to list files in order within different groups.
-  if($variables['node'] or drupal_is_front_page()){
+	if (isset($variables['node'])) {
+		if ($variables['node']->type == 'home') {
+			drupal_add_js(path_to_theme(). '/js/jquery.flot.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));
+			drupal_add_js(path_to_theme(). '/js/jquery.bxslider.min.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));
+			drupal_add_js(path_to_theme(). '/js/scripts.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));
+		}
+	}
+  
+  
+  if(drupal_is_front_page() || drupal_get_path_alias() == 'landlords'){
 		//drupal_add_css(path_to_theme(). '/css/front.css', array('group' => CSS_THEME));
 		drupal_add_js(path_to_theme(). '/js/jquery.bxslider.min.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));  
-		drupal_add_js(path_to_theme(). '/js/jquery.flot.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));
-		drupal_add_js(path_to_theme(). '/js/scripts.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));  
+		drupal_add_js(path_to_theme(). '/js/scripts.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));
   }
   
 	if (drupal_get_path_alias() == 'signup-confirmation') {

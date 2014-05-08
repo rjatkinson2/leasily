@@ -26,12 +26,12 @@
               <?php //print $top_bar_main_menu; ?>
             <?php //endif; ?>
 			<ul id="secondary-menu" class="secondary link-list right" data-thmr="thmr_400">
+				
 				<!--<li class="divider topDivide show-for-large-up"></li>-->
 
-				<li>
-					<?php print l(t('landlords'), 'landlords', array('attributes' => array('class' => array('topBarFont')))); ?>
-				</li>
-				
+				<?php if ($top_bar_link_other): ?>
+					<?php print $top_bar_link_other;?>
+				<?php endif; ?>
 				
 				<?php if ($top_bar_link_one): ?>
 				<li class="divider topDivide show-for-large-up"></li>
