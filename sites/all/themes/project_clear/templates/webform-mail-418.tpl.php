@@ -19,7 +19,7 @@
  * when using the "default" e-mail template.
  */
 ?>
-<?php print (t('This better work!')); ?>
+<?php print ($email['html'] ? '<p>' : '') . t('The results of this submission may be viewed at:') . ($email['html'] ? '</p>' : '') ?>
 
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted on %date'). ($email['html'] ? '</p>' : ''); ?>
 
