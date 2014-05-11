@@ -171,12 +171,12 @@
 		</div>
 	</div>
 	
-	<div class="row fade" id="promoDetails" style="padding:0 0 20px 0; display:none">
+	<div class="row fade" id="promoDetails" style="padding:30px 0 20px 0; display:none; overflow:visible">
 		<div class="large-12 columns">
-				<h4>Leasily was created by a New Orleans based team with a passion for photography, and our mission is to reinvent the way renters look for their new home.</h4>
-				<h4>We're giving away gift cards because we love our product and want to share it with the world as fast as possible.</h4>
-				<h4>Our <span style="text-decoration: underline">only requirement</span> is that you obtain permission from your landlord before signing up.</h4>
-				<h4>If you could tidy up a bit before the shoot it would really help the photographs shine, and we're confident your landlord won't mind a little cleaning.</h4>
+				<h4>- Leasily was created by a New Orleans based team with a passion for photography, and our mission is to reinvent the way renters look for their new home.</h4>
+				<h4>- We're giving away gift cards because we love our product and want to share it with the world as fast as possible.</h4>
+				<h4>- Our <span style="text-decoration: underline">only requirement</span> is that you obtain permission from your landlord before signing up.</h4>
+				<h4>- If you could tidy up a bit before the shoot it would really help the photographs shine, and we're confident your landlord won't mind a little cleaning.</h4>
 		</div>
 	</div>
 	<div id="learn" style="position:absolute; bottom:-150px; left:20%">
