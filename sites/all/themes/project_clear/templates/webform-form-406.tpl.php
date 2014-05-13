@@ -52,7 +52,7 @@
 	        	</div>
         	</div>
         	
-        	<div class="row" style="margin-top:50px">
+        	<div class="row" style="margin-top:50px"  onclick="_gaq.push(['_trackPageview', '/landlords/messageLandlord']);">
 				<?php print drupal_render_children($form);?>
         	</div>
         	

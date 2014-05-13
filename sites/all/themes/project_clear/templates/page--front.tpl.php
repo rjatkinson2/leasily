@@ -255,7 +255,7 @@
 	</div>
 </div>
 
-<div class="row card base" id="signupReturn"  onclick="_gaq.push(['_trackPageview', '/landlords/tenantSignupReturn']);" style="margin-top:100px">
+<div class="row card base" id="signupReturn" onclick="_gaq.push(['_trackPageview', '/landlords/tenantSignupReturn']);" style="margin-top:100px">
 	<div class="large-12 large-centered columns">
 		<div class="large-3 columns">
 			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Arrow@2x.png';?>" width="60px" class="centerTest" style="padding:1.1em 0 1.0em 0">
