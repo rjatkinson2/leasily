@@ -125,7 +125,7 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>-->
-<div class="topSecondBar" style="background-color: #4D997C; border:none; padding-bottom:10px; position:relative">
+<div class="topSecondBar front" style="background-color: #4D997C; border:none; padding-bottom:10px; position:relative">
 	<div class="row fade" style="padding-top:20px;">
 		<div class="large-11 large-centered columns" style="padding:0; margins:0">
 			<div class="large-2 columns">

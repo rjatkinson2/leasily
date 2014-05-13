@@ -4282,6 +4282,10 @@ div.dotted > div{
 	text-decoration: underline;
 }
 
+.topSecondBar.front{
+	padding-top: 10px;
+}
+
 @media only screen and (min-width: 768px) {
 	.amazon {
 		margin-left:9.2em;
@@ -4300,7 +4304,10 @@ div.dotted > div{
 		margin-top:.3em;
 		text-align: left;
 	}
-
+	
+	.topSecondBar.front{
+		padding-top: 40px;
+	}
 }
 
 #promoDetails h4{
