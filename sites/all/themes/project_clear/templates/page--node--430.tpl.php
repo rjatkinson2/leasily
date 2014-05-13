@@ -159,8 +159,8 @@
 			</div>
 			<div class="large-6 dubs columns">
 				<?php $image_html = '<img src="' . base_path() . drupal_get_path('theme', 'project_clear') . '/images/confirmation/flat-map@2x.png" width="164px" class="centerTest">';?>
-				<?php print l($image_html, '<front>', array('html' => TRUE)); ?>
-				<h5 style="padding: 0 2.0em">Head back to the home page to see our mapping features.</h5>
+				<?php print l($image_html, 'map', array('html' => TRUE)); ?>
+				<h5 style="padding: 0 2.0em">Head back to the map to see our high quality listings!</h5>
 			</div>
 		</div>
 	</div>
