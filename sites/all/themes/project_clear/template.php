@@ -191,6 +191,11 @@ function project_clear_preprocess_page(&$variables){
 		drupal_add_js(path_to_theme(). '/js/fbpixel.js', array('group' => 2000, 'every_page' => TRUE, 'weight' => -19.5));
 		//kpr($variables);
 	}
+	
+	if (drupal_get_path_alias() == 'map') {
+		drupal_add_js(path_to_theme(). '/js/mapStyle.js', array('group' => 2000, 'every_page' => TRUE, 'weight' => -19.5));
+		//kpr($variables);
+	}
     
   //drupal_add_js works exactly the same as drupal_add_css above
   //drupal_add_js(path_to_theme(). '/js/custom.js', array('group' => -99, 'every_page' => TRUE, 'weight' => -19.5));  
