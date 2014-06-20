@@ -189,8 +189,8 @@
 	<div style="background-color:#FFF; padding:6.0em 0" class="wideCard" id="thousand">
 		<div class="row">
 			<div class="large-7 columns">
-				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex2.jpg'; ?>" width="310px" style="float:right"/>
-				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex1.jpg'; ?>" width="220px" style="float:right; margin-right:15px; margin-top:74px"/>
+				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex2@2x.jpg'; ?>" width="310px" style="float:right"/>
+				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex1@2x.jpg'; ?>" width="220px" style="float:right; margin-right:15px; margin-top:74px"/>
 			</div>
 			<div class="large-5 columns">
 				<h1 style="text-align:left">Photos worth a thousand words</h1>
@@ -199,10 +199,10 @@
 		</div>
 		<div class="row" style="padding-top:15px">
 			<div class="large-7 columns">
-				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex3.jpg'; ?>" width="390px" style="float:right"/>
+				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex3@2x.jpg'; ?>" width="390px" style="float:right"/>
 			</div>
 			<div class="large-5 columns">
-					<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex5.jpg'; ?>" width="310px"/>
+					<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex4@2x.jpg'; ?>" width="310px"/>
 			</div>
 		</div>
 	</div>
@@ -222,14 +222,14 @@
 			</div>  
 			<div class="large-6 pull-6 columns" style="margin-top:1.5em">
 				<div class="large-12 columns">
-		            <img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/craigslist-logo.jpeg'; ?>" width="215" class="centerTest"/>
+		            <img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/Craigslist@2x.jpg'; ?>" width="215" class="centerTest"/>
 				</div>
 				<div class="large-12 columns" style="margin-top:1.5em">
 	            	<div class="large-5 columns">
-		            	<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/trulia-logo.png'; ?>" width="215" class="centerTest"/>
+		            	<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/Trulia@2x.png'; ?>" width="215" class="centerTest"/>
 	            	</div>
 	            	<div class="large-7 columns">
-						<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landlordOverview/zillow-logo.jpg'; ?>" width="215" class ="centerTest"/>
+						<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/Zillow@2x.png'; ?>" width="215" class ="centerTest"/>
 	            	</div>
 				</div>
 			</div>
