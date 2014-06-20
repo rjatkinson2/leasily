@@ -181,11 +181,10 @@ function project_clear_preprocess_page(&$variables){
 	}
   
   
-  if(drupal_is_front_page() || drupal_get_path_alias() == 'landlords'){
-		//drupal_add_css(path_to_theme(). '/css/front.css', array('group' => CSS_THEME));
+	if(drupal_is_front_page() || drupal_get_path_alias() == 'landlords'){
 		drupal_add_js(path_to_theme(). '/js/jquery.bxslider.min.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));  
 		drupal_add_js(path_to_theme(). '/js/scripts.js', array('group' => 1000, 'every_page' => TRUE, 'weight' => -19.5));
-  }
+	}
   
 	if (drupal_get_path_alias() == 'signup-confirmation') {
 		drupal_add_js(path_to_theme(). '/js/fbpixel.js', array('group' => 2000, 'every_page' => TRUE, 'weight' => -19.5));
@@ -549,6 +548,30 @@ function project_clear_form_alter(&$form, &$form_state, $form_id){
 
 	if($form_id == 'webform_client_form_429'){
 		$form['submitted']['landlord_email']['#attributes']['placeholder'] = t( 'jappleseed@example.com' );
+		//kpr($form);
+	}
+	
+	if($form_id == 'webform_client_form_438'){
+		$form['submitted']['future_tenant_email']['#attributes']['class'][0] = 'email-field';
+		$form['submitted']['future_tenant_email']['#attributes']['placeholder'] = t( 'future-tenant@example.com' );
+		$form['submitted']['listing_link']['#attributes']['class'][0] = 'url-field';
+		$form['submitted']['listing_link']['#attributes']['placeholder'] = t( 'example - http://neworleans.craigslist.org/apa/4525611682.html' );
+		
+		//kpr($form);
+	}
+	
+	if($form_id == 'webform_client_form_439'){
+		$form['submitted']['landlord_email']['#attributes']['class'][0] = 'email-field';
+		$form['submitted']['landlord_email']['#attributes']['placeholder'] = t( 'landlord@example.com' );
+		$form['submitted']['property_address']['#attributes']['placeholder'] = t( 'example - 1234 Fake New Orleans Street, LA 70115' );
+
+		//kpr($form);
+	}
+
+	if($form_id == 'webform_client_form_440'){
+		$form['submitted']['current_tenant_email']['#attributes']['class'][0] = 'email-field';
+		$form['submitted']['current_tenant_email']['#attributes']['placeholder'] = t( 'current-tenant@example.com' );
+		$form['submitted']['your_landlords_email']['#attributes']['placeholder'] = t( 'landlord@example.com' );
 		//kpr($form);
 	}
 	

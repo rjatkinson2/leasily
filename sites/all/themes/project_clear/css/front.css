@@ -1,11 +1,2031 @@
 html{
-	background: none repeat scroll 0 0 #945d5d;
+	background: none repeat scroll 0 0 #F5F5F5;
 }
 
 body{
-	background-color: #945d5d;
+	background-color: #F5F5F5;
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-	font-weight: 400;
+	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	color:rgb(83,83,83);
+}
+
+.alert-box.alert,
+.alert-box.secondary{
+	background-color: #D44332;
+	text-align: center;
+	color: #FFF;
+	border: none;
+}
+
+
+
+
+.contain-to-grid{
+	background-color: #4D997C;
+}
+
+.top-bar{
+	background-color: #4D997C;
+	margin-bottom: 0px;
+}
+
+.contain-to-grid .top-bar{
+	margin-bottom: 0;
+}
+
+.l-header{
+	z-index: 99999;
+}
+
+[data-magellan-expedition]{
+	z-index: 99998;
+	border-bottom: solid 1px #C3C3C3;
+}
+
+UNUSED.footer, UNUSED.footer h2{
+	color: #ffffff;
+	text-align: center;
+	font-weight: 200;
+}
+
+.footer h2{
+	font-size: 2.0em;
+	margin-bottom: 0;
+}
+
+UNUSED.footer-first, UNUSED.footer-second, UNUSED.footer-third{
+	border-right: solid 1px rgba(255,255,255,.4);
+}
+
+.footerLinks div ul li a:hover{
+	color: #2ba6cb;
+}
+
+
+img.logo{
+	height: 40px;
+	padding-top: 4px;
+	padding-left: 10px;
+}
+
+ul.title-area{
+	background: #4D997C;
+}
+
+.expanded .top-bar-section ul li > a:hover{
+	background-color: #4D997C;
+	border: none;
+	border-bottom-color: #343434;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.top-bar-section li a:not(.button){
+	background-color: #4D997C;
+}
+
+.top-bar-section li a:hover:not(.button){
+	background-color: #2b2b2b;
+}
+
+.top-bar-section li .dropdown a:not(.button){
+	background-color: #2b2b2b;
+	text-align: right;
+	padding: 25px 50px;
+}
+
+.top-bar-section li .dropdown a:hover:not(.button){
+	background-color: #4D997C;
+}
+
+.top-bar-section > ul > .divider.topDivide{
+	border: 1px solid #4D997C;
+	border-bottom-width: 21px;
+	border-top-width: 21px;
+	clear: none;
+	height: 58px;
+	width: 3px;
+	background-color:#FFF;
+}
+
+.top-bar-section a.topBarFont,
+UNUSED.top-bar-section span.topBarHome a{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 1280px) {
+	.top-bar{
+		height: 58px;
+	}
+	
+	.top-bar-section ul li > a{
+		height: 58px;
+	}
+	
+	.top-bar-section li a:not(.button){
+		padding-top: 6px;
+	}
+	
+	img.logo{
+		height: 40px;
+		margin-top: 7px;
+		padding-top: 4px;
+		padding-left: 10px;
+	}
+
+}
+
+.parent-link.js-generated{
+	display: none;
+}
+
+.alert-box{
+	margin-bottom: 0;
+}  
+
+@media only screen and (min-width: 768px) {
+	#over_map {
+		padding-bottom: 0px;
+		width: 225px;
+		z-index: 1;
+		
+		-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+		border: 0px solid #000000;
+	}
+}
+  
+.wideCard{
+  padding: 3.0em 0;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #C3C3C3;
+  background: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+	.wideCard{
+		padding: 5.0em 0;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.card {
+		border-width: 1px;
+		padding: 2.0em;
+	  }
+	  
+	.searchCard{
+		border-width: 1px;
+	}
+
+}
+
+	
+
+
+br {
+	display: block;
+	margin:0px;
+}
+  a:hover, a:focus {
+    color:#666; }
+  a img {
+    border: none; }
+
+@media only screen and (min-width: 768px) {
+	.deckText{
+		padding-top: 100px;
+	}
+}
+
+
+UNUSED.deckText div:first-child, UNUSED.deckHeader {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 2.1em;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: .50em;
+  text-rendering: optimizeLegibility;
+  color:#17254C;
+}
+
+
+UNUSED.statHeader,
+UNUSED.profileSelector .field-name-field-profile-type{
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 2.1em;
+  text-align: center;
+  margin-bottom: 0;
+  text-rendering: optimizeLegibility;
+  color:#17254C;
+}
+
+UNUSED.statDescription,
+UNUSEDspan.date-display-single{
+  font-size: 1.2em;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+
+
+UNUSED.field-name-field-move-in-day,
+UNUSED.field-name-field-open-house-date{
+	text-align: left;
+}
+
+UNUSED.field-name-field-move-in-day.field-label-hidden.field-wrapper,
+UNUSED.field-name-field-open-house-date.field-label-hidden.field-wrapper{
+	text-align: center;
+}
+
+
+h1, UNUSEDh2, h3, UNUSEDh4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	color: #17254C;
+	line-height: 120%;
+	font-weight: 200;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+ }
+
+UNUSEDh1 small, UNUSEDh2 small, UNUSEDh3 small, UNUSEDh4 small, UNUSEDh5 small, UNUSEDh6 small {
+	font-size: 60%;
+	color: #6f6f6f;
+	line-height: 0;
+}
+
+h1 {
+  font-size: 2.4em; }
+  
+@media only screen and (min-width: 768px) {
+	h1 {
+	  font-size: 3.0em; }
+}
+
+h2 {
+  font-size: 1.6875em; }
+
+h3 {
+  font-size: 1.5em;
+  color: #909090; }
+
+h4 {
+  font-size: 1.3em;
+  color: #909090; }
+
+h5 {
+  font-size: 1.125em;
+  color: #909090; }
+
+h6 {
+  font-size: 1em;
+  color: #909090; }
+
+
+UNUSEDem,
+UNUSEDi {
+  font-style: italic;
+  line-height: inherit; }
+
+strong,
+UNUSEDb {
+  font-weight: bold;
+  line-height: inherit; }
+
+ UNUSEDbutton.search, UNUSED.button.search {
+    padding-top: 0.5625em;
+    padding-right: 1.125em;
+    padding-bottom: 0.625em;
+    padding-left: 1.125em;
+    font-size: 0.8125em;
+	min-width:126px;}
+
+
+@media only screen and (min-width: 768px) {
+	p.clearTitle{
+		margin-bottom: 0px;
+	}
+	
+	ul.homeButtonGrid {
+		margin-top: .7em;
+	}  
+}
+
+UNUSED.profileDescription,
+UNUSED.profInfo div.field{
+  font-size: 1.0em;
+  color:rgb(83,83,83);
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+input {
+	font-size: 18px;
+}
+
+input[type=checkbox] {
+	margin: 7px;
+}
+
+.deckDescription a:hover{
+	color:#2BA6CB;
+}
+
+.clearH2 a:hover{
+	color:#2BA6CB;
+}
+
+
+
+
+
+button,
+UNUSEDdiv.commerce-payflow-cancel a{
+	width: 80%;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	padding: 15px 40px;
+	text-align: center;
+	box-shadow: none;
+}
+
+button,
+UNUSEDbutton:active,
+div.commerce-payflow-cancel a,
+UNUSEDdiv.commerce-payflow-cancel a:active{
+	color: #FFF;
+	background-color: #0082A6;
+	border: 1px solid #0082A6;
+}
+
+button:hover,
+div.commerce-payflow-cancel a:hover{
+	color: #0082A6;
+	background-color: transparent;
+}
+
+div.commerce-payflow-cancel a{
+	font-weight: 700;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+.block-views-most-viewed-block .view,
+UNUSED.block-views-newest-listings-block .view,
+UNUSED.page-profile-main .view {
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+UNUSED.block-views-most-viewed-block .view .mask, UNUSED.view .content,
+UNUSED.block-views-newest-listings-block .view .mask, .view .content,
+UNUSED.page-profile-main .view .mask, .view .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+UNUSED.block-views-most-viewed-block .view img,
+UNUSED.block-views-newest-listings-block .view img,
+UNUSED.page-profile-main .view img {
+    display: block;
+    position: relative
+}
+UNUSED.block-views-most-viewed-block .view h2,
+UNUSED.block-views-newest-listings-block .view h2,
+UNUSED.page-profile-main .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px 0 0 0
+}
+UNUSED.block-views-most-viewed-block .view p,
+UNUSED.block-views-newest-listings-block .view p,
+UNUSED.page-profile-main .view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+
+UNUSED.block-views-most-viewed-block .view .hoverStat,
+UNUSED.block-views-newest-listings-block .view .hoverStat,
+UNUSED.page-profile-main .view .hoverStat{
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 34px;
+	text-align:center;
+	display:inline;
+	float:left;
+	margin-left:2px;
+    position: relative;
+    color: #fff;
+	width:110px;
+    padding: 5px;
+	margin-top:25px;
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.view-first:hover img {
+   -webkit-transform: scale(1.1,1.1);
+   -moz-transform: scale(1.1,1.1);
+   -o-transform: scale(1.1,1.1);
+   -ms-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1);
+}
+.view-first:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+}
+.view-first:hover p {
+   -webkit-transition-delay: 0.1s;
+   -moz-transition-delay: 0.1s;
+   -o-transition-delay: 0.1s;
+   -ms-transition-delay: 0.1s;
+   transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+}
+
+.statHeader {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 2.1em;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  color:#17254C;
+}
+
+.statHeader:nth-child(n+2){
+	margin-top: 25px;
+}
+
+
+.deckDescription {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.3em;
+  margin-bottom: 1.25em;
+}
+
+.statDescription{
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
+
+@media only screen and (min-width: 1280px) {
+	.makeOffer{
+		margin-top: 3em;
+	}
+	
+	.makeOffer div:nth-child(1){
+		border-left: none;
+	}
+	
+	.makeOffer div.large-4 p:nth-child(1){
+		font-size: 1.7em;	
+		text-align: center;
+		color:#17254C;
+		margin-bottom: .5em;
+	}
+}
+
+.deckHeader a{
+	margin-left:0px;
+}
+
+.footer{
+	background-color:#4D997C;
+	min-height:450px;
+}
+
+@media only screen and (min-width: 1280px) {
+	.signUpText{
+		text-align: right;
+	}
+}
+
+img.centerTest{
+	display: block; 
+    margin-left: auto; 
+    margin-right: auto;	
+}
+
+UNUSED.profileSelector img,
+UNUSED.accountSettings .field img,
+UNUSED.registerForm .image-widget img{
+	margin-left:10%;
+	display:block;
+	width: 165px;
+	height: 165px;
+	border-radius: 115px;
+	-webkit-border-radius: 115px;
+	-moz-border-radius: 115px;
+	position:relative;
+	z-index:1;
+	border: 5px solid #fff;
+}
+
+.profileSelector a:nth-child(1){
+	margin-right: 140px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+UNUSEDtextarea {
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875em;
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  height: 2.3125em;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px #999999;
+  -moz-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
+  border-color: #999999;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  background: #fafafa;
+  border-color: #999999;
+  outline: none;
+}
+
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="month"][disabled],
+input[type="week"][disabled],
+input[type="email"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+textarea[disabled] {
+  background-color: #dddddd;
+}
+
+
+
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"],
+UNUSEDselect {
+  margin: 0 0 1em 0;
+}
+
+#search-block-form input[type="text"]{
+	width:90%;
+	float:right;
+	height: 28px;
+	font-size:13px;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color:#17254C;
+	padding-left:15px;
+	padding-right:40px;
+	margin-bottom:0px;
+	margin-top:-3px;
+}
+
+#search-block-form input[type="image"]{
+	float:right;
+	border:none;
+	width:45px;
+	height:18px;
+	margin-top:-23px;
+}
+
+
+#edit-basic input[type="text"]{
+	background-color:#17254C;
+	height:50px;
+	margin: 0 auto;
+	min-width:400px;
+	z-index:80;
+	width:70%;
+	font-size:18px;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color:#fff;
+	padding-left:35px;
+	padding-right:40px;
+}
+
+#edit-basic input[type="image"]{
+	float:right;
+	border:none;
+	height:25px;
+	margin-top:-37px;
+	margin-right:170px;
+}
+
+a:hover .topBarText{
+	color:#fff;	
+}
+
+.form-item-name input[type="text"],
+.form-item-pass input[type="password"],
+.form-item-mail input[type="text"],
+.form-item-current-pass input[type="password"],
+.accountSettings input[type="text"]{
+	background-color:#17254C;
+	height:50px;
+	margin: 0 auto;
+	z-index:80;
+	width:80%;
+	font-size:18px;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color:#fff;
+	border:none;
+	margin-top:12px;
+	margin-bottom:20px;
+	padding: 0 35px;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+}
+
+@media only screen and (min-width: 768px) {
+	.form-item-name input[type="text"],
+	.form-item-pass input[type="password"],
+	.form-item-mail input[type="text"],
+	.form-item-current-pass input[type="password"],
+	.accountSettings input[type="text"]{
+		width:60%;
+	}
+}
+
+.accountSettings input[type="text"],
+.accountSettings input[type="password"],
+UNUSED.password-parent,
+UNUSED.confirm-parent{
+	width:100%;
+}
+
+.addProperty input[type="text"]{
+	background-color:#17254C;
+	height:50px;
+	margin: 0 auto;
+	width:100%;
+	font-size:18px;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color:#fff;
+	padding-left:35px;
+	padding-right:40px;
+	border:none;
+	margin-top:12px;
+	margin-bottom:20px;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+}
+
+input#edit-name:-webkit-autofill {
+    color: #FFFFFF !important;
+}
+
+UNUSED.form-item-pass label,
+UNUSED.form-item-name label,
+UNUSED.form-item-current-pass label,
+UNUSED.form-item-mail label,
+UNUSED.form-item-timezone label,
+UNUSED.addProperty label,
+UNUSED.registerForm label{
+	text-align:left;
+	font-family: 'Pacifico', cursive;
+  	font-weight: normal;
+  	font-size: 22px;
+  	text-rendering: optimizeLegibility;
+  	color: #525252;
+	margin-left:15%;
+	display: inline;
+	width:200px;
+	margin-top:-5px;
+	font-weight: 100;
+}
+
+@media only screen and (min-width: 768px) {
+	.form-item-pass label,
+	.form-item-name label,
+	.form-item-current-pass label,
+	.form-item-mail label,
+	.form-item-timezone label,
+	.addProperty label,
+	.registerForm label{
+		margin-left: 22%;
+	}
+}
+
+.registerForm label{
+	font-size: 1em;
+}
+
+UNUSED.accountSettings label,
+.addProperty label{
+	margin-left:1%;
+}
+
+UNUSED.password-strength,
+UNUSEDdiv.password-confirm{
+	max-width: 50%;
+}
+
+UNUSEDbutton.loginSubmit,
+UNUSED.registerForm button#edit-submit,
+UNUSED#edit-save-and-edit{
+	clear: none;
+	float:left;
+	font-family: 'Pacifico', cursive;
+	font-size:35px;
+	text-align:right;
+	margin-right:15%;
+	padding:10px 0 70px 0;
+	font-weight: normal;
+	margin-bottom: -.1em;
+	text-rendering: optimizeLegibility;
+	color:#17254C;
+	background-color:#FFF;
+	border:none;
+	padding:0 10px 10px 10px;
+	margin-bottom:50px;
+}
+
+@media only screen and (min-width: 768px) {
+	button.loginSubmit,
+	.registerForm button#edit-submit{
+		margin-right: 22%;
+	}
+}
+
+#edit-save-and-edit{
+	width: auto;
+	color: #4D997C;
+	float: right;
+	margin-right: .9em;
+}
+
+.registerForm button#edit-submit{
+	margin: 13px 0 0 0;
+	padding: 0 20px;
+}
+
+button.loginSubmit:hover,
+UNUSEDbutton.loginSubmit:active{
+	color:#17254C;
+	background-color:#FFF;
+	border:none;
+	border-top-color:#FFF;
+}
+
+@media only screen and (min-width: 768px) {
+	.form-item-remember-me{
+		display: block;
+		margin-right:21.5%;
+		float:right;
+		margin-top:-215px;
+		clear:both;
+	}
+	
+	.forgotLinks{
+	font-size:14px;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color:#17254C;
+	float:right;
+	line-height:16px;
+	margin-top:-188px;
+	margin-right:21.5%;
+	clear:both;
+	padding: 0;
+	}
+
+}
+
+UNUSED.spelling-suggestions dt,
+UNUSED.spelling-suggestions dd{
+	display: inline;
+}
+
+UNUSEDinput#edit-retain-filters,
+label.option{
+	float: left;
+	margin-left: 16%;
+	margin-top: 10px;
+}
+
+
+
+input[type=checkbox].form-checkbox {
+	display:none;
+}
+
+input[type=checkbox].form-checkbox + label.option {
+	padding-left:35px;
+	height:22px; 
+	display:inline-block;
+	line-height:22px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:14px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].form-checkbox:checked + label.option {
+	background-position: 0 -22px;
+}
+
+UNUSED.accountSettings .deckDescription,
+UNUSED.addProperty .deckDescription{
+	text-align: left;
+	padding-left: 30px;
+	font-size: 18px;
+}
+
+UNUSED.accountSettings button.loginSubmit,
+UNUSED.addProperty button.loginSubmit{
+	width: auto;
+	float: right;
+	margin-right:20px;
+	display: inline;
+	height: 35px;
+}
+
+UNUSED.accountSettings .cancelButton,
+UNUSED.addProperty .cancelButton,
+UNUSEDbutton#edit-cancel{
+	clear: none;
+	float: right;
+	margin-right: 0;
+	font-family: 'Pacifico', cursive;
+  	font-weight: normal;
+  	font-size: 22px;
+  	text-rendering: optimizeLegibility;
+  	color: #525252;
+	display: inline;
+	margin-top: 16px;
+	padding: 0 20px;
+	border-style: none none none solid;
+	border-width: 1px;
+	border-color: #C3C3C3;
+	background-color: transparent;
+	border-radius: 0;
+	width: auto;
+}
+
+UNUSED.accountSettings .form-item,
+UNUSED.addProperty .form-item{
+	margin: .5em 0;
+}
+
+UNUSED.accountSettings a,
+UNUSED.addProperty a{
+	color: #525252;
+}
+
+UNUSED.block-views-most-viewed-block > h2, UNUSED.block-views-newest-listings-block > h2, UNUSED.block-views-front-map-block > h2{
+	display: none;
+}
+
+UNUSED#edit-field-move-in-day-und-0-value-datepicker-popup-0,
+UNUSED#form-item-field-move-in-day-und-0-value{
+	width: 100%;
+}
+
+UNUSED.field-type-list-integer.field-name-field-bed-number.field-widget-options-select.form-wrapper,
+UNUSED.form-item.form-type-textfield.form-item-locations-0-province{
+	width: 45%;
+	float: left;
+	clear: none;
+}
+
+UNUSED.field-type-list-integer.field-name-field-full-baths.field-widget-options-select.form-wrapper,
+UNUSED.form-item.form-type-textfield.form-item-locations-0-postal-code{
+	width: 45%;
+	float: right;
+	clear: none;
+}
+
+UNUSED.location.form-wrapper span.fieldset-legend,
+UNUSEDfieldset#edit-cart-contents legend,
+UNUSEDfieldset#edit-customer-profile-billing legend,
+UNUSED#webform-component-your-email .form-required,
+UNUSED#webform-component-your-landlords-email .form-required{
+	display: none;
+}
+
+UNUSEDfieldset.location.form-wrapper,
+UNUSEDfieldset#edit-cart-contents,
+UNUSEDfieldset#edit-customer-profile-billing{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.cardDemo div p:nth-child(odd){
+	font-family: 'Pacifico', cursive;
+  	font-weight: normal;
+  	font-size: 1.4em;
+  	margin-bottom: 5px;
+}
+
+.cardDemo div p:nth-child(even){
+	font-size: .9em;
+}
+
+UNUSED.section-container.auto > section.active > .title,
+UNUSED.section-container.vertical-tabs > section.active > .title{
+	border: none;
+	background: #4D997C;
+}
+
+UNUSED.section-container.auto > section.active > .title a,
+UNUSED.section-container.vertical-tabs > section.active > .title a{
+	color: #FFF;
+}
+
+#edit-actions{
+	display: inline-block;
+	float: right;
+}
+
+UNUSED#home-node-form .button.secondary,
+#home-node-form .button.secondary:hover,
+UNUSED#home-node-form .nodeAddHome .button.secondary:active{
+	background-color: #FFF;
+	border: none;
+	color: #17254C;
+}
+
+UNUSED.accountSettings button#edit-delete,
+UNUSED.registerForm div.description{
+	display: none;
+}
+
+UNUSED.image-widget-data span a,
+UNUSED.image-widget-data button{
+	text-align: center;
+}
+
+.image-widget-data{
+	font-size: .8em;
+}
+
+UNUSED.gmap-popup div.panel2,
+UNUSED.gm-style div{
+	font-size: 14px;
+}
+
+UNUSED.facetCard h2.block-title,
+UNUSED.sortBox h2.block-title{
+	display: none;
+}
+
+.ammenities ul li{
+   background:url('icons/green32.png') 0% 50% no-repeat no-repeat;
+}
+
+UNUSEDspan.ok, UNUSEDsmall.ok {
+    background: none repeat scroll 0 0 #D44332;
+    color: #FFFFFF;
+    display: block;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: -1.3125em;
+    padding: 0.375em 0.25em;
+}
+
+div.vertical-tabs{
+	display: none;
+}
+
+div.alert-box.alert,
+div.alert-box.success{
+	text-align: center;
+}
+
+
+UNUSED#over_map div.large-12.columns,
+UNUSED.pricing_table div.large-12.columns{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+UNUSED.pricing_table p,
+UNUSED.pricing_table .field-content{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+UNUSED.pricing_table .large-12.small-12 p,
+UNUSED.pricing_table .large-12.small-12 div{
+	text-align: right;
+	padding:0 10% 0 20%;
+}
+
+.pricing_table .searchRow p:nth-child(2),
+.pricing_table .searchRow div:nth-child(2){
+	font-size: .8em;
+}
+
+.pricing_table .searchRow div:nth-child(2){
+	line-height: 1.6;
+}
+
+#over_map div.searchRow:nth-child(n+2){
+	padding: .7em 0;
+}
+
+#over_map div.large-12.columns.searchRow:nth-child(1){
+	background-color: #475462;
+	color: #FFF;
+}
+
+.pricing_table div.searchRow:nth-child(2){
+	background-color: #475462;
+	color: #FFF;
+	padding: .7em 0;
+	border: solid 1px #475462;
+}
+
+UNUSED#edit-line-item-fields,
+UNUSED#edit-line-item-fields--2,
+UNUSED#edit-line-item-fields--3{
+	padding: 0;
+	margin: 0;
+}
+
+UNUSED.signUp div div,
+UNUSED.signUp div div button{
+	width: 80%;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	margin: 20px auto;
+	padding: 15px 0;
+	text-align: center;
+	box-shadow: none;
+}
+
+.signUp div div button{
+	width: 100%;
+	margin: 0;
+}
+
+UNUSED.signUp div a div,
+UNUSED.signUp div a div:active,
+.signUp div div button,
+UNUSED.signUp div div button:active{
+	color: #FFF;
+}
+
+UNUSED.one .signUp div a div,
+UNUSED.one .signUp div a div:active,
+UNUSED.one .signUp div div button,
+UNUSED.one .signUp div div button:active{
+	background-color: #4D997C;
+	border: 1px solid #4D997C;
+}
+
+.one .signUp div a div:hover,
+.one .signUp div div button:hover{
+	color: #4D997C;
+	background-color: #FFF;
+}
+
+UNUSED.two .signUp div a div,
+UNUSED.two .signUp div a div:active,
+UNUSED.rush_hour .signUp div div button,
+UNUSED.rush_hour .signUp div div button:active{
+	background-color: #1F3348;
+	border: 1px solid #1F3348;
+}
+
+.two .signUp div a div:hover,
+.rush_hour .signUp div div button:hover{
+	color: #1F3348;
+	background-color: #FFF;
+}
+
+UNUSED.three .signUp div a div,
+UNUSED.three .signUp div a div:active,
+UNUSED.prime_time .signUp div div button,
+UNUSED.prime_time .signUp div div button:active{
+	background-color: #D44332;
+	border: 1px solid #D44332;
+}
+
+.three .signUp div a div:hover,
+.prime_time .signUp div div button:hover{
+	color: #D44332;
+	background-color: #FFF;
+}
+
+UNUSED.four .signUp div a div,
+UNUSED.four .signUp div a div:active,
+UNUSED.early_bird .signUp div div button,
+UNUSED.early_bird .signUp div div button:active{
+	background-color: #0082A6;
+	border: 1px solid #0082A6;
+}
+
+.four .signUp div a div:hover,
+.early_bird .signUp div div button:hover{
+	color: #0082A6;
+	background-color: #FFF;
+}
+
+UNUSED#over_map div.top,
+UNUSED#over_map div.bottom,
+UNUSED.pricing_table div.top{
+	background-color: #333C48;
+	font-family: 'Pacifico', cursive;
+	font-size: 1em;
+	color: #FFF;
+	padding: 1em 0;
+	text-align: center;
+	
+}
+
+#over_map div.bottom{
+	background-color: #4D997C ;
+	line-height: 2.0em;
+	
+}
+
+@media only screen and (min-width: 1280px) {
+	#over_map .form-type-select.form-item-city select{
+		padding-left: 35%;
+	}
+}
+
+#over_map .form-type-select select:focus {
+    outline: none;
+}
+
+div#priceDesc div.columns{
+	color: #17254C;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+div#priceDesc .accountNumber{
+	color: #17254C;
+	border-color: #17254C;
+}
+
+@media only screen and (min-width: 768px) {
+	div.topSecondBar.pricing{
+		padding:0;
+		margin: 0 0 750px 0;
+	}
+	
+	div#priceDesc div.columns{
+		color: #FFF;
+		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	}
+	
+	div#priceDesc .accountNumber{
+		color: #FFF;
+		border-color: #FFF;
+	}
+	
+	.pricingTables .pricing_table.row{
+	margin-bottom: 0;
+}
+
+	
+}
+
+@media only screen and (min-width: 1280px) {
+	div.topSecondBar.pricing{
+		padding:0;
+		margin: 0 0 830px 0;
+	}
+	
+	.logoPush{
+		position:absolute;
+		bottom:340px;
+		width:100%
+	}
+	
+	.whiteDrop{
+		position:absolute;
+		bottom:-40px;
+		width:100%;
+		height:720px;
+		background-color:#FFF;
+		border-bottom:solid 1px #C2C2C2;
+	}
+}
+
+UNUSED.stepsRow .form-type-radio input,
+UNUSED.stepsRow .form-type-radio label{
+	display: inline-block;
+	float: left;
+	width: 100%;
+	color: #525252;
+    font-family: 'Pacifico',cursive;
+    font-size: 22px;
+    font-weight: 100;
+    margin-left: 15%;
+    margin-top: -5px;
+    text-align: left;
+    text-rendering: optimizelegibility;
+}
+
+UNUSED.form-item-field-occupancy-und > label,
+UNUSED.form-item-field-privacy-und > label{
+	display: none;
+}
+
+.privacyBar p:nth-child(3){
+	color: #D44332;
+	font-size: 1.3em;
+}
+
+UNUSED.button1 span,
+UNUSED.button1 p{
+	padding: 0;
+	margin: 0;
+	font-size: .5em;
+	color: #17254C;
+}
+
+UNUSEDp.statDescription,
+.deckText,
+.top-bar-section .dropdown li a,
+.ammenities ul li,
+UNUSED.date-display-single,
+.footer,
+.button1 span,
+.button1 p,
+.clearH2,
+.field-name-field-subcity,
+UNUSED.field,
+.loginFooterText,
+.field-name-field-subcity,
+#views-exposed-form-front-map-block select{
+	font-family: 'Raleway', sans-serif;
+}
+
+.button1 span{
+	padding: .5em 0 .2em 0;
+	display: inline-block;
+	clear: both;
+}
+
+.button1 p{
+	line-height: 2.0em;
+}
+
+#edit-customer-profile-billing input[type="text"],
+.form-item-account-login-mail input[type="text"]{
+	background-color: #FFF;
+	color: #2C333D;
+	border: solid 1px #C3C3C3;
+}
+
+UNUSED#edit-customer-profile-billing label,
+UNUSED#edit-account .form-item-account-login-mail label{
+	color: #2C333D;
+}
+
+button#edit-cancel,
+UNUSEDbutton#edit-back{
+	margin: .5em 0;
+}
+
+@media only screen and (min-width: 1280px) {
+	
+	button.checkout-continue.form-submit,
+	button#edit-cancel{
+		margin: .5em 0;
+	}
+
+}
+
+button.checkout-continue.form-submit:hover,
+UNUSEDbutton.checkout-continue.form-submit:active{
+	background-color: transparent;
+	color: #4D997C;
+}
+
+form#commerce-payflow-link-redirect-form  div iframe{
+	margin: 0 auto;
+}
+
+div.commerce-payflow-cancel a{
+	margin-left: 9%;
+}
+
+a.anythingHere:nth-child(1){
+	margin: 0;
+}
+
+input:-webkit-autofill {
+    background-color: #17254C;
+}
+
+UNUSED#block-views-front-map-block .view-content,
+UNUSED#block-views-front-map-block .view-empty{
+	width: 75%;
+	display: inline-block;
+	float:left;
+	clear: none;
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+	.listPropertyLink p.deckHeader{
+		margin-top:.9em;
+	}
+	
+	.listPropertyLink .large-9{
+		margin-top: 2.5em;
+	}
+
+}
+
+UNUSED.block-mailchimp-lists-leasily-launch-subscribers label,
+UNUSED.block-mailchimp-lists-leasily-launch-subscribers div.description,
+UNUSED.block-mailchimp-lists-leasily-launch-subscribers h2.block-title,
+UNUSED.block-mailchimp-lists-landlord-signup label{
+	display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+
+	div#mailchimp-newsletter-leasily_launch_subscribers{
+		width: 60%;
+	}
+	
+	.block-mailchimp-lists-leasily-launch-subscribers button{
+		width: 30%;
+		display: inline-block;
+		float: left;
+		margin-left: -10%;
+		clear: none;
+	}
+	
+	.mailFull .block-mailchimp-lists-leasily-launch-subscribers button{
+		width: 80%;
+		margin-left: 0;
+	}
+	
+	.mailFull .block-mailchimp-lists-leasily-launch-subscribers button{
+		margin-top: 0em;
+	}
+	
+	.footerForm .large-5.columns{
+		margin-top: 0;
+	}
+	
+	.footerForm div.columns{
+		padding: 0 .6em;
+	}
+
+}
+
+form#mailchimp-lists-user-subscribe-form-leasily-launch-subscribers button:hover{
+	background-color: #FFF;
+	color: #17254C;
+}
+
+.btn1:hover{
+	color: #CD3528;
+	background-color: #FFF;
+	border: 1px solid #CD3528;
+}
+
+UNUSED#edit-webform-ajax-submit-406,
+UNUSED#comment-form button,
+#edit-submit--4,
+UNUSED#webform-client-form-406 #edit-submit--3{
+	display: block;
+	background: #4D997C;
+	margin: 10px auto;
+	color: #FFF;
+	border: solid 1px #4D997C;
+	box-shadow: 0;
+}
+
+#edit-submit--4{
+	margin: 0 auto 10px auto;
+}
+
+#edit-webform-ajax-submit-406:hover,
+#edit-submit--4:hover,
+#webform-client-form-406 #edit-submit--3:hover{
+	background: transparent;
+	color: #4D997C;
+}
+
+#comment-form button{
+	margin-top: 1.0em;
+	background-color: #EEEEEE;
+	border-color: #C3C3C3;
+	color: #17254C;
+	width: 100%;
+}
+
+#comment-form button:hover{
+	background: transparent;
+	border-color: #17254C;
+}
+
+UNUSED#comment-form .tips,
+UNUSED#edit-comment-body-und-0-format{
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+	img.locationIcon{
+		margin: 1em auto;
+	}
+}
+
+UNUSEDbutton#nexttab,
+UNUSEDbutton#prevtab{
+	background-color: transparent;
+	border: none;
+}
+
+button#nexttab{
+	float: right;
+}
+
+
+UNUSEDbutton#nexttab:active,
+UNUSEDbutton#prevtab:active{
+	background-color: transparent;
+	border: none;
+}
+
+UNUSEDdiv#webform-component-mailto,
+UNUSEDdiv#webform-component-property{
+	display: none;
+}
+
+.mask a{
+	border: solid 1px #fff;
+	border-radius: 10px;
+	padding: .5em;
+}
+
+.makeOffer .statDescription{
+	font-size: 1.0em;
+	margin-bottom: 2.5em;
+}
+
+UNUSED.mask h2,
+.footer h2{
+	font-family:"Baskerville Old Face";
+}
+
+UNUSED#mailchimp-lists-user-subscribe-form-landlord-signup button,
+#webform-client-form-415 button,
+UNUSED#webform-client-form-429 button{
+	width: 100%;
+	background-color: #E16565;
+	border-color: #E16565;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: #FFFFFF;
+	padding: 15px 40px;
+}
+
+#mailchimp-lists-user-subscribe-form-landlord-signup button:hover,
+#webform-client-form-415 button:hover,
+#webform-client-form-429 button:hover{
+	background-color: transparent;
+	color: #E16565;
+}
+
+UNUSED#mailchimp-lists-user-subscribe-form-landlord-signup input,
+#webform-client-form-415 input,
+UNUSED#webform-client-form-429 input{
+	font-size: 1.3em;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.wideCard.listing .large-7 img{
+ 	padding:40px 5px;
+ }
+
+
+@media only screen and (min-width: 768px) {
+
+	#mailchimp-lists-user-subscribe-form-landlord-signup button,
+	#webform-client-form-415 button,
+	#webform-client-form-429 button{
+		margin: 0 0 1.25em 0;
+		width: 40%;
+		display: inline-block;
+		float: left;
+	}
+		
+	#mailchimp-lists-user-subscribe-form-landlord-signup input,
+	#webform-client-form-415 input,
+	#webform-client-form-429 input{
+		font-size: 1.3em;
+		font-family: 'Raleway', sans-serif;
+		margin: 0 0 0 -1px;
+		text-align: center;
+		font-weight: 200;
+	}
+	
+	UNUSED#mailchimp-lists-user-subscribe-form-landlord-signup div,
+	#webform-client-form-415 div,
+	UNUSED#webform-client-form-429 div{
+		margin: 0;
+	}
+	
+	UNUSED#mailchimp-newsletter-landlord_signup,
+	#webform-component-landlord-email{
+		width: 60%;
+		display: inline-block;
+		float: right;
+	}
+	
+	UNUSEDform#mailchimp-lists-user-subscribe-form-landlord-signup,
+	UNUSEDform#webform-client-form-429{
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 1.9em;
+		
+	}
+
+
+	.stats h1{
+		text-align:right;
+		color:#4D997C;
+	}
+	
+	.stats .large-8{
+		padding-right: 0;
+	}
+	
+	.wideCard h1,
+	.wideCard h5{
+		text-align: left;
+	}
+	
+	UNUSED.offer h1, .offer h5{
+		text-align: right;
+	}
+	
+	.wideCard.listing .large-7 img{
+	 	padding:10px 5px;
+	}
+	
+	.row.card.base{
+		 padding:1.0em 0;
+		 width:60%;
+		 margin: 2.0em auto;
+		 border-radius:15px;
+	}
+	
+	.offer{
+		 padding:5.5em 1.0em
+	}
+	
+	.offer h1{
+		padding-top: 1.3em;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	.dubs {
+	  margin-top: 0; }
+}
+
+.arrow-down2 {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(255, 255, 255, 0.7);
+	
+}
+
+UNUSED#webform-component-your-email label,
+UNUSED#webform-component-your-landlords-email label{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFF;
+	padding-left: 4px;
+
+}
+
+UNUSED#webform-component-your-email input,
+UNUSED#webform-component-your-landlords-email input{
+	background: transparent;
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 1px solid #FFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	color: #FFF;
+	padding:0 1.5em;
+	height: 3.0em;
+}
+
+UNUSED#webform-component-your-email input.error,
+UNUSED#webform-component-your-landlords-email input.error{
+	border:solid 2px #D44332;
+	background-color: #FFF;
+	color: #4D997C;
+}
+
+.frontForm button.button.secondary:hover{
+	background-color: #00BAFF;
+	border-color: #00BAFF;
+	color: #FFF;
+}
+
+div.dotted > div{
+	border-left: 3px dotted #FFF;
+	margin-bottom: 1.4em;
+	padding-bottom: .05em;
+}
+
+.dotted > div > div{
+    background: none;
+    border: 2px solid #FFF;
+    border-radius: 16px;
+    height: 16px;
+    margin-left: -10px;
+    margin-top: -18px;
+    width: 16px;
+    float: left;
+}
+
+.dotted{
+	padding:2.2em 1.0em 0 2.0em;
+}
+
+.offer h4 a:hover{
+	background-color: #FFF;
+	color: #4D997C;
+}
+
+.fade h4{
+	color:#FFF;
+	text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+	.amazon {
+		margin-left:9.2em;
+	}
+	
+	.dotted{
+		padding:2.2em 0 0 7.0em;
+	}
+	
+	.mapLink{
+		text-align:right;
+	}
+	
+	.fade h1{
+		font-size:2.6em;
+		margin-top:.3em;
+		text-align: left;
+	}
+	
+	.topSecondBar.front{
+		padding-top: 40px;
+	}
+}
+
+
+#front > div{
+	width: 100%;
+}
+
+#bg{
+    background-image:  url('backgrounds/bg1.jpg');
+    background-size:   cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bg .columns{
+	margin-top:14em;
+	margin-bottom:2.7em; 
+}
+
+#bg .columns h1{
+	
+	padding: 0 0 2.9em 1.0em;
+	text-align: left;
+	color: #FFF;
+	margin-top: 0;
+	position: relative;
+	top: -44px;
+	line-height: 1.4em;	
+}
+
+#bg .columns span{
+	background-color: rgba(51,66,82,0.50);
+	padding:0;
+}
+
+#bg > div:not(.row){
+	width: 100%;
+	background:rgba(51,66,82,0.25);
+	position:absolute;
+	bottom:0;
+}
+
+#bg ul{
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+}
+
+#bg ul li{
+	display: inline-block;
+	padding: 1.0em;
+}
+
+#bg ul li a{
+	padding: .3em  1.0em;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+#bg ul li a.act{
+	border-bottom: solid 2px #4d997c
+}
+
+#options{
+	background-color: #FFF;
+	padding-top: 4.0em;
+	padding-bottom: 4.0em;
+}
+
+#options h3{
+	text-align: left;
+	float: left;
+	display: inline;
+	width: 40%;
+	font-size: 1.4em;
+}
+
+#options h6{
+	clear: both;
+	text-align: left;
+}
+
+#options img{
+	float: left;
+	display: inline;
+	margin: .5em 1.0em 0 0;
+}
+
+.arrow-down2 {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #ABABAB;
+}
+
+#thousand img{
+	border: 3px solid #FFFFFF;
+	-moz-box-shadow: -3px -3px 6px 0px rgba(0,0,0,0.25), 3px 3px 6px 0px rgba(0,0,0,0.25);
+	box-shadow: -3px -3px 6px 0px rgba(0,0,0,0.25), 3px 3px 6px 0px rgba(0,0,0,0.25);
+}
+
+#bg2{
+	background-image:url('backgrounds/bgMap.jpg');
+	background-repeat:no-repeat;
+	background-position:center;
+	min-height: 486px;
+}
+
+#bg2 div > div{
+	border-radius: 16px;
+	background: rgba(255,255,255,0.66);
+	border: 1px solid #DEDEDE;
+	width: 410px;
+	padding: .7em 1.0em;
+	margin-left: 130px;
+	
+}
+
+#bg2 div > div h1{
+	font-size: 44px;
+	color: #4A4A4A;
+	margin:0;
+}
+
+#bg2 div > a{
+	font-size: 22px;
+	color: #FFF;
+	line-height: 26px;
+	border-radius: 7px;
+	background: #E67523;
+	border: 1px solid #DEDEDE;
+	padding: .3em .5em;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 2.0em;
+	
+}
+
+#midForm button, #footForm button{
+	border-radius: 0 15px 15px 15px;
+	background: #4d997c;
+	border: none;
+	box-shadow: none;
+	float: right;
+	width: 30%;
+	height: 60px;
+	padding: 1.0em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+#footForm button{
+	background: #344252;
+}
+
+#midForm button:hover{
+	background: rgba(77,153,124,0.8);
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+
+#footForm button:hover{
+	background: rgba(51,65,81,0.8);
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+
+#midForm div.form-item, #footForm div.form-item{
+	float: left;
+	margin: 0;
+	width: 70%;
+}
+
+#midForm input.email, #footForm input.email{
+	border-radius: 15px 0 15px 15px;
+	border: 1px solid #FFFFFF;
+	background: transparent;
+	height: 60px;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 20px;
+	padding-left: 1.6em;
+	text-align: center;
+}
+
+.foot ul li h6{
+	padding: .3em  2.5em .3em 1.0em;
+	color: #4A4A4A;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	border-right: solid 1px rgba(166,166,166,0.3);
+}
+
+.foot ul li a{
+	padding: .3em  1.0em;
+	color: #4A4A4A;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+}
+
+.foot ul li a:hover{
+	color: #ababab;
+}
+
+.foot ul li a.o{
+	padding-left:2.5em;
 }

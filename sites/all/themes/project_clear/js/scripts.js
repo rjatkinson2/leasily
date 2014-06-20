@@ -20,6 +20,34 @@
 				});
 			}*/
 			
+			/*
+			
+			*/
+			
+			$('#bg a').click(function (e) {
+				if (!$(this).hasClass('act')){
+				    //reset all the link classes
+				    $('#bg a').removeClass('act');
+				        
+				    //set current link as active
+				    $(this).addClass('act');
+				    
+				    //store link's rel attribute to identify option
+				    var optionId = $(this).attr('rel');
+	
+				    //hide current option set
+				    $('#options .row').slideUp();
+				    $('.large-centered > .suf').hide();    
+				    
+				    //show linked option set    
+				    $('#'+optionId).slideDown();
+				    $('.'+optionId).fadeIn(1500);
+	 			}
+	 			
+			    //prevent href="#" from returning to the top
+ 				e.preventDefault();
+			});
+						
 			var winWidth = $(document).width();
 			var leftMarg = (winWidth-1000)/2+60;
 			$("#learn").css("left" , leftMarg+'px'); 
