@@ -92,8 +92,8 @@
 			<div class="small-10 small-centered columns dotted">
 				<div style="margin:0">
 					<div></div>
-					<h1><span>Rental property listings hand crafted for people who love photography.</span></h1>
-					<div style="margin-top:8px"></div>
+					<h1><span>Rental <span class="hide-for-small">property</span> listings <span class="hide-for-small">hand</span> crafted for people who love photography.</span></h1>
+					<div style="margin-top:8px" class="hide-for-small"></div>
 				</div>
 			</div>
 		</div>
@@ -180,21 +180,42 @@
 			</div>
 		</div>
 	</div>
+	
 	<div style="background-color:#F4F4F4">
 		<div class="row" style="margin:1.0em auto">
-			<h3 class="hide-for-small">learn more</h3>
-			<div class="arrow-down2 hide-for-small" style="margin: 0 auto"></div>
+			<h3>learn more</h3>
+			<div class="arrow-down2" style="margin: 0 auto"></div>
 		</div>
 	</div>
-	<div style="background-color:#FFF; padding:6.0em 0" class="wideCard" id="thousand">
+	
+	<div class="wideCard hide-for-medium-up">      
+		<div class="row">
+			<div class="large-4 large-offset-1 push-7 columns">
+				<h1>Photos worth a thousand words</h1>
+				<h5>Photography is at the heart and soul of Leasily.com.  We professionally photograph every listing, delivering tenants with the complete experience before a tour is ever required.</h5>
+			</div>  
+			<div class="large-7 pull-5 columns">
+		    	<ul class="bxslider">
+		                <li><img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex1@2x.jpg'; ?>"/></li>
+		                <li><img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex2@2x.jpg'; ?>"/></li>
+		                <li><img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex3@2x.jpg'; ?>"/></li>
+		                <li><img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex4@2x.jpg'; ?>"/></li>
+		    	</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div style="background-color:#FFF; padding:6.0em 0" class="wideCard hide-for-small" id="thousand">
 		<div class="row">
 			<div class="large-7 columns">
 				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex2@2x.jpg'; ?>" width="310px" style="float:right"/>
 				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/ex1@2x.jpg'; ?>" width="220px" style="float:right; margin-right:15px; margin-top:74px"/>
 			</div>
 			<div class="large-5 columns">
-				<h1 style="text-align:left">Photos worth a thousand words</h1>
-				<h5 style="text-align:left">Every property is professionally photographed at leasily.com, delivering the complete experience from the comfort of your (soon to be old) home.</h5>
+				<h1 style="text-align:left; margin-bottom:.2em">Photos worth a thousand words</h1>
+				<h5 style="text-align:left">Every property is professionally photographed at leasily.com, delivering the complete experience from the comfort of your<br/> (soon to be old) home.</h5>
 			</div>
 		</div>
 		<div class="row" style="padding-top:15px">
@@ -206,11 +227,11 @@
 			</div>
 		</div>
 	</div>
-	<div style="padding:2.0em; position:relative" id="bg2">
-		<div class="row" style="margin-top:80px">
+	<div id="bg2">
+		<div class="row">
 			<div><h1>Map based search</h1></div>
 		</div>
-		<div class="row" style="margin-top:20px; padding-left:350px;">
+		<div class="row">
 			<?php print l(t('Start hunting!'), 'map');?>
 		</div>
 	</div>
