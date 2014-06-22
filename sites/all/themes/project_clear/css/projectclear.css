@@ -4352,7 +4352,7 @@ div.dotted > div{
 	line-height: 1.4em;
 }
 
-#bg .columns span{
+#bg .columns h1 > span{
 	background-color: rgba(51,66,82,0.50);
 	padding:0;
 }
@@ -4377,7 +4377,7 @@ div.dotted > div{
 }
 
 #bg ul li a{
-	padding: .3em  .1em;
+	padding: .3em 0;
 	color: #FFF;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
@@ -4669,7 +4669,7 @@ off#options h6:before{
 		line-height: 1.4em;	
 	}
 	
-	#bg .columns span{
+	#bg .columns h1 > span{
 		background-color: rgba(51,66,82,0.50);
 		padding:0;
 	}
