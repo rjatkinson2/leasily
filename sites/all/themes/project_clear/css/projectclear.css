@@ -4359,7 +4359,7 @@ div.dotted > div{
 
 #bg > div:not(.row){
 	width: 100%;
-	background:rgba(51,66,82,0.25);
+	background:rgba(51,66,82,0.75);
 	position:absolute;
 	bottom:0;
 }
