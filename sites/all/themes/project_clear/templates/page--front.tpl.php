@@ -111,7 +111,7 @@
 			<div class="large-4 columns">
 				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/houseFlat@2x.png'; ?>" width="94px"/>
 				<h3>You Find a Potential Rental</h3>
-				<h6>Find a rental your interested in through Craigslist, Zillow, Trulia, or any way you choose.</h6>
+				<h6>Find a rental you're interested in through Craigslist, Zillow, Trulia, or any way you choose.</h6>
 				<h6>Paste a link to the listing in the form below!</h6>
 			</div>
 			<div class="large-4 columns">
