@@ -139,9 +139,10 @@
 				<h6>You tell us any time you need new tenants and we’ll set your listing live.<br/>We’ll hold onto the listing for easy access every year.</h6>
 			</div>
 			<div class="large-4 columns">
-				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/amazonFlat@2x.png'; ?>" width="127.2px"/>
-				<h3>Free <br/>Gift Card for Trying!</h3>
-				<h6>We’ll give you 20 bucks to Amazon for trying out our service and helping spread the word!</h6>
+				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/mapFlat@2x.png'; ?>" width="90px"/>
+				<h3>Check it out and more at the map!</h3>
+				<h6>You'll find your listing, along with many other on our map based property search.</h6>
+				<h6>Best of all, our service is <span style="text-decoration:underline">completely free!</span></h6>
 			</div>
 		</div>
 		<div class="row" id="p3" style="display:none">
@@ -156,9 +157,10 @@
 				<h6>You tell us any time you need new tenants and we’ll set your listing live.<br/>We’ll hold onto the listing for easy access every year.</h6>
 			</div>
 			<div class="large-4 columns">
-				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/amazonFlat@2x.png'; ?>" width="127.2px"/>
-				<h3>Free <br/>Gift Card for Trying!</h3>
-				<h6>We’ll give you 20 bucks to Amazon for trying out our service and helping spread the word!</h6>
+				<img src="<?php print base_path() . drupal_get_path('theme', 'project_clear') . '/images/landingIcons/mapFlat@2x.png'; ?>" width="90px"/>
+				<h3>Check it out and more at the map!</h3>
+				<h6>You'll find your listing, along with many other on our map based property search.</h6>
+				<h6>Best of all, our service is <span style="text-decoration:underline">completely free!</span></h6>
 			</div>
 		</div>
 	</div>
