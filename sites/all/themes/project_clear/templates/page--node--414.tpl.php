@@ -133,7 +133,7 @@
 	<div class="small-12 columns">
 		<div class="large-3 small-6 columns">
 			<div class="large-4 columns">
-				<h1>2</h1>
+				<h1>13</h1>
 			</div>
 			<div class="large-8 columns">
 				<h6>properties photographed</h6>
@@ -141,10 +141,10 @@
 		</div>      								  
 		<div class="large-3 small-6 columns">				  
 			<div class="large-4 columns">
-				<h1>30</h1>
+				<h1>7</h1>
 			</div>
 			<div class="large-8 columns">
-				<h6>average tenants interested</h6>
+				<h6>offers made per property</h6>
 			</div>
 		</div>      								  
 		<div class="large-3 small-6 columns">				  
@@ -157,7 +157,7 @@
 		</div>      								  
 		<div class="large-3 small-6 columns">				  
 			<div class="large-4 columns">
-				<h1>10</h1>
+				<h1>30</h1>
 			</div>
 			<div class="large-8 columns">
 				<h6>happy tenants and landlords</h6>
@@ -166,20 +166,10 @@
 	</div>
 </div>
 
-<div class="row" style="padding:3.0em 1.0em 1.5em 1.0em">
-	<div class="large-9 columns" style="padding:0, margin:0">
+<div class="row" style="padding:3.0em 1.0em 5.0em 1.0em">
+	<div class="large-12 columns" style="padding:0, margin:0">
 			<?php $block = module_invoke('webform', 'block_view', 'client-block-415');
 			print render($block['content']);?>
-	</div>
-	<div class="large-3 columns">
-		<h2 style="color:#4A4A4A; font-size:2.0em; margin-bottom:10px">*$20 card to</h1>
-		<img src="<?php print $base_path . $theme_path . '/images/amazonlogo.png';?>" alt="Logo" class="centerTest" width="200px" style="margin:0 auto">
-	</div>
-</div>
-
-<div class="row">
-	<div class="large-10 large-centered columns">
-		<h6 style="margin-bottom:5.0em; font-size:1.4em; line-height: 150%;"><span style="color:#E16565; font-size:1.3em">Sign up</span> to have your house listed! Get all the features <span style="font-weight:400">below</span> for&nbsp;<span style="color:#4D997C; font-size:1.8em; text-decoration: underline;">free.</span><br />Plus - get a <span style="font-weight:400; color:#FF9900; text-decoration:underline">$20 Amazon Gift Card*</span> on us, for a short time.<br /><span style="font-size:.7em">(*Offer open to first 200 residencies, New Orleans only. Card earned and sent after listing is complete.)</h6>
 	</div>
 </div>
 
@@ -267,7 +257,7 @@
 	</div>
 </div>
 
-<div class="row card base" id="signupReturn"  onclick="_gaq.push(['_trackPageview', '/landlords/signupReturn']);">
+<div class="row card base" id="signupReturn" onclick="_gaq.push(['_trackPageview', '/landlords/signupReturn']);">
 	<div class="large-12 large-centered columns">
 		<div class="large-3 columns">
 			<img src="<?php print $base_path . $theme_path . '/images/landlordOverview/Arrow@2x.png';?>" width="60px" class="centerTest" style="padding:1.1em 0 1.0em 0">
